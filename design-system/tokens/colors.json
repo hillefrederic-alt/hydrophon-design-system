@@ -1,0 +1,280 @@
+{
+  "$schema": "https://design-tokens.org/schema.json",
+  "hydrophon": {
+    "blau": {
+      "50": {
+        "$value": "#e5f5fd",
+        "$type": "color",
+        "$description": "Hydrophon Blau - Hellste Nuance"
+      },
+      "100": {
+        "$value": "#b8e4f9",
+        "$type": "color",
+        "$description": "Hydrophon Blau - Sehr hell"
+      },
+      "200": {
+        "$value": "#8ad3f5",
+        "$type": "color",
+        "$description": "Hydrophon Blau - Hell"
+      },
+      "300": {
+        "$value": "#5cc2f1",
+        "$type": "color",
+        "$description": "Hydrophon Blau - Leicht"
+      },
+      "400": {
+        "$value": "#2eb1ed",
+        "$type": "color",
+        "$description": "Hydrophon Blau - Medium hell"
+      },
+      "500": {
+        "$value": "#008bd2",
+        "$type": "color",
+        "$description": "Hydrophon Blau - Primärfarbe (Brand CI)"
+      },
+      "600": {
+        "$value": "#007bb8",
+        "$type": "color",
+        "$description": "Hydrophon Blau - Medium dunkel"
+      },
+      "700": {
+        "$value": "#006a9e",
+        "$type": "color",
+        "$description": "Hydrophon Blau - Dunkel"
+      },
+      "800": {
+        "$value": "#005a84",
+        "$type": "color",
+        "$description": "Hydrophon Blau - Sehr dunkel"
+      },
+      "900": {
+        "$value": "#00496a",
+        "$type": "color",
+        "$description": "Hydrophon Blau - Dunkelste Nuance"
+      }
+    },
+    "grau": {
+      "50": {
+        "$value": "#f7f7f7",
+        "$type": "color",
+        "$description": "Hydrophon Grau - Hellste Nuance"
+      },
+      "100": {
+        "$value": "#e8e8e8",
+        "$type": "color",
+        "$description": "Hydrophon Grau - Sehr hell"
+      },
+      "200": {
+        "$value": "#d1d1d1",
+        "$type": "color",
+        "$description": "Hydrophon Grau - Hell"
+      },
+      "300": {
+        "$value": "#b0afaf",
+        "$type": "color",
+        "$description": "Hydrophon Grau - Leicht"
+      },
+      "400": {
+        "$value": "#939292",
+        "$type": "color",
+        "$description": "Hydrophon Grau - Medium hell"
+      },
+      "500": {
+        "$value": "#575656",
+        "$type": "color",
+        "$description": "Hydrophon Grau - Primärfarbe (Brand CI)"
+      },
+      "600": {
+        "$value": "#4d4c4c",
+        "$type": "color",
+        "$description": "Hydrophon Grau - Medium dunkel"
+      },
+      "700": {
+        "$value": "#434242",
+        "$type": "color",
+        "$description": "Hydrophon Grau - Dunkel"
+      },
+      "800": {
+        "$value": "#393838",
+        "$type": "color",
+        "$description": "Hydrophon Grau - Sehr dunkel"
+      },
+      "900": {
+        "$value": "#2f2e2e",
+        "$type": "color",
+        "$description": "Hydrophon Grau - Dunkelste Nuance"
+      }
+    }
+  },
+  "neutral": {
+    "50": {
+      "$value": "#fafafa",
+      "$type": "color",
+      "$description": "Neutralgrau - Hellste Nuance"
+    },
+    "100": {
+      "$value": "#f5f5f5",
+      "$type": "color",
+      "$description": "Neutralgrau - Sehr hell"
+    },
+    "200": {
+      "$value": "#e5e5e5",
+      "$type": "color",
+      "$description": "Neutralgrau - Hell"
+    },
+    "300": {
+      "$value": "#d4d4d4",
+      "$type": "color",
+      "$description": "Neutralgrau - Leicht"
+    },
+    "400": {
+      "$value": "#a3a3a3",
+      "$type": "color",
+      "$description": "Neutralgrau - Medium hell"
+    },
+    "500": {
+      "$value": "#737373",
+      "$type": "color",
+      "$description": "Neutralgrau - Medium"
+    },
+    "600": {
+      "$value": "#525252",
+      "$type": "color",
+      "$description": "Neutralgrau - Medium dunkel"
+    },
+    "700": {
+      "$value": "#404040",
+      "$type": "color",
+      "$description": "Neutralgrau - Dunkel"
+    },
+    "800": {
+      "$value": "#262626",
+      "$type": "color",
+      "$description": "Neutralgrau - Sehr dunkel"
+    },
+    "900": {
+      "$value": "#171717",
+      "$type": "color",
+      "$description": "Neutralgrau - Dunkelste Nuance"
+    },
+    "white": {
+      "$value": "#ffffff",
+      "$type": "color",
+      "$description": "Weiß"
+    },
+    "black": {
+      "$value": "#000000",
+      "$type": "color",
+      "$description": "Schwarz"
+    }
+  },
+  "color": {
+    "primary": {
+      "$value": "{hydrophon.blau.500}",
+      "$type": "color",
+      "$description": "Primärfarbe für Markenelemente"
+    },
+    "secondary": {
+      "$value": "{hydrophon.grau.500}",
+      "$type": "color",
+      "$description": "Sekundärfarbe für unterstützende Elemente"
+    },
+    "success": {
+      "$value": "#22c55e",
+      "$type": "color",
+      "$description": "Erfolg, positive Aktionen, Bestätigungen"
+    },
+    "warning": {
+      "$value": "#f59e0b",
+      "$type": "color",
+      "$description": "Warnungen, Vorsicht, wichtige Hinweise"
+    },
+    "error": {
+      "$value": "#ef4444",
+      "$type": "color",
+      "$description": "Fehler, Probleme, destruktive Aktionen"
+    },
+    "info": {
+      "$value": "#3b82f6",
+      "$type": "color",
+      "$description": "Informationen, neutrale Hinweise"
+    },
+    "background": {
+      "primary": {
+        "$value": "{neutral.white}",
+        "$type": "color",
+        "$description": "Primärer Hintergrund"
+      },
+      "secondary": {
+        "$value": "{neutral.50}",
+        "$type": "color",
+        "$description": "Sekundärer Hintergrund für Abgrenzungen"
+      },
+      "tertiary": {
+        "$value": "{neutral.100}",
+        "$type": "color",
+        "$description": "Tertiärer Hintergrund für zusätzliche Hierarchie"
+      }
+    },
+    "text": {
+      "primary": {
+        "$value": "{neutral.900}",
+        "$type": "color",
+        "$description": "Primärer Text (hoher Kontrast)"
+      },
+      "secondary": {
+        "$value": "{neutral.700}",
+        "$type": "color",
+        "$description": "Sekundärer Text (mittlerer Kontrast)"
+      },
+      "muted": {
+        "$value": "{neutral.500}",
+        "$type": "color",
+        "$description": "Gedämpfter Text (niedriger Kontrast)"
+      },
+      "inverse": {
+        "$value": "{neutral.white}",
+        "$type": "color",
+        "$description": "Text auf dunklem Hintergrund"
+      }
+    }
+  },
+  "productline": {
+    "hyhero": {
+      "primary": {
+        "$value": "#f49a36",
+        "$type": "color",
+        "$description": "hyHero Primärfarbe - Orange"
+      },
+      "secondary": {
+        "$value": "#373643",
+        "$type": "color",
+        "$description": "hyHero Sekundärfarbe - Dunkelgrau"
+      }
+    },
+    "hyindustry": {
+      "primary": {
+        "$value": "#0e2638",
+        "$type": "color",
+        "$description": "hyIndustry Primärfarbe - Dunkelblau"
+      }
+    },
+    "gluy": {
+      "primary": {
+        "$value": "#ffeeb6",
+        "$type": "color",
+        "$description": "Gluy Primärfarbe - Gelb"
+      },
+      "secondary": {
+        "$value": "#88a9c3",
+        "$type": "color",
+        "$description": "Gluy Sekundärfarbe - Hellblau"
+      },
+      "tertiary": {
+        "$value": "#14202e",
+        "$type": "color",
+        "$description": "Gluy Tertiärfarbe - Dunkelblau"
+      }
+    }
+  }
+}
