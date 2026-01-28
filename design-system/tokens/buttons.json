@@ -1,0 +1,363 @@
+{
+  "$schema": "https://design-tokens.org/schema.json",
+  "color": {
+    "action": {
+      "primary": {
+        "$value": "{hydrophon.blau.500}",
+        "$type": "color",
+        "$description": "Primäre Aktionsfarbe für wichtigste Buttons"
+      },
+      "primaryHover": {
+        "$value": "{hydrophon.blau.600}",
+        "$type": "color",
+        "$description": "Primäre Aktionsfarbe bei Hover-Zustand"
+      },
+      "primaryActive": {
+        "$value": "{hydrophon.blau.700}",
+        "$type": "color",
+        "$description": "Primäre Aktionsfarbe bei Active-Zustand"
+      },
+      "disabled": {
+        "$value": "{neutral.200}",
+        "$type": "color",
+        "$description": "Hintergrundfarbe für deaktivierte Buttons"
+      }
+    },
+    "text": {
+      "onPrimary": {
+        "$value": "{neutral.white}",
+        "$type": "color",
+        "$description": "Textfarbe auf primären Aktionsfarben"
+      },
+      "disabled": {
+        "$value": "{neutral.400}",
+        "$type": "color",
+        "$description": "Textfarbe für deaktivierte Elemente"
+      }
+    }
+  },
+  "button": {
+    "primary": {
+      "background": {
+        "default": {
+          "$value": "{color.action.primary}",
+          "$type": "color",
+          "$description": "Primärer Button Hintergrund - Standard-Zustand"
+        },
+        "hover": {
+          "$value": "{color.action.primaryHover}",
+          "$type": "color",
+          "$description": "Primärer Button Hintergrund - Hover-Zustand"
+        },
+        "active": {
+          "$value": "{color.action.primaryActive}",
+          "$type": "color",
+          "$description": "Primärer Button Hintergrund - Active-Zustand"
+        },
+        "disabled": {
+          "$value": "{color.action.disabled}",
+          "$type": "color",
+          "$description": "Primärer Button Hintergrund - Deaktiviert"
+        }
+      },
+      "foreground": {
+        "default": {
+          "$value": "{color.text.onPrimary}",
+          "$type": "color",
+          "$description": "Primärer Button Text - Standard-Zustand"
+        },
+        "disabled": {
+          "$value": "{color.text.disabled}",
+          "$type": "color",
+          "$description": "Primärer Button Text - Deaktiviert"
+        }
+      },
+      "border": {
+        "default": {
+          "$value": "transparent",
+          "$type": "color",
+          "$description": "Primärer Button Rahmen - Standard (kein sichtbarer Rahmen)"
+        },
+        "focus": {
+          "$value": "{hydrophon.blau.300}",
+          "$type": "color",
+          "$description": "Primärer Button Rahmen - Focus-Zustand"
+        }
+      }
+    },
+    "secondary": {
+      "background": {
+        "default": {
+          "$value": "transparent",
+          "$type": "color",
+          "$description": "Sekundärer Button Hintergrund - Standard (transparent für Outline-Stil)"
+        },
+        "hover": {
+          "$value": "{hydrophon.blau.50}",
+          "$type": "color",
+          "$description": "Sekundärer Button Hintergrund - Hover-Zustand"
+        },
+        "active": {
+          "$value": "{hydrophon.blau.100}",
+          "$type": "color",
+          "$description": "Sekundärer Button Hintergrund - Active-Zustand"
+        },
+        "disabled": {
+          "$value": "transparent",
+          "$type": "color",
+          "$description": "Sekundärer Button Hintergrund - Deaktiviert"
+        }
+      },
+      "foreground": {
+        "default": {
+          "$value": "{hydrophon.blau.500}",
+          "$type": "color",
+          "$description": "Sekundärer Button Text - Standard-Zustand"
+        },
+        "hover": {
+          "$value": "{hydrophon.blau.600}",
+          "$type": "color",
+          "$description": "Sekundärer Button Text - Hover-Zustand"
+        },
+        "disabled": {
+          "$value": "{neutral.400}",
+          "$type": "color",
+          "$description": "Sekundärer Button Text - Deaktiviert"
+        }
+      },
+      "border": {
+        "default": {
+          "$value": "{hydrophon.blau.500}",
+          "$type": "color",
+          "$description": "Sekundärer Button Rahmen - Standard-Zustand"
+        },
+        "hover": {
+          "$value": "{hydrophon.blau.600}",
+          "$type": "color",
+          "$description": "Sekundärer Button Rahmen - Hover-Zustand"
+        },
+        "disabled": {
+          "$value": "{neutral.300}",
+          "$type": "color",
+          "$description": "Sekundärer Button Rahmen - Deaktiviert"
+        },
+        "focus": {
+          "$value": "{hydrophon.blau.300}",
+          "$type": "color",
+          "$description": "Sekundärer Button Rahmen - Focus-Zustand"
+        }
+      }
+    },
+    "tertiary": {
+      "background": {
+        "default": {
+          "$value": "transparent",
+          "$type": "color",
+          "$description": "Tertiärer/Ghost Button Hintergrund - Standard (transparent)"
+        },
+        "hover": {
+          "$value": "{neutral.100}",
+          "$type": "color",
+          "$description": "Tertiärer/Ghost Button Hintergrund - Hover-Zustand"
+        },
+        "active": {
+          "$value": "{neutral.200}",
+          "$type": "color",
+          "$description": "Tertiärer/Ghost Button Hintergrund - Active-Zustand"
+        },
+        "disabled": {
+          "$value": "transparent",
+          "$type": "color",
+          "$description": "Tertiärer/Ghost Button Hintergrund - Deaktiviert"
+        }
+      },
+      "foreground": {
+        "default": {
+          "$value": "{hydrophon.blau.500}",
+          "$type": "color",
+          "$description": "Tertiärer/Ghost Button Text - Standard-Zustand"
+        },
+        "hover": {
+          "$value": "{hydrophon.blau.600}",
+          "$type": "color",
+          "$description": "Tertiärer/Ghost Button Text - Hover-Zustand"
+        },
+        "disabled": {
+          "$value": "{neutral.400}",
+          "$type": "color",
+          "$description": "Tertiärer/Ghost Button Text - Deaktiviert"
+        }
+      },
+      "border": {
+        "default": {
+          "$value": "transparent",
+          "$type": "color",
+          "$description": "Tertiärer/Ghost Button Rahmen - Standard (kein Rahmen)"
+        },
+        "focus": {
+          "$value": "{hydrophon.blau.300}",
+          "$type": "color",
+          "$description": "Tertiärer/Ghost Button Rahmen - Focus-Zustand"
+        }
+      }
+    },
+    "size": {
+      "small": {
+        "paddingX": {
+          "$value": "{spacing.3}",
+          "$type": "dimension",
+          "$description": "Small Button horizontales Padding - 12px"
+        },
+        "paddingY": {
+          "$value": "{spacing.1.5}",
+          "$type": "dimension",
+          "$description": "Small Button vertikales Padding - 6px"
+        },
+        "fontSize": {
+          "$value": "14px",
+          "$type": "dimension",
+          "$description": "Small Button Schriftgröße - entspricht typography.sm"
+        },
+        "minHeight": {
+          "$value": "32px",
+          "$type": "dimension",
+          "$description": "Small Button Mindesthöhe - kompakte UIs"
+        },
+        "iconSize": {
+          "$value": "{icon.size.xs}",
+          "$type": "dimension",
+          "$description": "Small Button Icon-Größe - 16px"
+        },
+        "gap": {
+          "$value": "{spacing.1.5}",
+          "$type": "dimension",
+          "$description": "Small Button Abstand zwischen Icon und Text - 6px"
+        }
+      },
+      "medium": {
+        "paddingX": {
+          "$value": "{spacing.4}",
+          "$type": "dimension",
+          "$description": "Medium Button horizontales Padding - 16px"
+        },
+        "paddingY": {
+          "$value": "{spacing.2}",
+          "$type": "dimension",
+          "$description": "Medium Button vertikales Padding - 8px"
+        },
+        "fontSize": {
+          "$value": "16px",
+          "$type": "dimension",
+          "$description": "Medium Button Schriftgröße - entspricht typography.base"
+        },
+        "minHeight": {
+          "$value": "40px",
+          "$type": "dimension",
+          "$description": "Medium Button Mindesthöhe - Standard für Formulare"
+        },
+        "iconSize": {
+          "$value": "{icon.size.sm}",
+          "$type": "dimension",
+          "$description": "Medium Button Icon-Größe - 20px"
+        },
+        "gap": {
+          "$value": "{spacing.2}",
+          "$type": "dimension",
+          "$description": "Medium Button Abstand zwischen Icon und Text - 8px"
+        }
+      },
+      "large": {
+        "paddingX": {
+          "$value": "{spacing.6}",
+          "$type": "dimension",
+          "$description": "Large Button horizontales Padding - 24px"
+        },
+        "paddingY": {
+          "$value": "{spacing.3}",
+          "$type": "dimension",
+          "$description": "Large Button vertikales Padding - 12px"
+        },
+        "fontSize": {
+          "$value": "18px",
+          "$type": "dimension",
+          "$description": "Large Button Schriftgröße - entspricht typography.lg"
+        },
+        "minHeight": {
+          "$value": "48px",
+          "$type": "dimension",
+          "$description": "Large Button Mindesthöhe - CTAs und Hero-Sections"
+        },
+        "iconSize": {
+          "$value": "{icon.size.sm}",
+          "$type": "dimension",
+          "$description": "Large Button Icon-Größe - 20px"
+        },
+        "gap": {
+          "$value": "{spacing.2}",
+          "$type": "dimension",
+          "$description": "Large Button Abstand zwischen Icon und Text - 8px"
+        }
+      }
+    },
+    "borderRadius": {
+      "$value": "{borderRadius.base}",
+      "$type": "dimension",
+      "$description": "Button Eckenradius - 4px Standard"
+    },
+    "borderWidth": {
+      "$value": "2px",
+      "$type": "dimension",
+      "$description": "Button Rahmenbreite für Secondary/Outline-Buttons"
+    },
+    "fontWeight": {
+      "$value": "500",
+      "$type": "number",
+      "$description": "Button Schriftgewicht - Medium für ausgewogene Lesbarkeit"
+    },
+    "transition": {
+      "$value": "150ms ease-in-out",
+      "$type": "string",
+      "$description": "Button Übergangsanimation für Hover/Active-Zustände"
+    },
+    "focus": {
+      "outlineWidth": {
+        "$value": "2px",
+        "$type": "dimension",
+        "$description": "Focus Outline Breite - WCAG 2.2 konform"
+      },
+      "outlineOffset": {
+        "$value": "2px",
+        "$type": "dimension",
+        "$description": "Focus Outline Abstand - Sichtbare Trennung vom Button"
+      },
+      "outlineColor": {
+        "$value": "{hydrophon.blau.300}",
+        "$type": "color",
+        "$description": "Focus Outline Farbe - 3:1 Kontrast zum Hintergrund"
+      }
+    },
+    "iconOnly": {
+      "small": {
+        "size": {
+          "$value": "32px",
+          "$type": "dimension",
+          "$description": "Icon-only Button (Small) - 32x32px, nur für Desktop mit ausreichend Abstand"
+        }
+      },
+      "medium": {
+        "size": {
+          "$value": "44px",
+          "$type": "dimension",
+          "$description": "Icon-only Button (Medium) - 44x44px, WCAG Touch-Target"
+        }
+      },
+      "large": {
+        "size": {
+          "$value": "48px",
+          "$type": "dimension",
+          "$description": "Icon-only Button (Large) - 48x48px für CTAs"
+        }
+      }
+    }
+  }
+}
