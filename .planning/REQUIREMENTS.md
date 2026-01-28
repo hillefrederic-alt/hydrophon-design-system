@@ -7,23 +7,23 @@
 
 ### Foundation (Design Tokens & Grundlagen)
 
-- [ ] **FOUND-01**: Design Token System etabliert (Figma Variables oder Style Dictionary)
-- [ ] **FOUND-02**: Farbpalette erweitert um Sekundärfarben und funktionale Farben (Success, Warning, Error, Info)
-- [ ] **FOUND-03**: Farbabstufungen dokumentiert (z.B. Blau-100 bis Blau-900)
-- [ ] **FOUND-04**: Typografie-System definiert (Schriftfamilien für Headline, Body, UI)
-- [ ] **FOUND-05**: Typografie-Hierarchie festgelegt (H1-H6, Body Sizes, Line Heights)
-- [ ] **FOUND-06**: Spacing-Scale definiert (4px, 8px, 16px, 24px, 32px, 48px, 64px, etc.)
-- [ ] **FOUND-07**: Grid-System dokumentiert (Breakpoints, Columns, Gutters)
-- [ ] **FOUND-08**: Border Radius Scale definiert (für Buttons, Cards, etc.)
-- [ ] **FOUND-09**: Shadow System definiert (Elevations für Cards, Modals)
+- [x] **FOUND-01**: Design Token System etabliert (Figma Variables oder Style Dictionary)
+- [x] **FOUND-02**: Farbpalette erweitert um Sekundärfarben und funktionale Farben (Success, Warning, Error, Info)
+- [x] **FOUND-03**: Farbabstufungen dokumentiert (z.B. Blau-100 bis Blau-900)
+- [x] **FOUND-04**: Typografie-System definiert (Schriftfamilien für Headline, Body, UI)
+- [x] **FOUND-05**: Typografie-Hierarchie festgelegt (H1-H6, Body Sizes, Line Heights)
+- [x] **FOUND-06**: Spacing-Scale definiert (4px, 8px, 16px, 24px, 32px, 48px, 64px, etc.)
+- [x] **FOUND-07**: Grid-System dokumentiert (Breakpoints, Columns, Gutters)
+- [x] **FOUND-08**: Border Radius Scale definiert (für Buttons, Cards, etc.)
+- [x] **FOUND-09**: Shadow System definiert (Elevations für Cards, Modals)
 
 ### Logo & Markenidentität
 
-- [ ] **LOGO-01**: Logo-Varianten dokumentiert (Original, Weiß, Schwarz, Grau, Blau)
-- [ ] **LOGO-02**: Schutzraum-Regeln definiert (Mindestabstand zu anderen Elementen)
-- [ ] **LOGO-03**: Mindestgrößen festgelegt (Print und Digital)
-- [ ] **LOGO-04**: Fehlverwendungen dokumentiert (Was man NICHT tun sollte)
-- [ ] **LOGO-05**: Produktlinien-Logos integriert (Gluy, hyHero, hyIndustry)
+- [x] **LOGO-01**: Logo-Varianten dokumentiert (Original, Weiß, Schwarz, Grau, Blau)
+- [x] **LOGO-02**: Schutzraum-Regeln definiert (Mindestabstand zu anderen Elementen)
+- [x] **LOGO-03**: Mindestgrößen festgelegt (Print und Digital)
+- [x] **LOGO-04**: Fehlverwendungen dokumentiert (Was man NICHT tun sollte)
+- [x] **LOGO-05**: Produktlinien-Logos integriert (Gluy, hyHero, hyIndustry)
 
 ### Icon-System
 
