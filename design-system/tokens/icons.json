@@ -1,0 +1,84 @@
+{
+  "icon": {
+    "size": {
+      "xs": {
+        "$value": "16px",
+        "$type": "dimension",
+        "$description": "Extra kleine Icon-Groesse - Minimum lesbar, kompakte UIs, inline mit kleinem Text"
+      },
+      "sm": {
+        "$value": "20px",
+        "$type": "dimension",
+        "$description": "Kleine Icon-Groesse - Standard für Buttons mit Text, Formular-Elemente"
+      },
+      "md": {
+        "$value": "24px",
+        "$type": "dimension",
+        "$description": "Mittlere Icon-Groesse - Standalone-Icons, Basis-Grid-Groesse, Icon-only Buttons"
+      },
+      "lg": {
+        "$value": "32px",
+        "$type": "dimension",
+        "$description": "Grosse Icon-Groesse - Betonung, Hero-Sections, Feature-Highlights"
+      },
+      "xl": {
+        "$value": "48px",
+        "$type": "dimension",
+        "$description": "Extra grosse Icon-Groesse - Dekorative Elemente, maximale praktische Groesse"
+      }
+    },
+    "spacing": {
+      "withText": {
+        "$value": "{spacing.2}",
+        "$type": "dimension",
+        "$description": "Abstand zwischen Icon und Text - 8px fuer harmonische Kombination"
+      },
+      "standalone": {
+        "$value": "{spacing.1}",
+        "$type": "dimension",
+        "$description": "Optischer Rand fuer standalone Icons - 4px fuer visuelle Ausrichtung"
+      }
+    },
+    "stroke": {
+      "weight": {
+        "$value": "2px",
+        "$type": "dimension",
+        "$description": "Strichstaerke fuer alle Icons - ausgewogen und lesbar bei allen Groessen"
+      },
+      "cap": {
+        "$value": "round",
+        "$type": "string",
+        "$description": "Strichabschluss - abgerundet fuer moderne B2B-Aesthetik, konsistent mit Inter Font"
+      },
+      "join": {
+        "$value": "round",
+        "$type": "string",
+        "$description": "Strichverbindung - abgerundet fuer weiche, moderne Optik"
+      }
+    },
+    "grid": {
+      "size": {
+        "$value": "24px",
+        "$type": "dimension",
+        "$description": "Basis-Grid-Groesse fuer Icon-Design - Standard-Artboard"
+      },
+      "padding": {
+        "$value": "2px",
+        "$type": "dimension",
+        "$description": "Grid-Padding - 1px visueller Abstand auf jeder Seite, 20x20px sichere Zone"
+      }
+    },
+    "touchTarget": {
+      "minimum": {
+        "$value": "44px",
+        "$type": "dimension",
+        "$description": "Minimale Touch-Target-Groesse - WCAG 2.1 AAA Empfehlung fuer mobile Interaktion"
+      },
+      "compact": {
+        "$value": "32px",
+        "$type": "dimension",
+        "$description": "Kompakte Touch-Target-Groesse - nur Desktop mit ausreichend Abstand zu anderen Elementen"
+      }
+    }
+  }
+}
