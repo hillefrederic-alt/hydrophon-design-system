@@ -31,10 +31,14 @@ Decimal phases appear between their surrounding integers in numeric order.
   2. Designer can place logo correctly with proper clearspace and sizing
   3. Developer can access design tokens as CSS/JSON variables
   4. Marketing can identify when logo is being used incorrectly
-**Plans**: TBD
+**Plans**: 5 plans
 
 Plans:
-- [ ] TBD during plan-phase
+- [ ] 01-01-PLAN.md — Color token system (palette, shades, semantics)
+- [ ] 01-02-PLAN.md — Typography token system (fonts, hierarchy, scale)
+- [ ] 01-03-PLAN.md — Spacing, grid, and effects tokens (spacing, breakpoints, radius, shadows)
+- [ ] 01-04-PLAN.md — Logo documentation (variants, clearspace, sizes, misuse)
+- [ ] 01-05-PLAN.md — Token system integration (Style Dictionary build)
 
 ### Phase 2: Icons & Basic Interactions
 **Goal**: Users can interact with primary actions using consistent button and icon patterns
@@ -129,7 +133,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6 → 7
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation & Brand Identity | 0/TBD | Not started | - |
+| 1. Foundation & Brand Identity | 0/5 | Planned | - |
 | 2. Icons & Basic Interactions | 0/TBD | Not started | - |
 | 3. Forms & Data Input | 0/TBD | Not started | - |
 | 4. Navigation & Content Structure | 0/TBD | Not started | - |
