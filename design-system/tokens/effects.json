@@ -1,0 +1,118 @@
+{
+  "borderRadius": {
+    "none": {
+      "$value": "0px",
+      "$type": "dimension",
+      "$description": "No border radius - sharp corners"
+    },
+    "sm": {
+      "$value": "2px",
+      "$type": "dimension",
+      "$description": "Subtle rounding for small elements"
+    },
+    "base": {
+      "$value": "4px",
+      "$type": "dimension",
+      "$description": "Standard rounding for buttons and inputs"
+    },
+    "md": {
+      "$value": "6px",
+      "$type": "dimension",
+      "$description": "Medium rounding for cards"
+    },
+    "lg": {
+      "$value": "8px",
+      "$type": "dimension",
+      "$description": "Large rounding for larger cards and modals"
+    },
+    "xl": {
+      "$value": "12px",
+      "$type": "dimension",
+      "$description": "Extra large rounding for pills and large elements"
+    },
+    "2xl": {
+      "$value": "16px",
+      "$type": "dimension",
+      "$description": "2XL rounding for feature cards"
+    },
+    "3xl": {
+      "$value": "24px",
+      "$type": "dimension",
+      "$description": "3XL rounding for large decorative elements"
+    },
+    "full": {
+      "$value": "9999px",
+      "$type": "dimension",
+      "$description": "Fully rounded for circular or pill shapes"
+    }
+  },
+  "shadow": {
+    "none": {
+      "$value": "none",
+      "$type": "shadow",
+      "$description": "No shadow"
+    },
+    "sm": {
+      "$value": "0 1px 2px 0 rgb(0 0 0 / 0.05)",
+      "$type": "shadow",
+      "$description": "Subtle shadow for minimal depth"
+    },
+    "base": {
+      "$value": "0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1)",
+      "$type": "shadow",
+      "$description": "Base shadow for standard elevation"
+    },
+    "md": {
+      "$value": "0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1)",
+      "$type": "shadow",
+      "$description": "Medium shadow for elevated elements"
+    },
+    "lg": {
+      "$value": "0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1)",
+      "$type": "shadow",
+      "$description": "Large shadow for floating elements"
+    },
+    "xl": {
+      "$value": "0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)",
+      "$type": "shadow",
+      "$description": "Extra large shadow for modals and dialogs"
+    },
+    "2xl": {
+      "$value": "0 25px 50px -12px rgb(0 0 0 / 0.25)",
+      "$type": "shadow",
+      "$description": "2XL shadow for dramatic elevation"
+    },
+    "inner": {
+      "$value": "inset 0 2px 4px 0 rgb(0 0 0 / 0.05)",
+      "$type": "shadow",
+      "$description": "Inner shadow for inset elements"
+    }
+  },
+  "elevation": {
+    "card": {
+      "$value": "{shadow.base}",
+      "$type": "shadow",
+      "$description": "Standard card elevation at rest"
+    },
+    "cardHover": {
+      "$value": "{shadow.md}",
+      "$type": "shadow",
+      "$description": "Card elevation on hover state"
+    },
+    "dropdown": {
+      "$value": "{shadow.lg}",
+      "$type": "shadow",
+      "$description": "Dropdown menu elevation"
+    },
+    "modal": {
+      "$value": "{shadow.xl}",
+      "$type": "shadow",
+      "$description": "Modal dialog elevation"
+    },
+    "tooltip": {
+      "$value": "{shadow.md}",
+      "$type": "shadow",
+      "$description": "Tooltip elevation"
+    }
+  }
+}
