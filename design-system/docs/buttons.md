@@ -122,7 +122,7 @@ Mehrere Secondary Buttons sind erlaubt, wenn sie gleichrangige Alternativen dars
 .button--secondary {
   background-color: var(--button-secondary-background-default);
   color: var(--button-secondary-foreground-default);
-  border: var(--button-border-width) solid var(--button-secondary-border-default);
+  border: var(--button-base-border-width) solid var(--button-secondary-border-default);
 }
 
 .button--secondary:hover:not(:disabled) {
@@ -494,9 +494,9 @@ Mindestens 8px Abstand zwischen benachbarten Buttons (verwenden Sie `spacing.2` 
   align-items: center;
   justify-content: center;
   font-family: var(--font-family-base); /* Inter */
-  font-weight: var(--button-font-weight); /* 500 */
-  border-radius: var(--button-border-radius); /* 4px */
-  transition: var(--button-transition); /* 150ms ease-in-out */
+  font-weight: var(--button-base-font-weight); /* 500 */
+  border-radius: var(--button-base-border-radius); /* 4px */
+  transition: var(--button-base-transition); /* 150ms ease-in-out */
   cursor: pointer;
   text-decoration: none;
   line-height: 1;
@@ -539,7 +539,7 @@ Mindestens 8px Abstand zwischen benachbarten Buttons (verwenden Sie `spacing.2` 
 .button--secondary {
   background-color: var(--button-secondary-background-default);
   color: var(--button-secondary-foreground-default);
-  border: var(--button-border-width) solid var(--button-secondary-border-default);
+  border: var(--button-base-border-width) solid var(--button-secondary-border-default);
 }
 
 .button--secondary:hover:not(:disabled) {
@@ -795,9 +795,9 @@ Alle Button-Tokens sind in `design-system/tokens/buttons.json` definiert und wer
 - `button.secondary.*` — Secondary Button Farben
 - `button.tertiary.*` — Tertiary Button Farben
 - `button.size.{small|medium|large}.*` — Button-Größen
+- `button.base.*` — Basis-Eigenschaften (borderRadius, borderWidth, fontWeight, transition)
 - `button.focus.*` — Focus-Indikatoren
 - `button.iconOnly.*` — Icon-Only Button-Dimensionen
-- `button.borderRadius`, `button.borderWidth`, `button.fontWeight`, `button.transition` — Basis-Eigenschaften
 
 **Verwendung:**
 ```css
