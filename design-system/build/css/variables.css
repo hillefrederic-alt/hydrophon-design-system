@@ -62,6 +62,18 @@
   --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); /** Extra large shadow for modals and dialogs */
   --shadow-2xl: 0 25px 50px -12px rgb(0 0 0 / 0.25); /** 2XL shadow for dramatic elevation */
   --shadow-inner: inset 0 2px 4px 0 rgb(0 0 0 / 0.05); /** Inner shadow for inset elements */
+  --icon-size-xs: 16px; /** Extra kleine Icon-Groesse - Minimum lesbar, kompakte UIs, inline mit kleinem Text */
+  --icon-size-sm: 20px; /** Kleine Icon-Groesse - Standard für Buttons mit Text, Formular-Elemente */
+  --icon-size-md: 24px; /** Mittlere Icon-Groesse - Standalone-Icons, Basis-Grid-Groesse, Icon-only Buttons */
+  --icon-size-lg: 32px; /** Grosse Icon-Groesse - Betonung, Hero-Sections, Feature-Highlights */
+  --icon-size-xl: 48px; /** Extra grosse Icon-Groesse - Dekorative Elemente, maximale praktische Groesse */
+  --icon-stroke-weight: 2px; /** Strichstaerke fuer alle Icons - ausgewogen und lesbar bei allen Groessen */
+  --icon-stroke-cap: round; /** Strichabschluss - abgerundet fuer moderne B2B-Aesthetik, konsistent mit Inter Font */
+  --icon-stroke-join: round; /** Strichverbindung - abgerundet fuer weiche, moderne Optik */
+  --icon-grid-size: 24px; /** Basis-Grid-Groesse fuer Icon-Design - Standard-Artboard */
+  --icon-grid-padding: 2px; /** Grid-Padding - 1px visueller Abstand auf jeder Seite, 20x20px sichere Zone */
+  --icon-touch-target-minimum: 44px; /** Minimale Touch-Target-Groesse - WCAG 2.1 AAA Empfehlung fuer mobile Interaktion */
+  --icon-touch-target-compact: 32px; /** Kompakte Touch-Target-Groesse - nur Desktop mit ausreichend Abstand zu anderen Elementen */
   --spacing-0: 0px; /** Zero spacing */
   --spacing-1: 4px; /** Base unit - smallest meaningful spacing */
   --spacing-2: 8px; /** Extra small spacing - 2x base unit */
@@ -138,6 +150,8 @@
   --elevation-dropdown: var(--shadow-lg); /** Dropdown menu elevation */
   --elevation-modal: var(--shadow-xl); /** Modal dialog elevation */
   --elevation-tooltip: var(--shadow-md); /** Tooltip elevation */
+  --icon-spacing-with-text: var(--spacing-2); /** Abstand zwischen Icon und Text - 8px fuer harmonische Kombination */
+  --icon-spacing-standalone: var(--spacing-1); /** Optischer Rand fuer standalone Icons - 4px fuer visuelle Ausrichtung */
   --grid-gutters-mobile: var(--spacing-4); /** Mobile gutter spacing (16px) */
   --grid-gutters-tablet: var(--spacing-6); /** Tablet gutter spacing (24px) */
   --grid-gutters-desktop: var(--spacing-8); /** Desktop gutter spacing (32px) */
