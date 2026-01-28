@@ -209,7 +209,7 @@
           "$description": "Small Button horizontales Padding - 12px"
         },
         "paddingY": {
-          "$value": "6px",
+          "$value": "{spacing.1.5}",
           "$type": "dimension",
           "$description": "Small Button vertikales Padding - 6px"
         },
@@ -229,7 +229,7 @@
           "$description": "Small Button Icon-Größe - 16px"
         },
         "gap": {
-          "$value": "6px",
+          "$value": "{spacing.1.5}",
           "$type": "dimension",
           "$description": "Small Button Abstand zwischen Icon und Text - 6px"
         }
@@ -299,25 +299,27 @@
         }
       }
     },
-    "borderRadius": {
-      "$value": "{borderRadius.base}",
-      "$type": "dimension",
-      "$description": "Button Eckenradius - 4px Standard"
-    },
-    "borderWidth": {
-      "$value": "2px",
-      "$type": "dimension",
-      "$description": "Button Rahmenbreite für Secondary/Outline-Buttons"
-    },
-    "fontWeight": {
-      "$value": "500",
-      "$type": "number",
-      "$description": "Button Schriftgewicht - Medium für ausgewogene Lesbarkeit"
-    },
-    "transition": {
-      "$value": "150ms ease-in-out",
-      "$type": "string",
-      "$description": "Button Übergangsanimation für Hover/Active-Zustände"
+    "base": {
+      "borderRadius": {
+        "$value": "{borderRadius.base}",
+        "$type": "dimension",
+        "$description": "Button Eckenradius - 4px Standard"
+      },
+      "borderWidth": {
+        "$value": "2px",
+        "$type": "dimension",
+        "$description": "Button Rahmenbreite für Secondary/Outline-Buttons"
+      },
+      "fontWeight": {
+        "$value": 500,
+        "$type": "fontWeight",
+        "$description": "Button Schriftgewicht - Medium für ausgewogene Lesbarkeit"
+      },
+      "transition": {
+        "$value": "150ms ease-in-out",
+        "$type": "string",
+        "$description": "Button Übergangsanimation für Hover/Active-Zustände"
+      }
     },
     "focus": {
       "outlineWidth": {
