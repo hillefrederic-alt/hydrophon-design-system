@@ -34,11 +34,11 @@ Decimal phases appear between their surrounding integers in numeric order.
 **Plans**: 5 plans
 
 Plans:
-- [ ] 01-01-PLAN.md — Color token system (palette, shades, semantics)
-- [ ] 01-02-PLAN.md — Typography token system (fonts, hierarchy, scale)
-- [ ] 01-03-PLAN.md — Spacing, grid, and effects tokens (spacing, breakpoints, radius, shadows)
-- [ ] 01-04-PLAN.md — Logo documentation (variants, clearspace, sizes, misuse)
-- [ ] 01-05-PLAN.md — Token system integration (Style Dictionary build)
+- [x] 01-01-PLAN.md — Color token system (palette, shades, semantics)
+- [x] 01-02-PLAN.md — Typography token system (fonts, hierarchy, scale)
+- [x] 01-03-PLAN.md — Spacing, grid, and effects tokens (spacing, breakpoints, radius, shadows)
+- [x] 01-04-PLAN.md — Logo documentation (variants, clearspace, sizes, misuse)
+- [x] 01-05-PLAN.md — Token system integration (Style Dictionary build)
 
 ### Phase 2: Icons & Basic Interactions
 **Goal**: Users can interact with primary actions using consistent button and icon patterns
@@ -49,10 +49,11 @@ Plans:
   2. Developer can implement button with all interactive states (hover, active, disabled)
   3. User can visually distinguish primary from secondary actions
   4. Icon style is consistent across all components
-**Plans**: TBD
+**Plans**: 2 plans
 
 Plans:
-- [ ] TBD during plan-phase
+- [ ] 02-01-PLAN.md — Icon system foundation (tokens, Lucide library, sizing rules, documentation)
+- [ ] 02-02-PLAN.md — Button component system (primary, secondary, tertiary variants, sizes, states, icon buttons)
 
 ### Phase 3: Forms & Data Input
 **Goal**: Users can input data consistently across all forms
@@ -133,8 +134,8 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6 → 7
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation & Brand Identity | 5/5 | ✓ Complete | 2026-01-28 |
-| 2. Icons & Basic Interactions | 0/TBD | Not started | - |
+| 1. Foundation & Brand Identity | 5/5 | Complete | 2026-01-28 |
+| 2. Icons & Basic Interactions | 0/2 | Planned | - |
 | 3. Forms & Data Input | 0/TBD | Not started | - |
 | 4. Navigation & Content Structure | 0/TBD | Not started | - |
 | 5. Feedback & System Responses | 0/TBD | Not started | - |
@@ -145,3 +146,4 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6 → 7
 *Roadmap created: 2026-01-28*
 *Last updated: 2026-01-28*
 *Phase 1 completed: 2026-01-28*
+*Phase 2 planned: 2026-01-28*
