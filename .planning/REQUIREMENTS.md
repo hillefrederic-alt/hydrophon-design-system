@@ -158,13 +158,76 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| (To be filled during roadmap creation) | | |
+| FOUND-01 | Phase 1 | Pending |
+| FOUND-02 | Phase 1 | Pending |
+| FOUND-03 | Phase 1 | Pending |
+| FOUND-04 | Phase 1 | Pending |
+| FOUND-05 | Phase 1 | Pending |
+| FOUND-06 | Phase 1 | Pending |
+| FOUND-07 | Phase 1 | Pending |
+| FOUND-08 | Phase 1 | Pending |
+| FOUND-09 | Phase 1 | Pending |
+| LOGO-01 | Phase 1 | Pending |
+| LOGO-02 | Phase 1 | Pending |
+| LOGO-03 | Phase 1 | Pending |
+| LOGO-04 | Phase 1 | Pending |
+| LOGO-05 | Phase 1 | Pending |
+| ICON-01 | Phase 2 | Pending |
+| ICON-02 | Phase 2 | Pending |
+| ICON-03 | Phase 2 | Pending |
+| ICON-04 | Phase 2 | Pending |
+| BTN-01 | Phase 2 | Pending |
+| BTN-02 | Phase 2 | Pending |
+| BTN-03 | Phase 2 | Pending |
+| BTN-04 | Phase 2 | Pending |
+| BTN-05 | Phase 2 | Pending |
+| FORM-01 | Phase 3 | Pending |
+| FORM-02 | Phase 3 | Pending |
+| FORM-03 | Phase 3 | Pending |
+| FORM-04 | Phase 3 | Pending |
+| FORM-05 | Phase 3 | Pending |
+| FORM-06 | Phase 3 | Pending |
+| FORM-07 | Phase 3 | Pending |
+| NAV-01 | Phase 4 | Pending |
+| NAV-02 | Phase 4 | Pending |
+| NAV-03 | Phase 4 | Pending |
+| NAV-04 | Phase 4 | Pending |
+| NAV-05 | Phase 4 | Pending |
+| CARD-01 | Phase 4 | Pending |
+| CARD-02 | Phase 4 | Pending |
+| CARD-03 | Phase 4 | Pending |
+| TABLE-01 | Phase 4 | Pending |
+| TABLE-02 | Phase 4 | Pending |
+| TABLE-03 | Phase 4 | Pending |
+| TABLE-04 | Phase 4 | Pending |
+| FB-01 | Phase 5 | Pending |
+| FB-02 | Phase 5 | Pending |
+| FB-03 | Phase 5 | Pending |
+| DOC-01 | Phase 6 | Pending |
+| DOC-02 | Phase 6 | Pending |
+| DOC-03 | Phase 6 | Pending |
+| DOC-04 | Phase 6 | Pending |
+| DOC-05 | Phase 6 | Pending |
+| DOC-06 | Phase 6 | Pending |
+| DOC-07 | Phase 6 | Pending |
+| DOC-08 | Phase 6 | Pending |
+| DOC-09 | Phase 6 | Pending |
+| DOC-10 | Phase 6 | Pending |
+| DOC-11 | Phase 6 | Pending |
+| DOC-12 | Phase 6 | Pending |
+| DOC-13 | Phase 6 | Pending |
+| DEL-01 | Phase 7 | Pending |
+| DEL-02 | Phase 7 | Pending |
+| DEL-03 | Phase 7 | Pending |
+| DEL-04 | Phase 7 | Pending |
+| DEL-05 | Phase 7 | Pending |
+| DEL-06 | Phase 7 | Pending |
 
 **Coverage:**
-- v1 requirements: 55 total
-- Mapped to phases: 0 (pending roadmap)
-- Unmapped: 55 ⚠️
+- v1 requirements: 64 total
+- Mapped to phases: 64 (100%)
+- Unmapped: 0
 
 ---
 *Requirements defined: 2026-01-28*
-*Last updated: 2026-01-28 after initial definition*
+*Last updated: 2026-01-28 after roadmap creation*
