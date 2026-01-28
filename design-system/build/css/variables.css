@@ -1,0 +1,156 @@
+/**
+ * Do not edit directly, this file was auto-generated.
+ */
+
+:root {
+  --hydrophon-blau-50: #e5f5fd; /** Hydrophon Blau - Hellste Nuance */
+  --hydrophon-blau-100: #b8e4f9; /** Hydrophon Blau - Sehr hell */
+  --hydrophon-blau-200: #8ad3f5; /** Hydrophon Blau - Hell */
+  --hydrophon-blau-300: #5cc2f1; /** Hydrophon Blau - Leicht */
+  --hydrophon-blau-400: #2eb1ed; /** Hydrophon Blau - Medium hell */
+  --hydrophon-blau-500: #008bd2; /** Hydrophon Blau - Primärfarbe (Brand CI) */
+  --hydrophon-blau-600: #007bb8; /** Hydrophon Blau - Medium dunkel */
+  --hydrophon-blau-700: #006a9e; /** Hydrophon Blau - Dunkel */
+  --hydrophon-blau-800: #005a84; /** Hydrophon Blau - Sehr dunkel */
+  --hydrophon-blau-900: #00496a; /** Hydrophon Blau - Dunkelste Nuance */
+  --hydrophon-grau-50: #f7f7f7; /** Hydrophon Grau - Hellste Nuance */
+  --hydrophon-grau-100: #e8e8e8; /** Hydrophon Grau - Sehr hell */
+  --hydrophon-grau-200: #d1d1d1; /** Hydrophon Grau - Hell */
+  --hydrophon-grau-300: #b0afaf; /** Hydrophon Grau - Leicht */
+  --hydrophon-grau-400: #939292; /** Hydrophon Grau - Medium hell */
+  --hydrophon-grau-500: #575656; /** Hydrophon Grau - Primärfarbe (Brand CI) */
+  --hydrophon-grau-600: #4d4c4c; /** Hydrophon Grau - Medium dunkel */
+  --hydrophon-grau-700: #434242; /** Hydrophon Grau - Dunkel */
+  --hydrophon-grau-800: #393838; /** Hydrophon Grau - Sehr dunkel */
+  --hydrophon-grau-900: #2f2e2e; /** Hydrophon Grau - Dunkelste Nuance */
+  --neutral-50: #fafafa; /** Neutralgrau - Hellste Nuance */
+  --neutral-100: #f5f5f5; /** Neutralgrau - Sehr hell */
+  --neutral-200: #e5e5e5; /** Neutralgrau - Hell */
+  --neutral-300: #d4d4d4; /** Neutralgrau - Leicht */
+  --neutral-400: #a3a3a3; /** Neutralgrau - Medium hell */
+  --neutral-500: #737373; /** Neutralgrau - Medium */
+  --neutral-600: #525252; /** Neutralgrau - Medium dunkel */
+  --neutral-700: #404040; /** Neutralgrau - Dunkel */
+  --neutral-800: #262626; /** Neutralgrau - Sehr dunkel */
+  --neutral-900: #171717; /** Neutralgrau - Dunkelste Nuance */
+  --neutral-white: #ffffff; /** Weiß */
+  --neutral-black: #000000; /** Schwarz */
+  --color-success: #22c55e; /** Erfolg, positive Aktionen, Bestätigungen */
+  --color-warning: #f59e0b; /** Warnungen, Vorsicht, wichtige Hinweise */
+  --color-error: #ef4444; /** Fehler, Probleme, destruktive Aktionen */
+  --color-info: #3b82f6; /** Informationen, neutrale Hinweise */
+  --productline-hyhero-primary: #f49a36; /** hyHero Primärfarbe - Orange */
+  --productline-hyhero-secondary: #373643; /** hyHero Sekundärfarbe - Dunkelgrau */
+  --productline-hyindustry-primary: #0e2638; /** hyIndustry Primärfarbe - Dunkelblau */
+  --productline-gluy-primary: #ffeeb6; /** Gluy Primärfarbe - Gelb */
+  --productline-gluy-secondary: #88a9c3; /** Gluy Sekundärfarbe - Hellblau */
+  --productline-gluy-tertiary: #14202e; /** Gluy Tertiärfarbe - Dunkelblau */
+  --border-radius-none: 0px; /** No border radius - sharp corners */
+  --border-radius-sm: 2px; /** Subtle rounding for small elements */
+  --border-radius-base: 4px; /** Standard rounding for buttons and inputs */
+  --border-radius-md: 6px; /** Medium rounding for cards */
+  --border-radius-lg: 8px; /** Large rounding for larger cards and modals */
+  --border-radius-xl: 12px; /** Extra large rounding for pills and large elements */
+  --border-radius-2xl: 16px; /** 2XL rounding for feature cards */
+  --border-radius-3xl: 24px; /** 3XL rounding for large decorative elements */
+  --border-radius-full: 9999px; /** Fully rounded for circular or pill shapes */
+  --shadow-none: none; /** No shadow */
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05); /** Subtle shadow for minimal depth */
+  --shadow-base: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1); /** Base shadow for standard elevation */
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1); /** Medium shadow for elevated elements */
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1); /** Large shadow for floating elements */
+  --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); /** Extra large shadow for modals and dialogs */
+  --shadow-2xl: 0 25px 50px -12px rgb(0 0 0 / 0.25); /** 2XL shadow for dramatic elevation */
+  --shadow-inner: inset 0 2px 4px 0 rgb(0 0 0 / 0.05); /** Inner shadow for inset elements */
+  --spacing-0: 0px; /** Zero spacing */
+  --spacing-1: 4px; /** Base unit - smallest meaningful spacing */
+  --spacing-2: 8px; /** Extra small spacing - 2x base unit */
+  --spacing-3: 12px; /** Small spacing - 3x base unit */
+  --spacing-4: 16px; /** Medium spacing - 4x base unit, common for padding */
+  --spacing-5: 20px; /** Medium-large spacing - 5x base unit */
+  --spacing-6: 24px; /** Large spacing - 6x base unit */
+  --spacing-7: 28px; /** Extra large spacing - 7x base unit */
+  --spacing-8: 32px; /** 2XL spacing - 8x base unit */
+  --spacing-9: 36px; /** 2.5XL spacing - 9x base unit */
+  --spacing-10: 40px; /** 3XL spacing - 10x base unit */
+  --spacing-11: 44px; /** 3.5XL spacing - 11x base unit */
+  --spacing-12: 48px; /** 4XL spacing - 12x base unit */
+  --spacing-14: 56px; /** 5XL spacing - 14x base unit */
+  --spacing-16: 64px; /** 6XL spacing - 16x base unit */
+  --spacing-20: 80px; /** 7XL spacing - 20x base unit */
+  --spacing-24: 96px; /** 8XL spacing - 24x base unit */
+  --spacing-28: 112px; /** 9XL spacing - 28x base unit */
+  --spacing-32: 128px; /** 10XL spacing - 32x base unit */
+  --spacing-0-5: 2px; /** Extra tiny spacing - 0.5x base unit */
+  --spacing-1-5: 6px; /** Tiny spacing - 1.5x base unit */
+  --spacing-2-5: 10px; /** Small-medium spacing - 2.5x base unit */
+  --grid-columns: 12; /** Standard 12-column grid system */
+  --grid-margins-mobile: 16px; /** Mobile page margins */
+  --grid-margins-tablet: 32px; /** Tablet page margins */
+  --grid-margins-desktop: 64px; /** Desktop page margins */
+  --grid-max-width: 1280px; /** Maximum content width */
+  --breakpoints-sm: 640px; /** Small devices breakpoint (landscape phones) */
+  --breakpoints-md: 768px; /** Medium devices breakpoint (tablets) */
+  --breakpoints-lg: 1024px; /** Large devices breakpoint (desktops) */
+  --breakpoints-xl: 1280px; /** Extra large devices breakpoint (large desktops) */
+  --breakpoints-2xl: 1536px; /** 2XL devices breakpoint (very large desktops) */
+  --container-sm: 640px; /** Small container max-width */
+  --container-md: 768px; /** Medium container max-width */
+  --container-lg: 1024px; /** Large container max-width */
+  --container-xl: 1280px; /** Extra large container max-width */
+  --font-family-sans: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; /** Primary font family for all text. Inter provides modern, professional appearance suitable for B2B context. */
+  --font-family-mono: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace; /** Monospace font for code snippets and technical specifications. */
+  --font-size-xs: 12px; /** Extra small - Captions, legal text */
+  --font-size-sm: 14px; /** Small - Labels, form inputs, UI text */
+  --font-size-base: 16px; /** Base size - Body text, paragraphs */
+  --font-size-lg: 18px; /** Large - Emphasis body text, large paragraphs */
+  --font-size-xl: 20px; /** Extra large - Subheadings, H5 */
+  --font-size-2xl: 24px; /** 2X large - H4 headings */
+  --font-size-3xl: 30px; /** 3X large - H3 headings */
+  --font-size-4xl: 36px; /** 4X large - H2 headings */
+  --font-size-5xl: 48px; /** 5X large - H1 headings */
+  --font-size-6xl: 60px; /** 6X large - Hero headings, special titles */
+  --font-weight-regular: 400; /** Regular weight for body text */
+  --font-weight-medium: 500; /** Medium weight for emphasis and UI elements */
+  --font-weight-semibold: 600; /** Semibold weight for subheadings */
+  --font-weight-bold: 700; /** Bold weight for headings */
+  --line-height-tight: 1.25; /** Tight line height for large headings */
+  --line-height-snug: 1.375; /** Snug line height for subheadings */
+  --line-height-normal: 1.5; /** Normal line height for body text */
+  --line-height-relaxed: 1.625; /** Relaxed line height for comfortable reading */
+  --line-height-loose: 2; /** Loose line height for special layouts */
+  --letter-spacing-tighter: -0.05em; /** Tighter tracking for large display text */
+  --letter-spacing-tight: -0.025em; /** Tight tracking for headings */
+  --letter-spacing-normal: 0em; /** Normal tracking for body text */
+  --letter-spacing-wide: 0.025em; /** Wide tracking for UI elements */
+  --letter-spacing-wider: 0.05em; /** Wider tracking for labels and buttons */
+  --color-primary: var(--hydrophon-blau-500); /** Primärfarbe für Markenelemente */
+  --color-secondary: var(--hydrophon-grau-500); /** Sekundärfarbe für unterstützende Elemente */
+  --color-background-primary: var(--neutral-white); /** Primärer Hintergrund */
+  --color-background-secondary: var(--neutral-50); /** Sekundärer Hintergrund für Abgrenzungen */
+  --color-background-tertiary: var(--neutral-100); /** Tertiärer Hintergrund für zusätzliche Hierarchie */
+  --color-text-primary: var(--neutral-900); /** Primärer Text (hoher Kontrast) */
+  --color-text-secondary: var(--neutral-700); /** Sekundärer Text (mittlerer Kontrast) */
+  --color-text-muted: var(--neutral-500); /** Gedämpfter Text (niedriger Kontrast) */
+  --color-text-inverse: var(--neutral-white); /** Text auf dunklem Hintergrund */
+  --elevation-card: var(--shadow-base); /** Standard card elevation at rest */
+  --elevation-card-hover: var(--shadow-md); /** Card elevation on hover state */
+  --elevation-dropdown: var(--shadow-lg); /** Dropdown menu elevation */
+  --elevation-modal: var(--shadow-xl); /** Modal dialog elevation */
+  --elevation-tooltip: var(--shadow-md); /** Tooltip elevation */
+  --grid-gutters-mobile: var(--spacing-4); /** Mobile gutter spacing (16px) */
+  --grid-gutters-tablet: var(--spacing-6); /** Tablet gutter spacing (24px) */
+  --grid-gutters-desktop: var(--spacing-8); /** Desktop gutter spacing (32px) */
+  --typography-heading-h1: var(--font-weight-bold) var(--font-size-5xl)/var(--line-height-tight) var(--font-family-sans); /** Main page heading (48px, bold, tight) */
+  --typography-heading-h2: var(--font-weight-bold) var(--font-size-4xl)/var(--line-height-tight) var(--font-family-sans); /** Section heading (36px, bold, tight) */
+  --typography-heading-h3: var(--font-weight-semibold) var(--font-size-3xl)/var(--line-height-snug) var(--font-family-sans); /** Subsection heading (30px, semibold, snug) */
+  --typography-heading-h4: var(--font-weight-semibold) var(--font-size-2xl)/var(--line-height-snug) var(--font-family-sans); /** Card heading (24px, semibold, snug) */
+  --typography-heading-h5: var(--font-weight-medium) var(--font-size-xl)/var(--line-height-normal) var(--font-family-sans); /** Small heading (20px, medium, normal) */
+  --typography-heading-h6: var(--font-weight-medium) var(--font-size-lg)/var(--line-height-normal) var(--font-family-sans); /** Smallest heading (18px, medium, normal) */
+  --typography-body-large: var(--font-weight-regular) var(--font-size-lg)/var(--line-height-relaxed) var(--font-family-sans); /** Large body text for emphasis (18px) */
+  --typography-body-base: var(--font-weight-regular) var(--font-size-base)/var(--line-height-normal) var(--font-family-sans); /** Standard body text (16px) */
+  --typography-body-small: var(--font-weight-regular) var(--font-size-sm)/var(--line-height-normal) var(--font-family-sans); /** Small body text (14px) */
+  --typography-ui-button: var(--font-weight-medium) var(--font-size-sm)/var(--line-height-normal) var(--font-family-sans); /** Button text (14px, medium, wide tracking) */
+  --typography-ui-label: var(--font-weight-medium) var(--font-size-sm)/var(--line-height-normal) var(--font-family-sans); /** Form label text (14px, medium) */
+  --typography-ui-caption: var(--font-weight-regular) var(--font-size-xs)/var(--line-height-normal) var(--font-family-sans); /** Caption and helper text (12px) */
+}
