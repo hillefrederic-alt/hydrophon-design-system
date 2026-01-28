@@ -13,17 +13,17 @@
   --button-tertiary-background-default: rgba(0, 0, 0, 0); /** Tertiärer/Ghost Button Hintergrund - Standard (transparent) */
   --button-tertiary-background-disabled: rgba(0, 0, 0, 0); /** Tertiärer/Ghost Button Hintergrund - Deaktiviert */
   --button-tertiary-border-default: rgba(0, 0, 0, 0); /** Tertiärer/Ghost Button Rahmen - Standard (kein Rahmen) */
-  --button-size-small-padding-y: 6px; /** Small Button vertikales Padding - 6px */
+  --button-size-small-padding-y: 6px; /** Small Button vertikales Padding - 6px (spacing.1.5) */
   --button-size-small-font-size: 14px; /** Small Button Schriftgröße - entspricht typography.sm */
   --button-size-small-min-height: 32px; /** Small Button Mindesthöhe - kompakte UIs */
-  --button-size-small-gap: 6px; /** Small Button Abstand zwischen Icon und Text - 6px */
+  --button-size-small-gap: 6px; /** Small Button Abstand zwischen Icon und Text - 6px (spacing.1.5) */
   --button-size-medium-font-size: 16px; /** Medium Button Schriftgröße - entspricht typography.base */
   --button-size-medium-min-height: 40px; /** Medium Button Mindesthöhe - Standard für Formulare */
   --button-size-large-font-size: 18px; /** Large Button Schriftgröße - entspricht typography.lg */
   --button-size-large-min-height: 48px; /** Large Button Mindesthöhe - CTAs und Hero-Sections */
-  --button-border-width: 2px; /** Button Rahmenbreite für Secondary/Outline-Buttons */
-  --button-font-weight: 500; /** Button Schriftgewicht - Medium für ausgewogene Lesbarkeit */
-  --button-transition: 150ms ease-in-out; /** Button Übergangsanimation für Hover/Active-Zustände */
+  --button-base-border-width: 2px; /** Button Rahmenbreite für Secondary/Outline-Buttons */
+  --button-base-font-weight: 500; /** Button Schriftgewicht - Medium für ausgewogene Lesbarkeit */
+  --button-base-transition: 150ms ease-in-out; /** Button Übergangsanimation für Hover/Active-Zustände */
   --button-focus-outline-width: 2px; /** Focus Outline Breite - WCAG 2.2 konform */
   --button-focus-outline-offset: 2px; /** Focus Outline Abstand - Sichtbare Trennung vom Button */
   --button-icon-only-small-size: 32px; /** Icon-only Button (Small) - 32x32px, nur für Desktop mit ausreichend Abstand */
@@ -199,7 +199,7 @@
   --button-size-large-padding-y: var(--spacing-3); /** Large Button vertikales Padding - 12px */
   --button-size-large-icon-size: var(--icon-size-sm); /** Large Button Icon-Größe - 20px */
   --button-size-large-gap: var(--spacing-2); /** Large Button Abstand zwischen Icon und Text - 8px */
-  --button-border-radius: var(--border-radius-base); /** Button Eckenradius - 4px Standard */
+  --button-base-border-radius: var(--border-radius-base); /** Button Eckenradius - 4px Standard */
   --button-focus-outline-color: var(--hydrophon-blau-300); /** Focus Outline Farbe - 3:1 Kontrast zum Hintergrund */
   --elevation-card: var(--shadow-base); /** Standard card elevation at rest */
   --elevation-card-hover: var(--shadow-md); /** Card elevation on hover state */

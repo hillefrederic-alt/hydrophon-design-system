@@ -209,9 +209,9 @@
           "$description": "Small Button horizontales Padding - 12px"
         },
         "paddingY": {
-          "$value": "{spacing.1.5}",
+          "$value": "6px",
           "$type": "dimension",
-          "$description": "Small Button vertikales Padding - 6px"
+          "$description": "Small Button vertikales Padding - 6px (spacing.1.5)"
         },
         "fontSize": {
           "$value": "14px",
@@ -229,9 +229,9 @@
           "$description": "Small Button Icon-Größe - 16px"
         },
         "gap": {
-          "$value": "{spacing.1.5}",
+          "$value": "6px",
           "$type": "dimension",
-          "$description": "Small Button Abstand zwischen Icon und Text - 6px"
+          "$description": "Small Button Abstand zwischen Icon und Text - 6px (spacing.1.5)"
         }
       },
       "medium": {
