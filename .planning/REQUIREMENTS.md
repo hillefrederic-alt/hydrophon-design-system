@@ -27,18 +27,18 @@
 
 ### Icon-System
 
-- [ ] **ICON-01**: Icon-Stil definiert (Linienstärke, Rundungen, Größen)
-- [ ] **ICON-02**: Basis-Iconset erstellt (20-30 Icons für Navigation und UI)
-- [ ] **ICON-03**: Icon-Anwendungsregeln dokumentiert (Wann welche Größe)
-- [ ] **ICON-04**: Icon-Export-Formate bereitgestellt (SVG, PNG)
+- [x] **ICON-01**: Icon-Stil definiert (Linienstärke, Rundungen, Größen)
+- [x] **ICON-02**: Basis-Iconset erstellt (20-30 Icons für Navigation und UI)
+- [x] **ICON-03**: Icon-Anwendungsregeln dokumentiert (Wann welche Größe)
+- [x] **ICON-04**: Icon-Export-Formate bereitgestellt (SVG, PNG)
 
 ### UI-Komponenten - Buttons
 
-- [ ] **BTN-01**: Primary Button definiert (Styling, States: Default, Hover, Active, Disabled)
-- [ ] **BTN-02**: Secondary Button definiert
-- [ ] **BTN-03**: Text/Ghost Button definiert
-- [ ] **BTN-04**: Button-Größen definiert (Small, Medium, Large)
-- [ ] **BTN-05**: Icon-Buttons dokumentiert
+- [x] **BTN-01**: Primary Button definiert (Styling, States: Default, Hover, Active, Disabled)
+- [x] **BTN-02**: Secondary Button definiert
+- [x] **BTN-03**: Text/Ghost Button definiert
+- [x] **BTN-04**: Button-Größen definiert (Small, Medium, Large)
+- [x] **BTN-05**: Icon-Buttons dokumentiert
 
 ### UI-Komponenten - Formulare
 
@@ -172,15 +172,15 @@ Which phases cover which requirements. Updated during roadmap creation.
 | LOGO-03 | Phase 1 | Pending |
 | LOGO-04 | Phase 1 | Pending |
 | LOGO-05 | Phase 1 | Pending |
-| ICON-01 | Phase 2 | Pending |
-| ICON-02 | Phase 2 | Pending |
-| ICON-03 | Phase 2 | Pending |
-| ICON-04 | Phase 2 | Pending |
-| BTN-01 | Phase 2 | Pending |
-| BTN-02 | Phase 2 | Pending |
-| BTN-03 | Phase 2 | Pending |
-| BTN-04 | Phase 2 | Pending |
-| BTN-05 | Phase 2 | Pending |
+| ICON-01 | Phase 2 | Complete |
+| ICON-02 | Phase 2 | Complete |
+| ICON-03 | Phase 2 | Complete |
+| ICON-04 | Phase 2 | Complete |
+| BTN-01 | Phase 2 | Complete |
+| BTN-02 | Phase 2 | Complete |
+| BTN-03 | Phase 2 | Complete |
+| BTN-04 | Phase 2 | Complete |
+| BTN-05 | Phase 2 | Complete |
 | FORM-01 | Phase 3 | Pending |
 | FORM-02 | Phase 3 | Pending |
 | FORM-03 | Phase 3 | Pending |
@@ -230,4 +230,4 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 ---
 *Requirements defined: 2026-01-28*
-*Last updated: 2026-01-28 after roadmap creation*
+*Last updated: 2026-01-29 after Phase 2 completion*
