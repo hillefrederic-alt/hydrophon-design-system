@@ -3,6 +3,32 @@
  */
 
 :root {
+  --color-success: #22c55e; /** Erfolg, positive Aktionen, Bestätigungen */
+  --color-warning: #f59e0b; /** Warnungen, Vorsicht, wichtige Hinweise */
+  --color-error: #ef4444; /** Fehler, Probleme, destruktive Aktionen */
+  --color-info: #3b82f6; /** Informationen, neutrale Hinweise */
+  --button-primary-border-default: rgba(0, 0, 0, 0); /** Primärer Button Rahmen - Standard (kein sichtbarer Rahmen) */
+  --button-secondary-background-default: rgba(0, 0, 0, 0); /** Sekundärer Button Hintergrund - Standard (transparent für Outline-Stil) */
+  --button-secondary-background-disabled: rgba(0, 0, 0, 0); /** Sekundärer Button Hintergrund - Deaktiviert */
+  --button-tertiary-background-default: rgba(0, 0, 0, 0); /** Tertiärer/Ghost Button Hintergrund - Standard (transparent) */
+  --button-tertiary-background-disabled: rgba(0, 0, 0, 0); /** Tertiärer/Ghost Button Hintergrund - Deaktiviert */
+  --button-tertiary-border-default: rgba(0, 0, 0, 0); /** Tertiärer/Ghost Button Rahmen - Standard (kein Rahmen) */
+  --button-size-small-padding-y: 6px; /** Small Button vertikales Padding - 6px */
+  --button-size-small-font-size: 14px; /** Small Button Schriftgröße - entspricht typography.sm */
+  --button-size-small-min-height: 32px; /** Small Button Mindesthöhe - kompakte UIs */
+  --button-size-small-gap: 6px; /** Small Button Abstand zwischen Icon und Text - 6px */
+  --button-size-medium-font-size: 16px; /** Medium Button Schriftgröße - entspricht typography.base */
+  --button-size-medium-min-height: 40px; /** Medium Button Mindesthöhe - Standard für Formulare */
+  --button-size-large-font-size: 18px; /** Large Button Schriftgröße - entspricht typography.lg */
+  --button-size-large-min-height: 48px; /** Large Button Mindesthöhe - CTAs und Hero-Sections */
+  --button-border-width: 2px; /** Button Rahmenbreite für Secondary/Outline-Buttons */
+  --button-font-weight: 500; /** Button Schriftgewicht - Medium für ausgewogene Lesbarkeit */
+  --button-transition: 150ms ease-in-out; /** Button Übergangsanimation für Hover/Active-Zustände */
+  --button-focus-outline-width: 2px; /** Focus Outline Breite - WCAG 2.2 konform */
+  --button-focus-outline-offset: 2px; /** Focus Outline Abstand - Sichtbare Trennung vom Button */
+  --button-icon-only-small-size: 32px; /** Icon-only Button (Small) - 32x32px, nur für Desktop mit ausreichend Abstand */
+  --button-icon-only-medium-size: 44px; /** Icon-only Button (Medium) - 44x44px, WCAG Touch-Target */
+  --button-icon-only-large-size: 48px; /** Icon-only Button (Large) - 48x48px für CTAs */
   --hydrophon-blau-50: #e5f5fd; /** Hydrophon Blau - Hellste Nuance */
   --hydrophon-blau-100: #b8e4f9; /** Hydrophon Blau - Sehr hell */
   --hydrophon-blau-200: #8ad3f5; /** Hydrophon Blau - Hell */
@@ -35,10 +61,6 @@
   --neutral-900: #171717; /** Neutralgrau - Dunkelste Nuance */
   --neutral-white: #ffffff; /** Weiß */
   --neutral-black: #000000; /** Schwarz */
-  --color-success: #22c55e; /** Erfolg, positive Aktionen, Bestätigungen */
-  --color-warning: #f59e0b; /** Warnungen, Vorsicht, wichtige Hinweise */
-  --color-error: #ef4444; /** Fehler, Probleme, destruktive Aktionen */
-  --color-info: #3b82f6; /** Informationen, neutrale Hinweise */
   --productline-hyhero-primary: #f49a36; /** hyHero Primärfarbe - Orange */
   --productline-hyhero-secondary: #373643; /** hyHero Sekundärfarbe - Dunkelgrau */
   --productline-hyindustry-primary: #0e2638; /** hyIndustry Primärfarbe - Dunkelblau */
@@ -136,15 +158,49 @@
   --letter-spacing-normal: 0em; /** Normal tracking for body text */
   --letter-spacing-wide: 0.025em; /** Wide tracking for UI elements */
   --letter-spacing-wider: 0.05em; /** Wider tracking for labels and buttons */
+  --color-action-primary: var(--hydrophon-blau-500); /** Primäre Aktionsfarbe für wichtigste Buttons */
+  --color-action-primary-hover: var(--hydrophon-blau-600); /** Primäre Aktionsfarbe bei Hover-Zustand */
+  --color-action-primary-active: var(--hydrophon-blau-700); /** Primäre Aktionsfarbe bei Active-Zustand */
+  --color-action-disabled: var(--neutral-200); /** Hintergrundfarbe für deaktivierte Buttons */
+  --color-text-on-primary: var(--neutral-white); /** Textfarbe auf primären Aktionsfarben */
+  --color-text-disabled: var(--neutral-400); /** Textfarbe für deaktivierte Elemente */
+  --color-text-primary: var(--neutral-900); /** Primärer Text (hoher Kontrast) */
+  --color-text-secondary: var(--neutral-700); /** Sekundärer Text (mittlerer Kontrast) */
+  --color-text-muted: var(--neutral-500); /** Gedämpfter Text (niedriger Kontrast) */
+  --color-text-inverse: var(--neutral-white); /** Text auf dunklem Hintergrund */
   --color-primary: var(--hydrophon-blau-500); /** Primärfarbe für Markenelemente */
   --color-secondary: var(--hydrophon-grau-500); /** Sekundärfarbe für unterstützende Elemente */
   --color-background-primary: var(--neutral-white); /** Primärer Hintergrund */
   --color-background-secondary: var(--neutral-50); /** Sekundärer Hintergrund für Abgrenzungen */
   --color-background-tertiary: var(--neutral-100); /** Tertiärer Hintergrund für zusätzliche Hierarchie */
-  --color-text-primary: var(--neutral-900); /** Primärer Text (hoher Kontrast) */
-  --color-text-secondary: var(--neutral-700); /** Sekundärer Text (mittlerer Kontrast) */
-  --color-text-muted: var(--neutral-500); /** Gedämpfter Text (niedriger Kontrast) */
-  --color-text-inverse: var(--neutral-white); /** Text auf dunklem Hintergrund */
+  --button-primary-border-focus: var(--hydrophon-blau-300); /** Primärer Button Rahmen - Focus-Zustand */
+  --button-secondary-background-hover: var(--hydrophon-blau-50); /** Sekundärer Button Hintergrund - Hover-Zustand */
+  --button-secondary-background-active: var(--hydrophon-blau-100); /** Sekundärer Button Hintergrund - Active-Zustand */
+  --button-secondary-foreground-default: var(--hydrophon-blau-500); /** Sekundärer Button Text - Standard-Zustand */
+  --button-secondary-foreground-hover: var(--hydrophon-blau-600); /** Sekundärer Button Text - Hover-Zustand */
+  --button-secondary-foreground-disabled: var(--neutral-400); /** Sekundärer Button Text - Deaktiviert */
+  --button-secondary-border-default: var(--hydrophon-blau-500); /** Sekundärer Button Rahmen - Standard-Zustand */
+  --button-secondary-border-hover: var(--hydrophon-blau-600); /** Sekundärer Button Rahmen - Hover-Zustand */
+  --button-secondary-border-disabled: var(--neutral-300); /** Sekundärer Button Rahmen - Deaktiviert */
+  --button-secondary-border-focus: var(--hydrophon-blau-300); /** Sekundärer Button Rahmen - Focus-Zustand */
+  --button-tertiary-background-hover: var(--neutral-100); /** Tertiärer/Ghost Button Hintergrund - Hover-Zustand */
+  --button-tertiary-background-active: var(--neutral-200); /** Tertiärer/Ghost Button Hintergrund - Active-Zustand */
+  --button-tertiary-foreground-default: var(--hydrophon-blau-500); /** Tertiärer/Ghost Button Text - Standard-Zustand */
+  --button-tertiary-foreground-hover: var(--hydrophon-blau-600); /** Tertiärer/Ghost Button Text - Hover-Zustand */
+  --button-tertiary-foreground-disabled: var(--neutral-400); /** Tertiärer/Ghost Button Text - Deaktiviert */
+  --button-tertiary-border-focus: var(--hydrophon-blau-300); /** Tertiärer/Ghost Button Rahmen - Focus-Zustand */
+  --button-size-small-padding-x: var(--spacing-3); /** Small Button horizontales Padding - 12px */
+  --button-size-small-icon-size: var(--icon-size-xs); /** Small Button Icon-Größe - 16px */
+  --button-size-medium-padding-x: var(--spacing-4); /** Medium Button horizontales Padding - 16px */
+  --button-size-medium-padding-y: var(--spacing-2); /** Medium Button vertikales Padding - 8px */
+  --button-size-medium-icon-size: var(--icon-size-sm); /** Medium Button Icon-Größe - 20px */
+  --button-size-medium-gap: var(--spacing-2); /** Medium Button Abstand zwischen Icon und Text - 8px */
+  --button-size-large-padding-x: var(--spacing-6); /** Large Button horizontales Padding - 24px */
+  --button-size-large-padding-y: var(--spacing-3); /** Large Button vertikales Padding - 12px */
+  --button-size-large-icon-size: var(--icon-size-sm); /** Large Button Icon-Größe - 20px */
+  --button-size-large-gap: var(--spacing-2); /** Large Button Abstand zwischen Icon und Text - 8px */
+  --button-border-radius: var(--border-radius-base); /** Button Eckenradius - 4px Standard */
+  --button-focus-outline-color: var(--hydrophon-blau-300); /** Focus Outline Farbe - 3:1 Kontrast zum Hintergrund */
   --elevation-card: var(--shadow-base); /** Standard card elevation at rest */
   --elevation-card-hover: var(--shadow-md); /** Card elevation on hover state */
   --elevation-dropdown: var(--shadow-lg); /** Dropdown menu elevation */
@@ -167,4 +223,10 @@
   --typography-ui-button: var(--font-weight-medium) var(--font-size-sm)/var(--line-height-normal) var(--font-family-sans); /** Button text (14px, medium, wide tracking) */
   --typography-ui-label: var(--font-weight-medium) var(--font-size-sm)/var(--line-height-normal) var(--font-family-sans); /** Form label text (14px, medium) */
   --typography-ui-caption: var(--font-weight-regular) var(--font-size-xs)/var(--line-height-normal) var(--font-family-sans); /** Caption and helper text (12px) */
+  --button-primary-background-default: var(--color-action-primary); /** Primärer Button Hintergrund - Standard-Zustand */
+  --button-primary-background-hover: var(--color-action-primary-hover); /** Primärer Button Hintergrund - Hover-Zustand */
+  --button-primary-background-active: var(--color-action-primary-active); /** Primärer Button Hintergrund - Active-Zustand */
+  --button-primary-background-disabled: var(--color-action-disabled); /** Primärer Button Hintergrund - Deaktiviert */
+  --button-primary-foreground-default: var(--color-text-on-primary); /** Primärer Button Text - Standard-Zustand */
+  --button-primary-foreground-disabled: var(--color-text-disabled); /** Primärer Button Text - Deaktiviert */
 }
