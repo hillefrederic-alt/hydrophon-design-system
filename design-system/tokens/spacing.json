@@ -1,0 +1,209 @@
+{
+  "spacing": {
+    "0": {
+      "$value": "0px",
+      "$type": "dimension",
+      "$description": "Zero spacing"
+    },
+    "0.5": {
+      "$value": "2px",
+      "$type": "dimension",
+      "$description": "Extra tiny spacing - 0.5x base unit"
+    },
+    "1": {
+      "$value": "4px",
+      "$type": "dimension",
+      "$description": "Base unit - smallest meaningful spacing"
+    },
+    "1.5": {
+      "$value": "6px",
+      "$type": "dimension",
+      "$description": "Tiny spacing - 1.5x base unit"
+    },
+    "2": {
+      "$value": "8px",
+      "$type": "dimension",
+      "$description": "Extra small spacing - 2x base unit"
+    },
+    "2.5": {
+      "$value": "10px",
+      "$type": "dimension",
+      "$description": "Small-medium spacing - 2.5x base unit"
+    },
+    "3": {
+      "$value": "12px",
+      "$type": "dimension",
+      "$description": "Small spacing - 3x base unit"
+    },
+    "4": {
+      "$value": "16px",
+      "$type": "dimension",
+      "$description": "Medium spacing - 4x base unit, common for padding"
+    },
+    "5": {
+      "$value": "20px",
+      "$type": "dimension",
+      "$description": "Medium-large spacing - 5x base unit"
+    },
+    "6": {
+      "$value": "24px",
+      "$type": "dimension",
+      "$description": "Large spacing - 6x base unit"
+    },
+    "7": {
+      "$value": "28px",
+      "$type": "dimension",
+      "$description": "Extra large spacing - 7x base unit"
+    },
+    "8": {
+      "$value": "32px",
+      "$type": "dimension",
+      "$description": "2XL spacing - 8x base unit"
+    },
+    "9": {
+      "$value": "36px",
+      "$type": "dimension",
+      "$description": "2.5XL spacing - 9x base unit"
+    },
+    "10": {
+      "$value": "40px",
+      "$type": "dimension",
+      "$description": "3XL spacing - 10x base unit"
+    },
+    "11": {
+      "$value": "44px",
+      "$type": "dimension",
+      "$description": "3.5XL spacing - 11x base unit"
+    },
+    "12": {
+      "$value": "48px",
+      "$type": "dimension",
+      "$description": "4XL spacing - 12x base unit"
+    },
+    "14": {
+      "$value": "56px",
+      "$type": "dimension",
+      "$description": "5XL spacing - 14x base unit"
+    },
+    "16": {
+      "$value": "64px",
+      "$type": "dimension",
+      "$description": "6XL spacing - 16x base unit"
+    },
+    "20": {
+      "$value": "80px",
+      "$type": "dimension",
+      "$description": "7XL spacing - 20x base unit"
+    },
+    "24": {
+      "$value": "96px",
+      "$type": "dimension",
+      "$description": "8XL spacing - 24x base unit"
+    },
+    "28": {
+      "$value": "112px",
+      "$type": "dimension",
+      "$description": "9XL spacing - 28x base unit"
+    },
+    "32": {
+      "$value": "128px",
+      "$type": "dimension",
+      "$description": "10XL spacing - 32x base unit"
+    }
+  },
+  "grid": {
+    "columns": {
+      "$value": "12",
+      "$type": "number",
+      "$description": "Standard 12-column grid system"
+    },
+    "gutters": {
+      "mobile": {
+        "$value": "{spacing.4}",
+        "$type": "dimension",
+        "$description": "Mobile gutter spacing (16px)"
+      },
+      "tablet": {
+        "$value": "{spacing.6}",
+        "$type": "dimension",
+        "$description": "Tablet gutter spacing (24px)"
+      },
+      "desktop": {
+        "$value": "{spacing.8}",
+        "$type": "dimension",
+        "$description": "Desktop gutter spacing (32px)"
+      }
+    },
+    "margins": {
+      "mobile": {
+        "$value": "16px",
+        "$type": "dimension",
+        "$description": "Mobile page margins"
+      },
+      "tablet": {
+        "$value": "32px",
+        "$type": "dimension",
+        "$description": "Tablet page margins"
+      },
+      "desktop": {
+        "$value": "64px",
+        "$type": "dimension",
+        "$description": "Desktop page margins"
+      }
+    },
+    "maxWidth": {
+      "$value": "1280px",
+      "$type": "dimension",
+      "$description": "Maximum content width"
+    }
+  },
+  "breakpoints": {
+    "sm": {
+      "$value": "640px",
+      "$type": "dimension",
+      "$description": "Small devices breakpoint (landscape phones)"
+    },
+    "md": {
+      "$value": "768px",
+      "$type": "dimension",
+      "$description": "Medium devices breakpoint (tablets)"
+    },
+    "lg": {
+      "$value": "1024px",
+      "$type": "dimension",
+      "$description": "Large devices breakpoint (desktops)"
+    },
+    "xl": {
+      "$value": "1280px",
+      "$type": "dimension",
+      "$description": "Extra large devices breakpoint (large desktops)"
+    },
+    "2xl": {
+      "$value": "1536px",
+      "$type": "dimension",
+      "$description": "2XL devices breakpoint (very large desktops)"
+    }
+  },
+  "container": {
+    "sm": {
+      "$value": "640px",
+      "$type": "dimension",
+      "$description": "Small container max-width"
+    },
+    "md": {
+      "$value": "768px",
+      "$type": "dimension",
+      "$description": "Medium container max-width"
+    },
+    "lg": {
+      "$value": "1024px",
+      "$type": "dimension",
+      "$description": "Large container max-width"
+    },
+    "xl": {
+      "$value": "1280px",
+      "$type": "dimension",
+      "$description": "Extra large container max-width"
+    }
+  }
+}
