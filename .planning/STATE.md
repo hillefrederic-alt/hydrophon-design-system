@@ -10,18 +10,18 @@ See: .planning/PROJECT.md (updated 2026-01-28)
 ## Current Position
 
 Phase: 5 of 7 (Feedback & System Responses)
-Plan: 1 of 3 in current phase
+Plan: 2 of 3 in current phase
 Status: In progress
-Last activity: 2026-01-29 — Completed 05-01-PLAN.md (Modal Dialogs)
+Last activity: 2026-01-29 — Completed 05-02-PLAN.md (Tooltips & Toasts)
 
-Progress: [████████████████████████████] 100% (14 of 14 plans complete)
+Progress: [████████████████████████████░] 93% (15 of 16 plans complete)
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 14
+- Total plans completed: 15
 - Average duration: 6.1 min
-- Total execution time: 1.43 hours
+- Total execution time: 1.55 hours
 
 **By Phase:**
 
@@ -31,11 +31,11 @@ Progress: [███████████████████████
 | 2 - Icons & Basic Interactions | 2/2 | 18 min | 9.0 min |
 | 3 - Forms & Data Input | 3/3 | 20 min | 6.7 min |
 | 4 - Navigation & Content Structure | 3/3 | 27 min | 6.3 min |
-| 5 - Feedback & System Responses | 1/3 | 5 min | 5.0 min |
+| 5 - Feedback & System Responses | 2/3 | 12 min | 6.0 min |
 
 **Recent Trend:**
-- Last 5 plans: 8 min, 5 min, 8 min, 8 min, 5 min
-- Trend: Excellent (5-8 min sustained, Phase 5 started at 5 min)
+- Last 5 plans: 5 min, 8 min, 8 min, 5 min, 7 min
+- Trend: Excellent (5-8 min sustained, Phase 5 at 6 min average)
 
 *Updated after each plan completion*
 
@@ -185,6 +185,23 @@ Recent decisions affecting current work:
 - Bestätigungs-Dialoge pattern: Explicit cancel button, error color for destructive actions, specific action labels
 - 1136-line German documentation: Complete modal use cases, accessibility patterns, Radix UI implementation
 
+**From Plan 05-02 (Tooltips & Toasts):**
+- 300ms tooltip delay: Industry standard preventing flicker on quick mouse movement while feeling responsive
+- WCAG 1.4.13 compliance for tooltips: Hoverable, dismissible, persistent content on hover/focus
+- Smart positioning with Floating UI: Automatic viewport collision detection, flip to alternative sides, 10px collision padding
+- Error toasts never auto-dismiss (duration: 0ms): Critical info requires explicit acknowledgment, prevents missed errors
+- Severity-based toast timing: 3s success (quick confirmation), 4s info (more read time), 5s warning (important), error stays
+- Max 4 visible toasts: Balance notification visibility vs UI clutter, FIFO dismissal (oldest removed first)
+- Semantic color scales (success/info/warning/error): 50/100/200/600/800 shades enabling proper contrast for backgrounds, borders, icons, text
+- Top-right toast position: Industry standard, doesn't block main content, accessible at all viewport sizes
+- Radix UI for tooltips: WCAG 1.4.13 compliant out-of-box, smart positioning, keyboard access automatic
+- Sonner for toasts: Modern standard (8M+ weekly downloads), minimal API, pause-on-hover built-in, ARIA live regions automatic
+- ARIA live regions: role="status" (success/info) for polite, role="alert" (warning/error) for assertive screenreader announcements
+- Action button patterns: Undo (destructive actions), Retry (failures), View Details (complex events)
+- German message tone: Clear, actionable, friendly Sie-form, avoid technical jargon
+- Tooltip content limit: 1-5 words maximum (labels only, not explanations)
+- 1328-line German documentation: Comprehensive tooltip/toast patterns, accessibility, anti-patterns, 32+ German message examples
+
 ### Pending Todos
 
 None yet.
@@ -195,10 +212,10 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-01-29 at 09:20:41Z
-Stopped at: Completed 05-01-PLAN.md (Modal Dialogs) - Phase 5 started
+Last session: 2026-01-29 at 09:23:18Z
+Stopped at: Completed 05-02-PLAN.md (Tooltips & Toasts) - Phase 5 progress
 Resume file: None
 
 ---
 *State initialized: 2026-01-28*
-*Last updated: 2026-01-29 09:20:41Z*
+*Last updated: 2026-01-29 09:23:18Z*
