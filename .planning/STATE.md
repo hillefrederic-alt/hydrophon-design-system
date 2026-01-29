@@ -10,18 +10,18 @@ See: .planning/PROJECT.md (updated 2026-01-28)
 ## Current Position
 
 Phase: 6 of 7 (Comprehensive Documentation)
-Plan: 4 of 6 in current phase
+Plan: 1 of 6 in current phase
 Status: In progress
-Last activity: 2026-01-29 — Completed 06-04-PLAN.md (Technical Reference Documentation)
+Last activity: 2026-01-29 — Completed 06-01-PLAN.md (Marketing Onboarding Guide)
 
-Progress: [████████████████████████████████] 100% (20 of 20 plans complete)
+Progress: [████████████████████████████████] 100% (19 of 24 plans complete)
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 20
+- Total plans completed: 19
 - Average duration: 5.3 min
-- Total execution time: 1.77 hours
+- Total execution time: 1.67 hours
 
 **By Phase:**
 
@@ -32,11 +32,11 @@ Progress: [███████████████████████
 | 3 - Forms & Data Input | 3/3 | 20 min | 6.7 min |
 | 4 - Navigation & Content Structure | 3/3 | 27 min | 6.3 min |
 | 5 - Feedback & System Responses | 5/5 | 24 min | 4.8 min |
-| 6 - Comprehensive Documentation | 3/6 | 12 min | 4.0 min |
+| 6 - Comprehensive Documentation | 1/6 | 5 min | 5.0 min |
 
 **Recent Trend:**
-- Last 5 plans: 9 min, 2 min, 1 min, 4 min, 4 min
-- Trend: Excellent (1-9 min range, highly efficient)
+- Last 5 plans: 2 min, 1 min, 4 min, 4 min, 5 min
+- Trend: Excellent (1-5 min range, highly efficient)
 
 *Updated after each plan completion*
 
@@ -239,6 +239,15 @@ Recent decisions affecting current work:
 - Three audience guides: Marketing (90 lines), Designers (156 lines), Developers (279 lines) with 82 total markdown links
 - Placeholder strategy: Future directories (00-quick-start, 04-technical-reference) noted clearly with alternatives provided
 
+**From Plan 06-01 (Marketing Onboarding Guide):**
+- 15-20 page comprehensive guide (1204 lines) for thorough onboarding of non-designers, NOT typical 1-2 page quick reference
+- Quick Reference tables at section starts enable sub-2-minute lookup (which logo on dark background, Hydrophon Blau hex, font for presentations)
+- Practical examples organized by medium: Presentations (font sizes, layouts), Social Media (platform-specific), Print (CMYK, Beschnitt), Email (CTA buttons)
+- Brand voice section establishes B2B communication: Sie-form consistently, professional but accessible, avoiding marketing fluff and Umgangssprache
+- Do's and Don'ts use ✓/✗ symbols with concrete examples over abstract rules
+- Links to detailed docs (logo-guidelines.md, colors.md, typography.md) avoid duplication while enabling deep dives
+- Checklists before publication ensure quality control before releasing materials
+
 ### Pending Todos
 
 None yet.
@@ -249,10 +258,10 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-01-29 at 11:56:12Z
-Stopped at: Completed 06-04-PLAN.md (Technical Reference Documentation) - Phase 6 in progress
+Last session: 2026-01-29 at 11:57:51Z
+Stopped at: Completed 06-01-PLAN.md (Marketing Onboarding Guide) - Phase 6 in progress
 Resume file: None
 
 ---
 *State initialized: 2026-01-28*
-*Last updated: 2026-01-29 11:56:26Z*
+*Last updated: 2026-01-29 11:57:51Z*
