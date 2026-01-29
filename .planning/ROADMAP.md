@@ -96,12 +96,14 @@ Plans:
   2. User can access contextual help via tooltips
   3. Developer can implement modal dialogs with proper accessibility
   4. System feedback is non-intrusive and dismissible
-**Plans**: 3 plans
+**Plans**: 5 plans
 
 Plans:
 - [x] 05-01-PLAN.md — Modal dialogs (tokens, size variants, focus trap, accessibility)
 - [x] 05-02-PLAN.md — Tooltips & toasts (hover labels, notifications, timing, stacking)
 - [x] 05-03-PLAN.md — Loading states (spinner, progress bar, skeleton screens, optimistic UI)
+- [ ] 05-04-PLAN.md — Gap closure: Add missing tooltip and toast tokens to feedback.json
+- [ ] 05-05-PLAN.md — Gap closure: Fix index.md navigation links
 
 ### Phase 6: Comprehensive Documentation
 **Goal**: All user groups can understand and apply the design system correctly
@@ -144,7 +146,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6 → 7
 | 2. Icons & Basic Interactions | 2/2 | Complete | 2026-01-29 |
 | 3. Forms & Data Input | 3/3 | Complete | 2026-01-29 |
 | 4. Navigation & Content Structure | 3/3 | Complete | 2026-01-29 |
-| 5. Feedback & System Responses | 3/3 | Complete | 2026-01-29 |
+| 5. Feedback & System Responses | 3/5 | Gap closure | 2026-01-29 |
 | 6. Comprehensive Documentation | 0/TBD | Not started | - |
 | 7. Final Packaging & Delivery | 0/TBD | Not started | - |
 
