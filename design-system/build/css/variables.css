@@ -84,6 +84,34 @@
   --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); /** Extra large shadow for modals and dialogs */
   --shadow-2xl: 0 25px 50px -12px rgb(0 0 0 / 0.25); /** 2XL shadow for dramatic elevation */
   --shadow-inner: inset 0 2px 4px 0 rgb(0 0 0 / 0.05); /** Inner shadow for inset elements */
+  --input-height-sm: 32px; /** Input-Höhe Small - Konsistent mit Button Small (nur Desktop) */
+  --input-height-md: 40px; /** Input-Höhe Medium - Standard für die meisten Formulare */
+  --input-height-lg: 48px; /** Input-Höhe Large - Mobile-optimiert, CTAs */
+  --input-field-border-width-default: 1px; /** Input Rahmenbreite - Standard-Zustand */
+  --input-field-border-width-focus: 2px; /** Input Rahmenbreite - Focus-Zustand (verstärkt) */
+  --input-focus-ring-width: 3px; /** Focus Ring Breite - WCAG 2.2 konform */
+  --input-focus-outline-width: 2px; /** Focus Outline Breite - Verstärkter Border bei Focus */
+  --input-focus-outline-offset: 0px; /** Focus Outline Offset - Direkt am Input-Rand */
+  --input-required-symbol: *; /** Required Indicator Symbol - Asterisk */
+  --input-textarea-min-height: 120px; /** Textarea Mindesthöhe - ca. 5 Zeilen */
+  --input-textarea-resize: vertical; /** Textarea Resize-Verhalten - Nur vertikal */
+  --input-base-transition: 150ms ease-in-out; /** Input Übergangsanimation für Zustandswechsel */
+  --checkbox-size-default: 20px; /** Checkbox Größe Standard - 20x20px für Desktop und Mobile */
+  --checkbox-size-large: 24px; /** Checkbox Größe Large - 24x24px für mobile-optimierte Interfaces */
+  --checkbox-border-radius: 4px; /** Checkbox Eckenradius - 4px für weiche Kanten */
+  --checkbox-border-width: 2px; /** Checkbox Rahmenbreite - 2px für klare Sichtbarkeit */
+  --checkbox-icon-size: 14px; /** Checkbox Icon Größe - 14px für Default-Checkbox (20px) */
+  --checkbox-focus-outline-width: 2px; /** Checkbox Focus Outline Breite - WCAG 2.2 konform */
+  --checkbox-focus-outline-offset: 2px; /** Checkbox Focus Outline Abstand - 2px für klare Trennung */
+  --radio-size-default: 20px; /** Radio Button Größe Standard - 20x20px Kreis */
+  --radio-size-large: 24px; /** Radio Button Größe Large - 24x24px für mobile Interfaces */
+  --radio-border-radius: 50%; /** Radio Button Eckenradius - 50% für perfekten Kreis */
+  --radio-border-width: 2px; /** Radio Button Rahmenbreite - 2px für klare Sichtbarkeit */
+  --radio-dot-size: 10px; /** Radio Button innerer Punkt Größe - 10px (50% der Standard-Größe) */
+  --radio-dot-size-large: 12px; /** Radio Button innerer Punkt Größe Large - 12px (50% der Large-Größe) */
+  --radio-focus-outline-width: 2px; /** Radio Button Focus Outline Breite - WCAG 2.2 konform */
+  --radio-focus-outline-offset: 2px; /** Radio Button Focus Outline Abstand - 2px für klare Trennung */
+  --radio-group-orientation: vertical; /** Radio Button Gruppen-Orientierung - Standard vertikal, horizontal möglich für max. 3-4 Optionen */
   --icon-size-xs: 16px; /** Extra kleine Icon-Groesse - Minimum lesbar, kompakte UIs, inline mit kleinem Text */
   --icon-size-sm: 20px; /** Kleine Icon-Groesse - Standard für Buttons mit Text, Formular-Elemente */
   --icon-size-md: 24px; /** Mittlere Icon-Groesse - Standalone-Icons, Basis-Grid-Groesse, Icon-only Buttons */
@@ -206,6 +234,85 @@
   --elevation-dropdown: var(--shadow-lg); /** Dropdown menu elevation */
   --elevation-modal: var(--shadow-xl); /** Modal dialog elevation */
   --elevation-tooltip: var(--shadow-md); /** Tooltip elevation */
+  --input-padding-x-sm: var(--spacing-2); /** Input horizontales Padding Small - 8px */
+  --input-padding-x-md: var(--spacing-3); /** Input horizontales Padding Medium - 12px */
+  --input-padding-x-lg: var(--spacing-4); /** Input horizontales Padding Large - 16px */
+  --input-font-size-sm: var(--font-size-sm); /** Input Schriftgröße Small - 14px */
+  --input-font-size-md: var(--font-size-base); /** Input Schriftgröße Medium - 16px */
+  --input-font-size-lg: var(--font-size-lg); /** Input Schriftgröße Large - 18px */
+  --input-field-background-default: var(--neutral-white); /** Input Hintergrund - Standard-Zustand */
+  --input-field-background-hover: var(--neutral-white); /** Input Hintergrund - Hover-Zustand */
+  --input-field-background-focus: var(--neutral-white); /** Input Hintergrund - Focus-Zustand */
+  --input-field-background-error: var(--neutral-white); /** Input Hintergrund - Error-Zustand */
+  --input-field-background-success: var(--neutral-white); /** Input Hintergrund - Success-Zustand */
+  --input-field-background-disabled: var(--neutral-50); /** Input Hintergrund - Deaktiviert (subtil grau) */
+  --input-field-border-default: var(--neutral-300); /** Input Rahmen - Standard-Zustand */
+  --input-field-border-hover: var(--neutral-400); /** Input Rahmen - Hover-Zustand */
+  --input-field-border-focus: var(--hydrophon-blau-500); /** Input Rahmen - Focus-Zustand (Hydrophon Blau) */
+  --input-field-border-error: var(--color-error); /** Input Rahmen - Error-Zustand */
+  --input-field-border-success: var(--color-success); /** Input Rahmen - Success-Zustand (gültige Eingabe) */
+  --input-field-border-disabled: var(--neutral-200); /** Input Rahmen - Deaktiviert */
+  --input-field-text-default: var(--neutral-900); /** Input Text - Standard-Zustand */
+  --input-field-text-placeholder: var(--neutral-400); /** Input Placeholder Text - Gedämpft */
+  --input-field-text-disabled: var(--neutral-600); /** Input Text - Deaktiviert (lesbar, aber reduziert) */
+  --input-focus-ring-color: var(--hydrophon-blau-100); /** Focus Ring Farbe - Hellblau für WCAG 2.2 Kontrast */
+  --input-label-color-default: var(--neutral-700); /** Label Farbe - Standard-Zustand */
+  --input-label-color-error: var(--color-error); /** Label Farbe - Error-Zustand */
+  --input-label-font-size: var(--font-size-sm); /** Label Schriftgröße - 14px */
+  --input-label-font-weight: var(--font-weight-medium); /** Label Schriftgewicht - Medium (500) */
+  --input-label-margin-bottom: var(--spacing-2); /** Label Abstand nach unten zum Input - 8px */
+  --input-helper-color: var(--neutral-600); /** Helper Text Farbe - Neutralgrau */
+  --input-helper-font-size: var(--font-size-xs); /** Helper Text Schriftgröße - 12px */
+  --input-helper-margin-top: var(--spacing-1); /** Helper Text Abstand nach oben vom Input - 4px */
+  --input-error-color: var(--color-error); /** Error Text Farbe - Rot */
+  --input-error-font-size: var(--font-size-xs); /** Error Text Schriftgröße - 12px */
+  --input-error-margin-top: var(--spacing-1); /** Error Text Abstand nach oben vom Input - 4px */
+  --input-success-color: var(--color-success); /** Success Text Farbe - Grün */
+  --input-required-color: var(--color-error); /** Required Indicator Farbe - Rot */
+  --input-select-icon-size: var(--icon-size-sm); /** Select Dropdown Icon Größe - 20px */
+  --input-select-icon-color-default: var(--neutral-600); /** Select Icon Farbe - Standard-Zustand */
+  --input-select-icon-color-disabled: var(--neutral-400); /** Select Icon Farbe - Deaktiviert */
+  --input-base-border-radius: var(--border-radius-base); /** Input Eckenradius - 4px Standard */
+  --input-base-font-family: var(--font-family-sans); /** Input Schriftfamilie - Inter Sans */
+  --checkbox-background-default: var(--neutral-white); /** Checkbox Hintergrund - Standard-Zustand (nicht angekreuzt) */
+  --checkbox-background-hover: var(--neutral-white); /** Checkbox Hintergrund - Hover-Zustand (nicht angekreuzt) */
+  --checkbox-background-checked: var(--hydrophon-blau-500); /** Checkbox Hintergrund - Angekreuzt (Hydrophon Blau) */
+  --checkbox-background-checked-hover: var(--hydrophon-blau-600); /** Checkbox Hintergrund - Angekreuzt + Hover (dunkler) */
+  --checkbox-background-disabled: var(--neutral-50); /** Checkbox Hintergrund - Deaktiviert (nicht angekreuzt) */
+  --checkbox-background-checked-disabled: var(--neutral-300); /** Checkbox Hintergrund - Deaktiviert + Angekreuzt (gedämpftes Grau) */
+  --checkbox-border-default: var(--neutral-300); /** Checkbox Rahmen - Standard-Zustand */
+  --checkbox-border-hover: var(--neutral-400); /** Checkbox Rahmen - Hover-Zustand */
+  --checkbox-border-checked: var(--hydrophon-blau-500); /** Checkbox Rahmen - Angekreuzt (Hydrophon Blau) */
+  --checkbox-border-focus: var(--hydrophon-blau-500); /** Checkbox Rahmen - Focus-Zustand (Tastatur-Navigation) */
+  --checkbox-border-error: var(--color-error); /** Checkbox Rahmen - Error-Zustand (Validierungsfehler) */
+  --checkbox-border-disabled: var(--neutral-200); /** Checkbox Rahmen - Deaktiviert */
+  --checkbox-icon-color: var(--neutral-white); /** Checkbox Icon Farbe - Weißes Checkmark bei angekreuztem Zustand */
+  --checkbox-focus-outline-color: var(--hydrophon-blau-300); /** Checkbox Focus Outline Farbe - Hellblau für Sichtbarkeit */
+  --checkbox-label-gap: var(--spacing-2); /** Checkbox Label Abstand - 8px zwischen Checkbox und Label-Text */
+  --checkbox-label-color: var(--neutral-700); /** Checkbox Label Farbe - Standard-Zustand */
+  --checkbox-label-color-disabled: var(--neutral-400); /** Checkbox Label Farbe - Deaktiviert (gedämpft) */
+  --radio-background-default: var(--neutral-white); /** Radio Button Hintergrund - Standard-Zustand (nicht ausgewählt) */
+  --radio-background-hover: var(--neutral-white); /** Radio Button Hintergrund - Hover-Zustand (nicht ausgewählt) */
+  --radio-background-checked: var(--hydrophon-blau-500); /** Radio Button Hintergrund - Ausgewählt (Hydrophon Blau) */
+  --radio-background-checked-hover: var(--hydrophon-blau-600); /** Radio Button Hintergrund - Ausgewählt + Hover (dunkler) */
+  --radio-background-disabled: var(--neutral-50); /** Radio Button Hintergrund - Deaktiviert (nicht ausgewählt) */
+  --radio-background-checked-disabled: var(--neutral-300); /** Radio Button Hintergrund - Deaktiviert + Ausgewählt (gedämpftes Grau) */
+  --radio-border-default: var(--neutral-300); /** Radio Button Rahmen - Standard-Zustand */
+  --radio-border-hover: var(--neutral-400); /** Radio Button Rahmen - Hover-Zustand */
+  --radio-border-checked: var(--hydrophon-blau-500); /** Radio Button Rahmen - Ausgewählt (Hydrophon Blau) */
+  --radio-border-focus: var(--hydrophon-blau-500); /** Radio Button Rahmen - Focus-Zustand (Tastatur-Navigation) */
+  --radio-border-error: var(--color-error); /** Radio Button Rahmen - Error-Zustand (Validierungsfehler) */
+  --radio-border-disabled: var(--neutral-200); /** Radio Button Rahmen - Deaktiviert */
+  --radio-dot-color: var(--neutral-white); /** Radio Button innerer Punkt Farbe - Weiß bei ausgewähltem Zustand */
+  --radio-focus-outline-color: var(--hydrophon-blau-300); /** Radio Button Focus Outline Farbe - Hellblau für Sichtbarkeit */
+  --radio-label-gap: var(--spacing-2); /** Radio Button Label Abstand - 8px zwischen Radio und Label-Text */
+  --radio-label-color: var(--neutral-700); /** Radio Button Label Farbe - Standard-Zustand */
+  --radio-label-color-disabled: var(--neutral-400); /** Radio Button Label Farbe - Deaktiviert (gedämpft) */
+  --radio-group-gap: var(--spacing-3); /** Radio Button Gruppen-Abstand - 12px zwischen einzelnen Radio Buttons in einer Gruppe */
+  --form-spacing-label-to-input: var(--spacing-2); /** Abstand von Label zu Input - 8px */
+  --form-spacing-input-to-helper: var(--spacing-1); /** Abstand von Input zu Helper/Error Text - 4px */
+  --form-spacing-field-to-field: var(--spacing-4); /** Abstand zwischen einzelnen Formularfeldern - 16px */
+  --form-spacing-group-to-group: var(--spacing-6); /** Abstand zwischen Formulargruppen/Sektionen - 24px */
   --icon-spacing-with-text: var(--spacing-2); /** Abstand zwischen Icon und Text - 8px fuer harmonische Kombination */
   --icon-spacing-standalone: var(--spacing-1); /** Optischer Rand fuer standalone Icons - 4px fuer visuelle Ausrichtung */
   --grid-gutters-mobile: var(--spacing-4); /** Mobile gutter spacing (16px) */
