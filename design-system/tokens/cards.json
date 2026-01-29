@@ -1,0 +1,151 @@
+{
+  "$schema": "https://design-tokens.org/schema.json",
+  "card": {
+    "gap": {
+      "$value": "{spacing.6}",
+      "$type": "dimension",
+      "$description": "Gap between cards in grid layout (24px)"
+    },
+    "minWidth": {
+      "$value": "280px",
+      "$type": "dimension",
+      "$description": "Minimum card width for auto-fit grid"
+    },
+    "background": {
+      "$value": "{color.background.primary}",
+      "$type": "color",
+      "$description": "Card background color"
+    },
+    "radius": {
+      "$value": "{borderRadius.lg}",
+      "$type": "dimension",
+      "$description": "Card border radius (8px)"
+    },
+    "padding": {
+      "$value": "{spacing.6}",
+      "$type": "dimension",
+      "$description": "Card internal padding (24px)"
+    },
+    "border": {
+      "width": {
+        "$value": "1px",
+        "$type": "dimension",
+        "$description": "Card border width"
+      },
+      "color": {
+        "$value": "{neutral.200}",
+        "$type": "color",
+        "$description": "Card border color"
+      }
+    },
+    "shadow": {
+      "default": {
+        "$value": "{shadow.sm}",
+        "$type": "shadow",
+        "$description": "Card shadow at rest state"
+      },
+      "hover": {
+        "$value": "{shadow.md}",
+        "$type": "shadow",
+        "$description": "Card shadow on hover state"
+      },
+      "active": {
+        "$value": "{shadow.lg}",
+        "$type": "shadow",
+        "$description": "Card shadow on active/pressed state"
+      }
+    },
+    "transition": {
+      "duration": {
+        "$value": "300ms",
+        "$type": "duration",
+        "$description": "Card transition duration"
+      },
+      "timing": {
+        "$value": "ease",
+        "$type": "cubicBezier",
+        "$description": "Card transition timing function"
+      }
+    },
+    "hover": {
+      "transform": {
+        "$value": "translateY(-4px)",
+        "$type": "string",
+        "$description": "Card transform on hover (GPU-accelerated)"
+      }
+    },
+    "image": {
+      "aspectRatio": {
+        "$value": "1 / 1",
+        "$type": "string",
+        "$description": "Square aspect ratio for product images"
+      },
+      "background": {
+        "$value": "{neutral.100}",
+        "$type": "color",
+        "$description": "Image placeholder background color"
+      },
+      "objectFit": {
+        "$value": "cover",
+        "$type": "string",
+        "$description": "Image object-fit behavior"
+      }
+    },
+    "title": {
+      "fontSize": {
+        "$value": "{fontSize.lg}",
+        "$type": "dimension",
+        "$description": "Card title font size (18px)"
+      },
+      "fontWeight": {
+        "$value": "{fontWeight.semibold}",
+        "$type": "fontWeight",
+        "$description": "Card title font weight (600)"
+      },
+      "color": {
+        "$value": "{color.text.primary}",
+        "$type": "color",
+        "$description": "Card title text color"
+      }
+    },
+    "specs": {
+      "fontSize": {
+        "$value": "{fontSize.sm}",
+        "$type": "dimension",
+        "$description": "Card specs font size (14px)"
+      },
+      "color": {
+        "$value": "{color.text.secondary}",
+        "$type": "color",
+        "$description": "Card specs text color"
+      },
+      "lineHeight": {
+        "$value": "1.5",
+        "$type": "number",
+        "$description": "Card specs line height for readability"
+      },
+      "gap": {
+        "$value": "{spacing.1}",
+        "$type": "dimension",
+        "$description": "Gap between spec items (4px)"
+      }
+    },
+    "cta": {
+      "color": {
+        "$value": "{hydrophon.blau.600}",
+        "$type": "color",
+        "$description": "Card CTA link color"
+      },
+      "colorHover": {
+        "$value": "{hydrophon.blau.700}",
+        "$type": "color",
+        "$description": "Card CTA link color on hover"
+      },
+      "fontWeight": {
+        "$value": "{fontWeight.medium}",
+        "$type": "fontWeight",
+        "$description": "Card CTA font weight (500)"
+      }
+    }
+  }
+}

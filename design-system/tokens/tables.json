@@ -1,0 +1,134 @@
+{
+  "$schema": "https://design-tokens.org/schema.json",
+  "table": {
+    "fontSize": {
+      "$value": "{fontSize.sm}",
+      "$type": "dimension",
+      "$description": "Table text font size (14px)"
+    },
+    "background": {
+      "$value": "{color.background.primary}",
+      "$type": "color",
+      "$description": "Table background color"
+    },
+    "borderColor": {
+      "$value": "{neutral.200}",
+      "$type": "color",
+      "$description": "Table border color"
+    },
+    "borderRadius": {
+      "$value": "{borderRadius.md}",
+      "$type": "dimension",
+      "$description": "Table container border radius (6px)"
+    },
+    "cell": {
+      "paddingY": {
+        "$value": "{spacing.3}",
+        "$type": "dimension",
+        "$description": "Table cell vertical padding (12px)"
+      },
+      "paddingX": {
+        "$value": "{spacing.4}",
+        "$type": "dimension",
+        "$description": "Table cell horizontal padding (16px)"
+      }
+    },
+    "header": {
+      "background": {
+        "$value": "{neutral.100}",
+        "$type": "color",
+        "$description": "Table header background color"
+      },
+      "color": {
+        "$value": "{color.text.primary}",
+        "$type": "color",
+        "$description": "Table header text color"
+      },
+      "fontWeight": {
+        "$value": "{fontWeight.semibold}",
+        "$type": "fontWeight",
+        "$description": "Table header font weight (600)"
+      },
+      "borderBottom": {
+        "width": {
+          "$value": "2px",
+          "$type": "dimension",
+          "$description": "Table header bottom border width"
+        },
+        "color": {
+          "$value": "{neutral.300}",
+          "$type": "color",
+          "$description": "Table header bottom border color"
+        }
+      }
+    },
+    "row": {
+      "default": {
+        "$value": "transparent",
+        "$type": "color",
+        "$description": "Default row background (odd rows)"
+      },
+      "stripe": {
+        "$value": "{neutral.50}",
+        "$type": "color",
+        "$description": "Striped row background (even rows) - subtle 1.5:1 contrast"
+      },
+      "hover": {
+        "$value": "{hydrophon.blau.50}",
+        "$type": "color",
+        "$description": "Row hover background color"
+      },
+      "borderBottom": {
+        "width": {
+          "$value": "1px",
+          "$type": "dimension",
+          "$description": "Row bottom border width"
+        },
+        "color": {
+          "$value": "{neutral.200}",
+          "$type": "color",
+          "$description": "Row bottom border color"
+        }
+      }
+    },
+    "caption": {
+      "fontSize": {
+        "$value": "{fontSize.lg}",
+        "$type": "dimension",
+        "$description": "Table caption font size (18px)"
+      },
+      "fontWeight": {
+        "$value": "{fontWeight.semibold}",
+        "$type": "fontWeight",
+        "$description": "Table caption font weight (600)"
+      },
+      "color": {
+        "$value": "{color.text.primary}",
+        "$type": "color",
+        "$description": "Table caption text color"
+      },
+      "padding": {
+        "$value": "{spacing.4}",
+        "$type": "dimension",
+        "$description": "Table caption padding (16px)"
+      },
+      "textAlign": {
+        "$value": "left",
+        "$type": "string",
+        "$description": "Table caption text alignment"
+      }
+    },
+    "responsive": {
+      "minWidth": {
+        "$value": "600px",
+        "$type": "dimension",
+        "$description": "Minimum table width before horizontal scroll"
+      },
+      "overflow": {
+        "$value": "auto",
+        "$type": "string",
+        "$description": "Table container overflow behavior"
+      }
+    }
+  }
+}
