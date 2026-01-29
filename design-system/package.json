@@ -11,13 +11,15 @@
     "build:watch": "style-dictionary build --watch --config style-dictionary.config.js",
     "build:palettes": "node scripts/export-palettes.js",
     "build:assets": "node scripts/export-assets.js",
-    "build:pdf": "node scripts/build-pdf.js"
+    "build:pdf": "node scripts/build-pdf.js",
+    "build:figma": "node scripts/export-figma-tokens.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "module",
   "devDependencies": {
+    "archiver": "^7.0.1",
     "ase-utils": "^0.1.1",
     "lucide-static": "^0.563.0",
     "md-to-pdf": "^5.2.5",
