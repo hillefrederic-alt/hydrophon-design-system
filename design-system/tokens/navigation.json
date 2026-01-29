@@ -1,5 +1,275 @@
 {
   "$schema": "https://design-tokens.org/schema.json",
+  "navigation": {
+    "header": {
+      "height": {
+        "desktop": {
+          "$value": "80px",
+          "$type": "dimension",
+          "$description": "Header-Höhe auf Desktop-Geräten"
+        },
+        "mobile": {
+          "$value": "64px",
+          "$type": "dimension",
+          "$description": "Header-Höhe auf mobilen Geräten"
+        }
+      },
+      "background": {
+        "$value": "{neutral.white}",
+        "$type": "color",
+        "$description": "Header Hintergrundfarbe - Weiß für klare Abgrenzung"
+      },
+      "borderBottom": {
+        "width": {
+          "$value": "1px",
+          "$type": "dimension",
+          "$description": "Header untere Rahmenlinie Breite"
+        },
+        "color": {
+          "$value": "{neutral.200}",
+          "$type": "color",
+          "$description": "Header untere Rahmenlinie Farbe - subtile Trennung"
+        }
+      },
+      "zIndex": {
+        "$value": "100",
+        "$type": "number",
+        "$description": "Header z-Index für Sticky-Verhalten"
+      },
+      "shadow": {
+        "$value": "{shadow.sm}",
+        "$type": "shadow",
+        "$description": "Header Schatten beim Scrollen (Sticky-State)"
+      },
+      "padding": {
+        "x": {
+          "mobile": {
+            "$value": "{spacing.4}",
+            "$type": "dimension",
+            "$description": "Header horizontales Padding auf Mobile - 16px"
+          },
+          "desktop": {
+            "$value": "{spacing.6}",
+            "$type": "dimension",
+            "$description": "Header horizontales Padding auf Desktop - 24px"
+          }
+        },
+        "y": {
+          "$value": "{spacing.0}",
+          "$type": "dimension",
+          "$description": "Header vertikales Padding - 0 (Höhe durch height-Token definiert)"
+        }
+      }
+    },
+    "link": {
+      "color": {
+        "default": {
+          "$value": "{neutral.700}",
+          "$type": "color",
+          "$description": "Navigation-Link Standard-Textfarbe"
+        },
+        "hover": {
+          "$value": "{neutral.900}",
+          "$type": "color",
+          "$description": "Navigation-Link Hover-Textfarbe"
+        },
+        "active": {
+          "$value": "{hydrophon.blau.600}",
+          "$type": "color",
+          "$description": "Navigation-Link aktive Seite Textfarbe (aria-current)"
+        }
+      },
+      "fontSize": {
+        "$value": "{fontSize.base}",
+        "$type": "dimension",
+        "$description": "Navigation-Link Schriftgröße - 16px"
+      },
+      "fontWeight": {
+        "default": {
+          "$value": "{fontWeight.medium}",
+          "$type": "fontWeight",
+          "$description": "Navigation-Link Standard-Schriftgewicht - 500"
+        },
+        "active": {
+          "$value": "{fontWeight.semibold}",
+          "$type": "fontWeight",
+          "$description": "Navigation-Link aktive Seite Schriftgewicht - 600"
+        }
+      },
+      "padding": {
+        "x": {
+          "$value": "{spacing.4}",
+          "$type": "dimension",
+          "$description": "Navigation-Link horizontales Padding - 16px"
+        },
+        "y": {
+          "$value": "{spacing.3}",
+          "$type": "dimension",
+          "$description": "Navigation-Link vertikales Padding - 12px"
+        }
+      },
+      "gap": {
+        "$value": "{spacing.6}",
+        "$type": "dimension",
+        "$description": "Abstand zwischen Navigation-Links - 24px"
+      },
+      "transition": {
+        "$value": "color 150ms ease-in-out",
+        "$type": "string",
+        "$description": "Navigation-Link Farbübergang für Hover-Effekte"
+      }
+    },
+    "activeIndicator": {
+      "color": {
+        "$value": "{hydrophon.blau.500}",
+        "$type": "color",
+        "$description": "Aktiver Link Unterstreichung Farbe"
+      },
+      "height": {
+        "$value": "2px",
+        "$type": "dimension",
+        "$description": "Aktiver Link Unterstreichung Höhe"
+      },
+      "position": {
+        "$value": "bottom",
+        "$type": "string",
+        "$description": "Aktiver Link Indikator Position - unten am Link"
+      }
+    },
+    "focus": {
+      "outline": {
+        "color": {
+          "$value": "{hydrophon.blau.300}",
+          "$type": "color",
+          "$description": "Navigation-Link Focus Outline Farbe"
+        },
+        "width": {
+          "$value": "2px",
+          "$type": "dimension",
+          "$description": "Navigation-Link Focus Outline Breite"
+        },
+        "offset": {
+          "$value": "2px",
+          "$type": "dimension",
+          "$description": "Navigation-Link Focus Outline Abstand"
+        }
+      }
+    },
+    "drawer": {
+      "width": {
+        "$value": "280px",
+        "$type": "dimension",
+        "$description": "Mobile Drawer feste Breite"
+      },
+      "maxWidth": {
+        "$value": "80vw",
+        "$type": "dimension",
+        "$description": "Mobile Drawer maximale Breite (verhindert zu breiten Drawer auf kleinen Geräten)"
+      },
+      "background": {
+        "$value": "{neutral.white}",
+        "$type": "color",
+        "$description": "Mobile Drawer Hintergrundfarbe"
+      },
+      "shadow": {
+        "$value": "{shadow.xl}",
+        "$type": "shadow",
+        "$description": "Mobile Drawer Schatten für Elevation"
+      },
+      "backdropColor": {
+        "$value": "rgba(0, 0, 0, 0.5)",
+        "$type": "color",
+        "$description": "Mobile Drawer Backdrop Overlay Farbe"
+      },
+      "zIndex": {
+        "$value": "1000",
+        "$type": "number",
+        "$description": "Mobile Drawer z-Index (über allem außer Toasts/Alerts)"
+      },
+      "transition": {
+        "duration": {
+          "$value": "300ms",
+          "$type": "duration",
+          "$description": "Mobile Drawer Slide-In/Out Animation Dauer"
+        },
+        "easing": {
+          "$value": "ease-in-out",
+          "$type": "string",
+          "$description": "Mobile Drawer Animation Easing"
+        }
+      },
+      "padding": {
+        "$value": "{spacing.6}",
+        "$type": "dimension",
+        "$description": "Mobile Drawer inneres Padding - 24px"
+      },
+      "link": {
+        "padding": {
+          "x": {
+            "$value": "{spacing.4}",
+            "$type": "dimension",
+            "$description": "Mobile Drawer Link horizontales Padding - 16px"
+          },
+          "y": {
+            "$value": "{spacing.3}",
+            "$type": "dimension",
+            "$description": "Mobile Drawer Link vertikales Padding - 12px"
+          }
+        },
+        "minHeight": {
+          "$value": "48px",
+          "$type": "dimension",
+          "$description": "Mobile Drawer Link minimale Höhe für Touch-Targets"
+        },
+        "gap": {
+          "$value": "{spacing.2}",
+          "$type": "dimension",
+          "$description": "Vertikaler Abstand zwischen Links im Drawer - 8px"
+        }
+      }
+    },
+    "toggle": {
+      "size": {
+        "$value": "44px",
+        "$type": "dimension",
+        "$description": "Hamburger-Button Größe - WCAG AAA Touch-Target"
+      },
+      "iconSize": {
+        "$value": "24px",
+        "$type": "dimension",
+        "$description": "Hamburger-Icon Größe"
+      },
+      "color": {
+        "default": {
+          "$value": "{neutral.700}",
+          "$type": "color",
+          "$description": "Hamburger-Button Standard-Farbe"
+        },
+        "hover": {
+          "$value": "{neutral.900}",
+          "$type": "color",
+          "$description": "Hamburger-Button Hover-Farbe"
+        }
+      },
+      "background": {
+        "default": {
+          "$value": "transparent",
+          "$type": "color",
+          "$description": "Hamburger-Button Standard-Hintergrund - transparent"
+        },
+        "hover": {
+          "$value": "{neutral.100}",
+          "$type": "color",
+          "$description": "Hamburger-Button Hover-Hintergrund - subtiler Grauton"
+        }
+      },
+      "borderRadius": {
+        "$value": "{borderRadius.base}",
+        "$type": "dimension",
+        "$description": "Hamburger-Button Eckenradius - 4px"
+      }
+    }
+  },
   "breadcrumb": {
     "fontSize": {
       "$value": "{fontSize.sm}",
