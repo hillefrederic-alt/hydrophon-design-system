@@ -73,9 +73,9 @@
 
 ### UI-Komponenten - Feedback
 
-- [ ] **FB-01**: Modal/Dialog-Komponente definiert
-- [ ] **FB-02**: Tooltip-Komponente definiert
-- [ ] **FB-03**: Toast/Notification-Komponente definiert
+- [x] **FB-01**: Modal/Dialog-Komponente definiert
+- [x] **FB-02**: Tooltip-Komponente definiert
+- [x] **FB-03**: Toast/Notification-Komponente definiert
 
 ### Dokumentation - Quick Start
 
@@ -200,9 +200,9 @@ Which phases cover which requirements. Updated during roadmap creation.
 | TABLE-02 | Phase 4 | Complete |
 | TABLE-03 | Phase 4 | Complete |
 | TABLE-04 | Phase 4 | Complete |
-| FB-01 | Phase 5 | Pending |
-| FB-02 | Phase 5 | Pending |
-| FB-03 | Phase 5 | Pending |
+| FB-01 | Phase 5 | Complete |
+| FB-02 | Phase 5 | Complete |
+| FB-03 | Phase 5 | Complete |
 | DOC-01 | Phase 6 | Pending |
 | DOC-02 | Phase 6 | Pending |
 | DOC-03 | Phase 6 | Pending |
@@ -230,4 +230,4 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 ---
 *Requirements defined: 2026-01-28*
-*Last updated: 2026-01-29 after Phase 2 completion*
+*Last updated: 2026-01-29 after Phase 5 completion*
