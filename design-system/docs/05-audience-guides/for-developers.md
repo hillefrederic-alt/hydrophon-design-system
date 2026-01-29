@@ -35,11 +35,15 @@ Technische Spezifikationen, Design Tokens und CSS-Variablen.
 
 ## Technische Referenz
 
-> **Hinweis:** Dedizierte technische Referenz-Dokumentation wird in einer zukünftigen Phase erstellt.
->
-> Aktuelle Token-Spezifikationen finden Sie in:
-> - `design-system/tokens/*.json` (Quelldateien)
-> - `design-system/build/css/variables.css` (Generierte CSS-Variablen)
+**Technische Referenz-Dokumentation:**
+
+- [Design Tokens](../04-technical-reference/design-tokens.md) - Token-Struktur, Verwendung, W3C DTCG Format
+- [CSS-Variablen](../04-technical-reference/css-variables.md) - Vollständige Variablen-Referenz mit Kategorien
+- [Grid & Breakpoints](../04-technical-reference/grid-breakpoints.md) - 12-Spalten-Grid, Responsive Breakpoints
+
+**Token-Quelldateien:**
+- `design-system/tokens/*.json` (Quelldateien)
+- `design-system/build/css/variables.css` (Generierte CSS-Variablen)
 
 ### Grid & Breakpoints
 
@@ -166,7 +170,8 @@ Modal-Patterns, Toast-Timing, Loading States:
 
 ### Testing Guide
 
-> **Hinweis:** Dedizierte Accessibility Testing Guide wird in einer zukünftigen Phase erstellt.
+Vollständige Anleitung für Accessibility-Tests:
+→ [Accessibility Testing Guide](../03-accessibility/testing-guide.md) - axe DevTools, Keyboard-Testing, Screen Reader Testing
 
 **Schnelltest-Checkliste:**
 1. Keyboard-Navigation: Alle interaktiven Elemente erreichbar via Tab
