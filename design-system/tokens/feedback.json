@@ -422,5 +422,219 @@
         "$description": "Ein-/Ausblend-Animation - schnell, nicht stoerend"
       }
     }
+  },
+  "toast": {
+    "position": {
+      "top": {
+        "$value": "{spacing.4}",
+        "$type": "dimension",
+        "$description": "Abstand vom oberen Bildschirmrand - 16px"
+      },
+      "right": {
+        "$value": "{spacing.4}",
+        "$type": "dimension",
+        "$description": "Abstand vom rechten Bildschirmrand - 16px"
+      }
+    },
+    "width": {
+      "$value": "360px",
+      "$type": "dimension",
+      "$description": "Standardbreite fuer Toasts"
+    },
+    "max-width": {
+      "$value": "calc(100vw - 32px)",
+      "$type": "dimension",
+      "$description": "Responsive maximale Breite"
+    },
+    "padding": {
+      "x": {
+        "$value": "{spacing.4}",
+        "$type": "dimension",
+        "$description": "Horizontaler Innenabstand - 16px"
+      },
+      "y": {
+        "$value": "{spacing.3}",
+        "$type": "dimension",
+        "$description": "Vertikaler Innenabstand - 12px"
+      }
+    },
+    "border-radius": {
+      "$value": "{borderRadius.lg}",
+      "$type": "dimension",
+      "$description": "Eckenradius - 8px"
+    },
+    "shadow": {
+      "$value": "{shadow.lg}",
+      "$type": "shadow",
+      "$description": "Schatten fuer Elevation"
+    },
+    "gap": {
+      "$value": "{spacing.3}",
+      "$type": "dimension",
+      "$description": "Abstand zwischen Icon und Text - 12px"
+    },
+    "stack-gap": {
+      "$value": "{spacing.2}",
+      "$type": "dimension",
+      "$description": "Abstand zwischen gestapelten Toasts - 8px"
+    },
+    "max-visible": {
+      "$value": "4",
+      "$type": "number",
+      "$description": "Maximale Anzahl gleichzeitig sichtbar"
+    },
+    "z-index": {
+      "$value": "1200",
+      "$type": "number",
+      "$description": "Z-Index ueber Tooltips (1100)"
+    },
+    "duration": {
+      "success": {
+        "$value": "3000ms",
+        "$type": "duration",
+        "$description": "Auto-Dismiss nach 3 Sekunden"
+      },
+      "info": {
+        "$value": "4000ms",
+        "$type": "duration",
+        "$description": "Auto-Dismiss nach 4 Sekunden"
+      },
+      "warning": {
+        "$value": "5000ms",
+        "$type": "duration",
+        "$description": "Auto-Dismiss nach 5 Sekunden"
+      },
+      "error": {
+        "$value": "0ms",
+        "$type": "duration",
+        "$description": "Bleibt bis manuell geschlossen"
+      }
+    },
+    "animation": {
+      "enter-duration": {
+        "$value": "200ms",
+        "$type": "duration",
+        "$description": "Einblend-Animation"
+      },
+      "exit-duration": {
+        "$value": "150ms",
+        "$type": "duration",
+        "$description": "Ausblend-Animation"
+      }
+    },
+    "variant": {
+      "success": {
+        "background": {
+          "$value": "#f0fdf4",
+          "$type": "color",
+          "$description": "Hellgruener Hintergrund (green-50)"
+        },
+        "border": {
+          "$value": "#bbf7d0",
+          "$type": "color",
+          "$description": "Gruener Rahmen (green-200)"
+        },
+        "icon-color": {
+          "$value": "#16a34a",
+          "$type": "color",
+          "$description": "Gruenes Icon (green-600)"
+        },
+        "text-color": {
+          "$value": "#166534",
+          "$type": "color",
+          "$description": "Dunkelgruener Text (green-800)"
+        }
+      },
+      "info": {
+        "background": {
+          "$value": "#eff6ff",
+          "$type": "color",
+          "$description": "Hellblauer Hintergrund (blue-50)"
+        },
+        "border": {
+          "$value": "#bfdbfe",
+          "$type": "color",
+          "$description": "Blauer Rahmen (blue-200)"
+        },
+        "icon-color": {
+          "$value": "#2563eb",
+          "$type": "color",
+          "$description": "Blaues Icon (blue-600)"
+        },
+        "text-color": {
+          "$value": "#1e40af",
+          "$type": "color",
+          "$description": "Dunkelblauer Text (blue-800)"
+        }
+      },
+      "warning": {
+        "background": {
+          "$value": "#fffbeb",
+          "$type": "color",
+          "$description": "Hellgelber Hintergrund (amber-50)"
+        },
+        "border": {
+          "$value": "#fde68a",
+          "$type": "color",
+          "$description": "Gelber Rahmen (amber-200)"
+        },
+        "icon-color": {
+          "$value": "#d97706",
+          "$type": "color",
+          "$description": "Gelbes Icon (amber-600)"
+        },
+        "text-color": {
+          "$value": "#92400e",
+          "$type": "color",
+          "$description": "Dunkelgelber Text (amber-800)"
+        }
+      },
+      "error": {
+        "background": {
+          "$value": "#fef2f2",
+          "$type": "color",
+          "$description": "Hellroter Hintergrund (red-50)"
+        },
+        "border": {
+          "$value": "#fecaca",
+          "$type": "color",
+          "$description": "Roter Rahmen (red-200)"
+        },
+        "icon-color": {
+          "$value": "#dc2626",
+          "$type": "color",
+          "$description": "Rotes Icon (red-600)"
+        },
+        "text-color": {
+          "$value": "#991b1b",
+          "$type": "color",
+          "$description": "Dunkelroter Text (red-800)"
+        }
+      }
+    },
+    "action": {
+      "font-size": {
+        "$value": "{fontSize.sm}",
+        "$type": "dimension",
+        "$description": "Schriftgroesse fuer Aktions-Buttons - 14px"
+      },
+      "font-weight": {
+        "$value": "{fontWeight.medium}",
+        "$type": "fontWeight",
+        "$description": "Schriftgewicht fuer Aktions-Buttons"
+      }
+    },
+    "close-button": {
+      "size": {
+        "$value": "24px",
+        "$type": "dimension",
+        "$description": "Groesse des Schliessen-Buttons"
+      },
+      "icon-size": {
+        "$value": "16px",
+        "$type": "dimension",
+        "$description": "Groesse des X-Icons"
+      }
+    }
   }
 }
