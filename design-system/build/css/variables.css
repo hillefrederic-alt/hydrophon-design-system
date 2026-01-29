@@ -29,6 +29,14 @@
   --button-icon-only-small-size: 32px; /** Icon-only Button (Small) - 32x32px, nur für Desktop mit ausreichend Abstand */
   --button-icon-only-medium-size: 44px; /** Icon-only Button (Medium) - 44x44px, WCAG Touch-Target */
   --button-icon-only-large-size: 48px; /** Icon-only Button (Large) - 48x48px für CTAs */
+  --card-min-width: 280px; /** Minimum card width for auto-fit grid */
+  --card-border-width: 1px; /** Card border width */
+  --card-transition-duration: 300ms; /** Card transition duration */
+  --card-transition-timing: ease; /** Card transition timing function */
+  --card-hover-transform: translateY(-4px); /** Card transform on hover (GPU-accelerated) */
+  --card-image-aspect-ratio: 1 / 1; /** Square aspect ratio for product images */
+  --card-image-object-fit: cover; /** Image object-fit behavior */
+  --card-specs-line-height: 1.5; /** Card specs line height for readability */
   --hydrophon-blau-50: #e5f5fd; /** Hydrophon Blau - Hellste Nuance */
   --hydrophon-blau-100: #b8e4f9; /** Hydrophon Blau - Sehr hell */
   --hydrophon-blau-200: #8ad3f5; /** Hydrophon Blau - Hell */
@@ -124,6 +132,36 @@
   --icon-grid-padding: 2px; /** Grid-Padding - 1px visueller Abstand auf jeder Seite, 20x20px sichere Zone */
   --icon-touch-target-minimum: 44px; /** Minimale Touch-Target-Groesse - WCAG 2.1 AAA Empfehlung fuer mobile Interaktion */
   --icon-touch-target-compact: 32px; /** Kompakte Touch-Target-Groesse - nur Desktop mit ausreichend Abstand zu anderen Elementen */
+  --navigation-header-height-desktop: 80px; /** Header-Höhe auf Desktop-Geräten */
+  --navigation-header-height-mobile: 64px; /** Header-Höhe auf mobilen Geräten */
+  --navigation-header-border-bottom-width: 1px; /** Header untere Rahmenlinie Breite */
+  --navigation-header-z-index: 100; /** Header z-Index für Sticky-Verhalten */
+  --navigation-link-transition: color 150ms ease-in-out; /** Navigation-Link Farbübergang für Hover-Effekte */
+  --navigation-active-indicator-height: 2px; /** Aktiver Link Unterstreichung Höhe */
+  --navigation-active-indicator-position: bottom; /** Aktiver Link Indikator Position - unten am Link */
+  --navigation-focus-outline-width: 2px; /** Navigation-Link Focus Outline Breite */
+  --navigation-focus-outline-offset: 2px; /** Navigation-Link Focus Outline Abstand */
+  --navigation-drawer-width: 280px; /** Mobile Drawer feste Breite */
+  --navigation-drawer-max-width: 80vw; /** Mobile Drawer maximale Breite (verhindert zu breiten Drawer auf kleinen Geräten) */
+  --navigation-drawer-backdrop-color: rgba(0, 0, 0, 0.5); /** Mobile Drawer Backdrop Overlay Farbe */
+  --navigation-drawer-z-index: 1000; /** Mobile Drawer z-Index (über allem außer Toasts/Alerts) */
+  --navigation-drawer-transition-duration: 300ms; /** Mobile Drawer Slide-In/Out Animation Dauer */
+  --navigation-drawer-transition-easing: ease-in-out; /** Mobile Drawer Animation Easing */
+  --navigation-drawer-link-min-height: 48px; /** Mobile Drawer Link minimale Höhe für Touch-Targets */
+  --navigation-toggle-size: 44px; /** Hamburger-Button Größe - WCAG AAA Touch-Target */
+  --navigation-toggle-icon-size: 24px; /** Hamburger-Icon Größe */
+  --navigation-toggle-background-default: rgba(0, 0, 0, 0); /** Hamburger-Button Standard-Hintergrund - transparent */
+  --breadcrumb-separator-content: ›; /** Chevron-Separator für moderne Richtungsanzeige */
+  --breadcrumb-link-text-decoration: none; /** Keine Unterstreichung im Standard-Zustand */
+  --breadcrumb-link-text-decoration-hover: underline; /** Unterstreichung bei Hover für deutliches Feedback */
+  --footer-border-top-width: 1px; /** Footer obere Rahmenstärke */
+  --footer-border-top-style: solid; /** Footer oberer Rahmenstil */
+  --footer-max-width: 1280px; /** Footer maximale Breite - konsistent mit Grid-System */
+  --footer-heading-text-transform: uppercase; /** Uppercase für Überschriften-Hierarchie */
+  --footer-heading-letter-spacing: 0.05em; /** Leicht erhöhter Buchstabenabstand für Uppercase-Lesbarkeit */
+  --footer-link-line-height: 2; /** Großzügige Zeilenhöhe für Touch-Targets - 28px bei 14px Schrift */
+  --footer-legal-border-top-width: 1px; /** Legal-Bereich obere Rahmenstärke */
+  --footer-legal-border-top-style: solid; /** Legal-Bereich oberer Rahmenstil */
   --spacing-0: 0px; /** Zero spacing */
   --spacing-1: 4px; /** Base unit - smallest meaningful spacing */
   --spacing-2: 8px; /** Extra small spacing - 2x base unit */
@@ -160,6 +198,12 @@
   --container-md: 768px; /** Medium container max-width */
   --container-lg: 1024px; /** Large container max-width */
   --container-xl: 1280px; /** Extra large container max-width */
+  --table-header-border-bottom-width: 2px; /** Table header bottom border width */
+  --table-row-default: rgba(0, 0, 0, 0); /** Default row background (odd rows) */
+  --table-row-border-bottom-width: 1px; /** Row bottom border width */
+  --table-caption-text-align: left; /** Table caption text alignment */
+  --table-responsive-min-width: 600px; /** Minimum table width before horizontal scroll */
+  --table-responsive-overflow: auto; /** Table container overflow behavior */
   --font-family-sans: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; /** Primary font family for all text. Inter provides modern, professional appearance suitable for B2B context. */
   --font-family-mono: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace; /** Monospace font for code snippets and technical specifications. */
   --font-size-xs: 12px; /** Extra small - Captions, legal text */
@@ -229,6 +273,21 @@
   --button-size-large-gap: var(--spacing-2); /** Large Button Abstand zwischen Icon und Text - 8px */
   --button-base-border-radius: var(--border-radius-base); /** Button Eckenradius - 4px Standard */
   --button-focus-outline-color: var(--hydrophon-blau-300); /** Focus Outline Farbe - 3:1 Kontrast zum Hintergrund */
+  --card-gap: var(--spacing-6); /** Gap between cards in grid layout (24px) */
+  --card-radius: var(--border-radius-lg); /** Card border radius (8px) */
+  --card-padding: var(--spacing-6); /** Card internal padding (24px) */
+  --card-border-color: var(--neutral-200); /** Card border color */
+  --card-shadow-default: var(--shadow-sm); /** Card shadow at rest state */
+  --card-shadow-hover: var(--shadow-md); /** Card shadow on hover state */
+  --card-shadow-active: var(--shadow-lg); /** Card shadow on active/pressed state */
+  --card-image-background: var(--neutral-100); /** Image placeholder background color */
+  --card-title-font-size: var(--font-size-lg); /** Card title font size (18px) */
+  --card-title-font-weight: var(--font-weight-semibold); /** Card title font weight (600) */
+  --card-specs-font-size: var(--font-size-sm); /** Card specs font size (14px) */
+  --card-specs-gap: var(--spacing-1); /** Gap between spec items (4px) */
+  --card-cta-color: var(--hydrophon-blau-600); /** Card CTA link color */
+  --card-cta-color-hover: var(--hydrophon-blau-700); /** Card CTA link color on hover */
+  --card-cta-font-weight: var(--font-weight-medium); /** Card CTA font weight (500) */
   --elevation-card: var(--shadow-base); /** Standard card elevation at rest */
   --elevation-card-hover: var(--shadow-md); /** Card elevation on hover state */
   --elevation-dropdown: var(--shadow-lg); /** Dropdown menu elevation */
@@ -315,9 +374,76 @@
   --form-spacing-group-to-group: var(--spacing-6); /** Abstand zwischen Formulargruppen/Sektionen - 24px */
   --icon-spacing-with-text: var(--spacing-2); /** Abstand zwischen Icon und Text - 8px fuer harmonische Kombination */
   --icon-spacing-standalone: var(--spacing-1); /** Optischer Rand fuer standalone Icons - 4px fuer visuelle Ausrichtung */
+  --navigation-header-background: var(--neutral-white); /** Header Hintergrundfarbe - Weiß für klare Abgrenzung */
+  --navigation-header-border-bottom-color: var(--neutral-200); /** Header untere Rahmenlinie Farbe - subtile Trennung */
+  --navigation-header-shadow: var(--shadow-sm); /** Header Schatten beim Scrollen (Sticky-State) */
+  --navigation-header-padding-x-mobile: var(--spacing-4); /** Header horizontales Padding auf Mobile - 16px */
+  --navigation-header-padding-x-desktop: var(--spacing-6); /** Header horizontales Padding auf Desktop - 24px */
+  --navigation-header-padding-y: var(--spacing-0); /** Header vertikales Padding - 0 (Höhe durch height-Token definiert) */
+  --navigation-link-color-default: var(--neutral-700); /** Navigation-Link Standard-Textfarbe */
+  --navigation-link-color-hover: var(--neutral-900); /** Navigation-Link Hover-Textfarbe */
+  --navigation-link-color-active: var(--hydrophon-blau-600); /** Navigation-Link aktive Seite Textfarbe (aria-current) */
+  --navigation-link-font-size: var(--font-size-base); /** Navigation-Link Schriftgröße - 16px */
+  --navigation-link-font-weight-default: var(--font-weight-medium); /** Navigation-Link Standard-Schriftgewicht - 500 */
+  --navigation-link-font-weight-active: var(--font-weight-semibold); /** Navigation-Link aktive Seite Schriftgewicht - 600 */
+  --navigation-link-padding-x: var(--spacing-4); /** Navigation-Link horizontales Padding - 16px */
+  --navigation-link-padding-y: var(--spacing-3); /** Navigation-Link vertikales Padding - 12px */
+  --navigation-link-gap: var(--spacing-6); /** Abstand zwischen Navigation-Links - 24px */
+  --navigation-active-indicator-color: var(--hydrophon-blau-500); /** Aktiver Link Unterstreichung Farbe */
+  --navigation-focus-outline-color: var(--hydrophon-blau-300); /** Navigation-Link Focus Outline Farbe */
+  --navigation-drawer-background: var(--neutral-white); /** Mobile Drawer Hintergrundfarbe */
+  --navigation-drawer-shadow: var(--shadow-xl); /** Mobile Drawer Schatten für Elevation */
+  --navigation-drawer-padding: var(--spacing-6); /** Mobile Drawer inneres Padding - 24px */
+  --navigation-drawer-link-padding-x: var(--spacing-4); /** Mobile Drawer Link horizontales Padding - 16px */
+  --navigation-drawer-link-padding-y: var(--spacing-3); /** Mobile Drawer Link vertikales Padding - 12px */
+  --navigation-drawer-link-gap: var(--spacing-2); /** Vertikaler Abstand zwischen Links im Drawer - 8px */
+  --navigation-toggle-color-default: var(--neutral-700); /** Hamburger-Button Standard-Farbe */
+  --navigation-toggle-color-hover: var(--neutral-900); /** Hamburger-Button Hover-Farbe */
+  --navigation-toggle-background-hover: var(--neutral-100); /** Hamburger-Button Hover-Hintergrund - subtiler Grauton */
+  --navigation-toggle-border-radius: var(--border-radius-base); /** Hamburger-Button Eckenradius - 4px */
+  --breadcrumb-font-size: var(--font-size-sm); /** Breadcrumb Schriftgröße - 14px für kompakte Navigation */
+  --breadcrumb-gap: var(--spacing-2); /** Abstand zwischen Breadcrumb-Elementen - 8px */
+  --breadcrumb-margin-y: var(--spacing-4); /** Vertikaler Abstand der Breadcrumb-Navigation - 16px */
+  --breadcrumb-separator-color: var(--neutral-400); /** Dezente Separator-Farbe für visuelle Trennung ohne Dominanz */
+  --breadcrumb-separator-margin-x: var(--spacing-2); /** Horizontaler Abstand um Separator - 8px */
+  --breadcrumb-link-color: var(--hydrophon-blau-600); /** Breadcrumb Link-Farbe - etwas dunkler als primäre Aktionsfarbe */
+  --breadcrumb-link-color-hover: var(--hydrophon-blau-700); /** Breadcrumb Link-Farbe bei Hover */
+  --breadcrumb-current-color: var(--neutral-900); /** Aktuelle Seite in neutraler Farbe ohne Link-Interaktion */
+  --breadcrumb-current-font-weight: var(--font-weight-medium); /** Medium-Gewicht hebt aktuelle Seite hervor - 500 */
+  --footer-background: var(--neutral-100); /** Footer Hintergrundfarbe - dezent vom Hauptinhalt abgesetzt */
+  --footer-border-top-color: var(--neutral-200); /** Footer obere Rahmenfarbe */
+  --footer-padding-y: var(--spacing-12); /** Footer vertikales Padding - 48px für großzügigen Abstand */
+  --footer-padding-x: var(--spacing-6); /** Footer horizontales Padding - 24px */
+  --footer-gap: var(--spacing-8); /** Abstand zwischen Footer-Spalten - 32px */
+  --footer-heading-font-size: var(--font-size-sm); /** Footer Überschriften-Größe - 14px */
+  --footer-heading-font-weight: var(--font-weight-semibold); /** Footer Überschriften-Gewicht - 600 für Betonung */
+  --footer-heading-color: var(--neutral-900); /** Footer Überschriften-Farbe - dunkles Grau für Kontrast */
+  --footer-heading-margin-bottom: var(--spacing-4); /** Abstand unter Überschrift - 16px */
+  --footer-link-color: var(--neutral-600); /** Footer Link-Farbe - dezentes Grau */
+  --footer-link-color-hover: var(--neutral-900); /** Footer Link-Farbe bei Hover - dunkler für Kontrast */
+  --footer-link-font-size: var(--font-size-sm); /** Footer Link-Größe - 14px */
+  --footer-legal-font-size: var(--font-size-xs); /** Footer Legal-Text Größe - 12px für sekundäre Information */
+  --footer-legal-color: var(--neutral-500); /** Footer Legal-Text Farbe - dezentes Grau */
+  --footer-legal-margin-top: var(--spacing-8); /** Abstand über Legal-Bereich - 32px */
+  --footer-legal-border-top-color: var(--neutral-200); /** Legal-Bereich obere Rahmenfarbe */
+  --footer-legal-padding-top: var(--spacing-6); /** Legal-Bereich oberes Padding - 24px */
   --grid-gutters-mobile: var(--spacing-4); /** Mobile gutter spacing (16px) */
   --grid-gutters-tablet: var(--spacing-6); /** Tablet gutter spacing (24px) */
   --grid-gutters-desktop: var(--spacing-8); /** Desktop gutter spacing (32px) */
+  --table-font-size: var(--font-size-sm); /** Table text font size (14px) */
+  --table-border-color: var(--neutral-200); /** Table border color */
+  --table-border-radius: var(--border-radius-md); /** Table container border radius (6px) */
+  --table-cell-padding-y: var(--spacing-3); /** Table cell vertical padding (12px) */
+  --table-cell-padding-x: var(--spacing-4); /** Table cell horizontal padding (16px) */
+  --table-header-background: var(--neutral-100); /** Table header background color */
+  --table-header-font-weight: var(--font-weight-semibold); /** Table header font weight (600) */
+  --table-header-border-bottom-color: var(--neutral-300); /** Table header bottom border color */
+  --table-row-stripe: var(--neutral-50); /** Striped row background (even rows) - subtle 1.5:1 contrast */
+  --table-row-hover: var(--hydrophon-blau-50); /** Row hover background color */
+  --table-row-border-bottom-color: var(--neutral-200); /** Row bottom border color */
+  --table-caption-font-size: var(--font-size-lg); /** Table caption font size (18px) */
+  --table-caption-font-weight: var(--font-weight-semibold); /** Table caption font weight (600) */
+  --table-caption-padding: var(--spacing-4); /** Table caption padding (16px) */
   --typography-heading-h1: var(--font-weight-bold) var(--font-size-5xl)/var(--line-height-tight) var(--font-family-sans); /** Main page heading (48px, bold, tight) */
   --typography-heading-h2: var(--font-weight-bold) var(--font-size-4xl)/var(--line-height-tight) var(--font-family-sans); /** Section heading (36px, bold, tight) */
   --typography-heading-h3: var(--font-weight-semibold) var(--font-size-3xl)/var(--line-height-snug) var(--font-family-sans); /** Subsection heading (30px, semibold, snug) */
@@ -336,4 +462,10 @@
   --button-primary-background-disabled: var(--color-action-disabled); /** Primärer Button Hintergrund - Deaktiviert */
   --button-primary-foreground-default: var(--color-text-on-primary); /** Primärer Button Text - Standard-Zustand */
   --button-primary-foreground-disabled: var(--color-text-disabled); /** Primärer Button Text - Deaktiviert */
+  --card-background: var(--color-background-primary); /** Card background color */
+  --card-title-color: var(--color-text-primary); /** Card title text color */
+  --card-specs-color: var(--color-text-secondary); /** Card specs text color */
+  --table-background: var(--color-background-primary); /** Table background color */
+  --table-header-color: var(--color-text-primary); /** Table header text color */
+  --table-caption-color: var(--color-text-primary); /** Table caption text color */
 }
