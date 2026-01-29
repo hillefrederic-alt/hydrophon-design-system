@@ -115,14 +115,15 @@ Plans:
   3. Developer can find technical specifications and code examples
   4. External agency can onboard to system using Quick Start guide
   5. All components meet WCAG 2.1 AA accessibility standards
-**Plans**: 5 plans
+**Plans**: 6 plans
 
 Plans:
-- [ ] 06-01-PLAN.md — Marketing Quick Start Guide (15-20 page comprehensive onboarding)
-- [ ] 06-02-PLAN.md — Audience entry points (for-marketing, for-designers, for-developers hub pages)
-- [ ] 06-03-PLAN.md — Accessibility documentation (overview, WCAG compliance, testing guide)
-- [ ] 06-04-PLAN.md — Technical reference (design tokens, CSS variables, grid/breakpoints)
-- [ ] 06-05-PLAN.md — Documentation hub & integration (README, link verification)
+- [x] 06-01-PLAN.md — Marketing Quick Start Guide (15-20 page comprehensive onboarding)
+- [x] 06-02-PLAN.md — Audience entry points (for-marketing, for-designers, for-developers hub pages)
+- [x] 06-03-PLAN.md — Accessibility documentation (overview, WCAG compliance, testing guide)
+- [x] 06-04-PLAN.md — Technical reference (design tokens, CSS variables, grid/breakpoints)
+- [x] 06-05-PLAN.md — Documentation hub & integration (README, link verification)
+- [ ] 06-06-PLAN.md — Gap closure: Wire audience guides to existing documentation
 
 ### Phase 7: Final Packaging & Delivery
 **Goal**: Design system is distributed to all stakeholders in usable formats
@@ -151,7 +152,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6 → 7
 | 3. Forms & Data Input | 3/3 | Complete | 2026-01-29 |
 | 4. Navigation & Content Structure | 3/3 | Complete | 2026-01-29 |
 | 5. Feedback & System Responses | 5/5 | Complete | 2026-01-29 |
-| 6. Comprehensive Documentation | 0/5 | Not started | - |
+| 6. Comprehensive Documentation | 5/6 | Gap closure | - |
 | 7. Final Packaging & Delivery | 0/TBD | Not started | - |
 
 ---
