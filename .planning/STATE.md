@@ -10,18 +10,18 @@ See: .planning/PROJECT.md (updated 2026-01-28)
 ## Current Position
 
 Phase: 3 of 7 (Forms & Data Input)
-Plan: 1 of 3 in current phase
+Plan: 2 of 3 in current phase
 Status: In progress
-Last activity: 2026-01-29 — Completed 03-01-PLAN.md (Form Foundation Tokens)
+Last activity: 2026-01-29 — Completed 03-02-PLAN.md (Checkbox & Radio Buttons)
 
-Progress: [████████████████░░░░░░░░░░░░] 57% (8 of 14 plans complete)
+Progress: [█████████████████░░░░░░░░░░░] 64% (9 of 14 plans complete)
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 8
-- Average duration: 6.4 min
-- Total execution time: 0.85 hours
+- Total plans completed: 9
+- Average duration: 6.2 min
+- Total execution time: 0.93 hours
 
 **By Phase:**
 
@@ -29,11 +29,11 @@ Progress: [████████████████░░░░░░░
 |-------|-------|-------|----------|
 | 1 - Foundation & Brand Identity | 5/5 | 22 min | 4.4 min |
 | 2 - Icons & Basic Interactions | 2/2 | 18 min | 9.0 min |
-| 3 - Forms & Data Input | 1/3 | 7 min | 7.0 min |
+| 3 - Forms & Data Input | 2/3 | 12 min | 6.0 min |
 
 **Recent Trend:**
-- Last 5 plans: 5 min, 7 min, 5 min, 13 min, 7 min
-- Trend: Stabilizing (7-13 min range for component documentation)
+- Last 5 plans: 7 min, 5 min, 13 min, 7 min, 5 min
+- Trend: Excellent (5-7 min for component docs, improving efficiency)
 
 *Updated after each plan completion*
 
@@ -109,6 +109,17 @@ Recent decisions affecting current work:
 - Error messages in German: erklärend-hilfsbereit mit Beispielen (not just "ungültig")
 - Character counter for Textarea: dynamic color coding based on remaining percentage
 
+**From Plan 03-02 (Checkbox & Radio Buttons):**
+- Native-first approach: opacity:0 instead of display:none preserves accessibility tree and keyboard navigation
+- Checkbox/Radio sizes: 20px default, 24px large (aligned with input system)
+- Focus indicators: 2px outline + 2px offset using hydrophon.blau.300, only on :focus-visible
+- Checkbox visual: Lucide Check icon (14px) for checked state, consistent with Phase 2 icon system
+- Radio visual: Inner white dot (50% of container - 10px/12px) instead of icon for simpler styling
+- Radio group spacing: 12px vertical gap (spacing.3), 16px horizontal gap (spacing.4)
+- Fieldset/legend pattern: Strongly recommended for checkbox/radio groups for semantic HTML and screen reader support
+- Anti-pattern documentation: Explicit warnings against display:none in both component docs
+- Native keyboard navigation: Arrow keys for radio groups, Space for checkbox toggle, Tab between groups
+
 ### Pending Todos
 
 None yet.
@@ -119,10 +130,10 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-01-29 at 00:23:42Z
-Stopped at: Completed 03-01-PLAN.md (Form Foundation Tokens & Documentation)
+Last session: 2026-01-29 at 00:35:01Z
+Stopped at: Completed 03-02-PLAN.md (Checkbox & Radio Buttons)
 Resume file: None
 
 ---
 *State initialized: 2026-01-28*
-*Last updated: 2026-01-29 00:23:42Z*
+*Last updated: 2026-01-29 00:35:01Z*
