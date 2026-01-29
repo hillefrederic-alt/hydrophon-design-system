@@ -308,6 +308,291 @@
       }
     }
   },
+  "checkbox": {
+    "size": {
+      "default": {
+        "$value": "20px",
+        "$type": "dimension",
+        "$description": "Checkbox Größe Standard - 20x20px für Desktop und Mobile"
+      },
+      "large": {
+        "$value": "24px",
+        "$type": "dimension",
+        "$description": "Checkbox Größe Large - 24x24px für mobile-optimierte Interfaces"
+      }
+    },
+    "borderRadius": {
+      "$value": "4px",
+      "$type": "dimension",
+      "$description": "Checkbox Eckenradius - 4px für weiche Kanten"
+    },
+    "borderWidth": {
+      "$value": "2px",
+      "$type": "dimension",
+      "$description": "Checkbox Rahmenbreite - 2px für klare Sichtbarkeit"
+    },
+    "background": {
+      "default": {
+        "$value": "{neutral.white}",
+        "$type": "color",
+        "$description": "Checkbox Hintergrund - Standard-Zustand (nicht angekreuzt)"
+      },
+      "hover": {
+        "$value": "{neutral.white}",
+        "$type": "color",
+        "$description": "Checkbox Hintergrund - Hover-Zustand (nicht angekreuzt)"
+      },
+      "checked": {
+        "$value": "{hydrophon.blau.500}",
+        "$type": "color",
+        "$description": "Checkbox Hintergrund - Angekreuzt (Hydrophon Blau)"
+      },
+      "checkedHover": {
+        "$value": "{hydrophon.blau.600}",
+        "$type": "color",
+        "$description": "Checkbox Hintergrund - Angekreuzt + Hover (dunkler)"
+      },
+      "disabled": {
+        "$value": "{neutral.50}",
+        "$type": "color",
+        "$description": "Checkbox Hintergrund - Deaktiviert (nicht angekreuzt)"
+      },
+      "checkedDisabled": {
+        "$value": "{neutral.300}",
+        "$type": "color",
+        "$description": "Checkbox Hintergrund - Deaktiviert + Angekreuzt (gedämpftes Grau)"
+      }
+    },
+    "border": {
+      "default": {
+        "$value": "{neutral.300}",
+        "$type": "color",
+        "$description": "Checkbox Rahmen - Standard-Zustand"
+      },
+      "hover": {
+        "$value": "{neutral.400}",
+        "$type": "color",
+        "$description": "Checkbox Rahmen - Hover-Zustand"
+      },
+      "checked": {
+        "$value": "{hydrophon.blau.500}",
+        "$type": "color",
+        "$description": "Checkbox Rahmen - Angekreuzt (Hydrophon Blau)"
+      },
+      "focus": {
+        "$value": "{hydrophon.blau.500}",
+        "$type": "color",
+        "$description": "Checkbox Rahmen - Focus-Zustand (Tastatur-Navigation)"
+      },
+      "error": {
+        "$value": "{color.error}",
+        "$type": "color",
+        "$description": "Checkbox Rahmen - Error-Zustand (Validierungsfehler)"
+      },
+      "disabled": {
+        "$value": "{neutral.200}",
+        "$type": "color",
+        "$description": "Checkbox Rahmen - Deaktiviert"
+      }
+    },
+    "icon": {
+      "color": {
+        "$value": "{neutral.white}",
+        "$type": "color",
+        "$description": "Checkbox Icon Farbe - Weißes Checkmark bei angekreuztem Zustand"
+      },
+      "size": {
+        "$value": "14px",
+        "$type": "dimension",
+        "$description": "Checkbox Icon Größe - 14px für Default-Checkbox (20px)"
+      }
+    },
+    "focus": {
+      "outlineWidth": {
+        "$value": "2px",
+        "$type": "dimension",
+        "$description": "Checkbox Focus Outline Breite - WCAG 2.2 konform"
+      },
+      "outlineOffset": {
+        "$value": "2px",
+        "$type": "dimension",
+        "$description": "Checkbox Focus Outline Abstand - 2px für klare Trennung"
+      },
+      "outlineColor": {
+        "$value": "{hydrophon.blau.300}",
+        "$type": "color",
+        "$description": "Checkbox Focus Outline Farbe - Hellblau für Sichtbarkeit"
+      }
+    },
+    "label": {
+      "gap": {
+        "$value": "{spacing.2}",
+        "$type": "dimension",
+        "$description": "Checkbox Label Abstand - 8px zwischen Checkbox und Label-Text"
+      },
+      "color": {
+        "$value": "{neutral.700}",
+        "$type": "color",
+        "$description": "Checkbox Label Farbe - Standard-Zustand"
+      },
+      "colorDisabled": {
+        "$value": "{neutral.400}",
+        "$type": "color",
+        "$description": "Checkbox Label Farbe - Deaktiviert (gedämpft)"
+      }
+    }
+  },
+  "radio": {
+    "size": {
+      "default": {
+        "$value": "20px",
+        "$type": "dimension",
+        "$description": "Radio Button Größe Standard - 20x20px Kreis"
+      },
+      "large": {
+        "$value": "24px",
+        "$type": "dimension",
+        "$description": "Radio Button Größe Large - 24x24px für mobile Interfaces"
+      }
+    },
+    "borderRadius": {
+      "$value": "50%",
+      "$type": "dimension",
+      "$description": "Radio Button Eckenradius - 50% für perfekten Kreis"
+    },
+    "borderWidth": {
+      "$value": "2px",
+      "$type": "dimension",
+      "$description": "Radio Button Rahmenbreite - 2px für klare Sichtbarkeit"
+    },
+    "background": {
+      "default": {
+        "$value": "{neutral.white}",
+        "$type": "color",
+        "$description": "Radio Button Hintergrund - Standard-Zustand (nicht ausgewählt)"
+      },
+      "hover": {
+        "$value": "{neutral.white}",
+        "$type": "color",
+        "$description": "Radio Button Hintergrund - Hover-Zustand (nicht ausgewählt)"
+      },
+      "checked": {
+        "$value": "{hydrophon.blau.500}",
+        "$type": "color",
+        "$description": "Radio Button Hintergrund - Ausgewählt (Hydrophon Blau)"
+      },
+      "checkedHover": {
+        "$value": "{hydrophon.blau.600}",
+        "$type": "color",
+        "$description": "Radio Button Hintergrund - Ausgewählt + Hover (dunkler)"
+      },
+      "disabled": {
+        "$value": "{neutral.50}",
+        "$type": "color",
+        "$description": "Radio Button Hintergrund - Deaktiviert (nicht ausgewählt)"
+      },
+      "checkedDisabled": {
+        "$value": "{neutral.300}",
+        "$type": "color",
+        "$description": "Radio Button Hintergrund - Deaktiviert + Ausgewählt (gedämpftes Grau)"
+      }
+    },
+    "border": {
+      "default": {
+        "$value": "{neutral.300}",
+        "$type": "color",
+        "$description": "Radio Button Rahmen - Standard-Zustand"
+      },
+      "hover": {
+        "$value": "{neutral.400}",
+        "$type": "color",
+        "$description": "Radio Button Rahmen - Hover-Zustand"
+      },
+      "checked": {
+        "$value": "{hydrophon.blau.500}",
+        "$type": "color",
+        "$description": "Radio Button Rahmen - Ausgewählt (Hydrophon Blau)"
+      },
+      "focus": {
+        "$value": "{hydrophon.blau.500}",
+        "$type": "color",
+        "$description": "Radio Button Rahmen - Focus-Zustand (Tastatur-Navigation)"
+      },
+      "error": {
+        "$value": "{color.error}",
+        "$type": "color",
+        "$description": "Radio Button Rahmen - Error-Zustand (Validierungsfehler)"
+      },
+      "disabled": {
+        "$value": "{neutral.200}",
+        "$type": "color",
+        "$description": "Radio Button Rahmen - Deaktiviert"
+      }
+    },
+    "dot": {
+      "size": {
+        "$value": "10px",
+        "$type": "dimension",
+        "$description": "Radio Button innerer Punkt Größe - 10px (50% der Standard-Größe)"
+      },
+      "sizeLarge": {
+        "$value": "12px",
+        "$type": "dimension",
+        "$description": "Radio Button innerer Punkt Größe Large - 12px (50% der Large-Größe)"
+      },
+      "color": {
+        "$value": "{neutral.white}",
+        "$type": "color",
+        "$description": "Radio Button innerer Punkt Farbe - Weiß bei ausgewähltem Zustand"
+      }
+    },
+    "focus": {
+      "outlineWidth": {
+        "$value": "2px",
+        "$type": "dimension",
+        "$description": "Radio Button Focus Outline Breite - WCAG 2.2 konform"
+      },
+      "outlineOffset": {
+        "$value": "2px",
+        "$type": "dimension",
+        "$description": "Radio Button Focus Outline Abstand - 2px für klare Trennung"
+      },
+      "outlineColor": {
+        "$value": "{hydrophon.blau.300}",
+        "$type": "color",
+        "$description": "Radio Button Focus Outline Farbe - Hellblau für Sichtbarkeit"
+      }
+    },
+    "label": {
+      "gap": {
+        "$value": "{spacing.2}",
+        "$type": "dimension",
+        "$description": "Radio Button Label Abstand - 8px zwischen Radio und Label-Text"
+      },
+      "color": {
+        "$value": "{neutral.700}",
+        "$type": "color",
+        "$description": "Radio Button Label Farbe - Standard-Zustand"
+      },
+      "colorDisabled": {
+        "$value": "{neutral.400}",
+        "$type": "color",
+        "$description": "Radio Button Label Farbe - Deaktiviert (gedämpft)"
+      }
+    },
+    "group": {
+      "gap": {
+        "$value": "{spacing.3}",
+        "$type": "dimension",
+        "$description": "Radio Button Gruppen-Abstand - 12px zwischen einzelnen Radio Buttons in einer Gruppe"
+      },
+      "orientation": {
+        "$value": "vertical",
+        "$type": "string",
+        "$description": "Radio Button Gruppen-Orientierung - Standard vertikal, horizontal möglich für max. 3-4 Optionen"
+      }
+    }
+  },
   "form": {
     "spacing": {
       "labelToInput": {
