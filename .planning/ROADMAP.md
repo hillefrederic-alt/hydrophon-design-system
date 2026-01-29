@@ -15,7 +15,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 - [x] **Phase 1: Foundation & Brand Identity** - Design tokens, colors, typography, spacing, grid, and logo system
 - [x] **Phase 2: Icons & Basic Interactions** - Icon system and button components with all states
 - [x] **Phase 3: Forms & Data Input** - Complete form components with validation and accessibility
-- [ ] **Phase 4: Navigation & Content Structure** - Navigation, cards, tables, and responsive layouts
+- [x] **Phase 4: Navigation & Content Structure** - Navigation, cards, tables, and responsive layouts
 - [ ] **Phase 5: Feedback & System Responses** - Modals, tooltips, and notification components
 - [ ] **Phase 6: Comprehensive Documentation** - Multi-tier documentation for all user groups
 - [ ] **Phase 7: Final Packaging & Delivery** - PDF compilation, asset export, and Figma library
@@ -83,9 +83,9 @@ Plans:
 **Plans**: 3 plans
 
 Plans:
-- [ ] 04-01-PLAN.md — Navigation system (Header tokens, desktop navigation, mobile drawer with focus management)
-- [ ] 04-02-PLAN.md — Location indicators & footer (Breadcrumb with aria-current, footer layout and legal)
-- [ ] 04-03-PLAN.md — Content components (Product cards, content cards, data tables with accessibility)
+- [x] 04-01-PLAN.md — Navigation system (Header tokens, desktop navigation, mobile drawer with focus management)
+- [x] 04-02-PLAN.md — Location indicators & footer (Breadcrumb with aria-current, footer layout and legal)
+- [x] 04-03-PLAN.md — Content components (Product cards, content cards, data tables with accessibility)
 
 ### Phase 5: Feedback & System Responses
 **Goal**: Users receive appropriate feedback for system actions and states
@@ -96,10 +96,12 @@ Plans:
   2. User can access contextual help via tooltips
   3. Developer can implement modal dialogs with proper accessibility
   4. System feedback is non-intrusive and dismissible
-**Plans**: TBD
+**Plans**: 3 plans
 
 Plans:
-- [ ] TBD during plan-phase
+- [ ] 05-01-PLAN.md — Modal dialogs (tokens, size variants, focus trap, accessibility)
+- [ ] 05-02-PLAN.md — Tooltips & toasts (hover labels, notifications, timing, stacking)
+- [ ] 05-03-PLAN.md — Loading states (spinner, progress bar, skeleton screens, optimistic UI)
 
 ### Phase 6: Comprehensive Documentation
 **Goal**: All user groups can understand and apply the design system correctly
@@ -142,7 +144,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6 → 7
 | 2. Icons & Basic Interactions | 2/2 | Complete | 2026-01-29 |
 | 3. Forms & Data Input | 3/3 | Complete | 2026-01-29 |
 | 4. Navigation & Content Structure | 3/3 | Complete | 2026-01-29 |
-| 5. Feedback & System Responses | 0/TBD | Not started | - |
+| 5. Feedback & System Responses | 0/3 | Planned | - |
 | 6. Comprehensive Documentation | 0/TBD | Not started | - |
 | 7. Final Packaging & Delivery | 0/TBD | Not started | - |
 
