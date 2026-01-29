@@ -42,34 +42,34 @@
 
 ### UI-Komponenten - Formulare
 
-- [ ] **FORM-01**: Text Input definiert (States: Default, Focus, Error, Disabled)
-- [ ] **FORM-02**: Textarea definiert
-- [ ] **FORM-03**: Select/Dropdown definiert
-- [ ] **FORM-04**: Checkbox definiert
-- [ ] **FORM-05**: Radio Button definiert
-- [ ] **FORM-06**: Form Labels und Helper Text dokumentiert
-- [ ] **FORM-07**: Error States und Validation Messages definiert
+- [x] **FORM-01**: Text Input definiert (States: Default, Focus, Error, Disabled)
+- [x] **FORM-02**: Textarea definiert
+- [x] **FORM-03**: Select/Dropdown definiert
+- [x] **FORM-04**: Checkbox definiert
+- [x] **FORM-05**: Radio Button definiert
+- [x] **FORM-06**: Form Labels und Helper Text dokumentiert
+- [x] **FORM-07**: Error States und Validation Messages definiert
 
 ### UI-Komponenten - Navigation
 
-- [ ] **NAV-01**: Header-Komponente definiert (Desktop)
-- [ ] **NAV-02**: Mobile Navigation/Burger Menu definiert
-- [ ] **NAV-03**: Footer-Komponente definiert
-- [ ] **NAV-04**: Navigation States dokumentiert (Active, Hover)
-- [ ] **NAV-05**: Breadcrumb-Komponente definiert
+- [x] **NAV-01**: Header-Komponente definiert (Desktop)
+- [x] **NAV-02**: Mobile Navigation/Burger Menu definiert
+- [x] **NAV-03**: Footer-Komponente definiert
+- [x] **NAV-04**: Navigation States dokumentiert (Active, Hover)
+- [x] **NAV-05**: Breadcrumb-Komponente definiert
 
 ### UI-Komponenten - Content
 
-- [ ] **CARD-01**: Product Card definiert (für Produktübersichten)
-- [ ] **CARD-02**: Content Card definiert (für allgemeine Inhalte)
-- [ ] **CARD-03**: Card States dokumentiert (Hover, Interactive)
+- [x] **CARD-01**: Product Card definiert (für Produktübersichten)
+- [x] **CARD-02**: Content Card definiert (für allgemeine Inhalte)
+- [x] **CARD-03**: Card States dokumentiert (Hover, Interactive)
 
 ### UI-Komponenten - Data Display
 
-- [ ] **TABLE-01**: Data Table Basis-Styling definiert
-- [ ] **TABLE-02**: Table Header Styling
-- [ ] **TABLE-03**: Table Row States (Default, Hover, Selected)
-- [ ] **TABLE-04**: Responsive Table Verhalten definiert
+- [x] **TABLE-01**: Data Table Basis-Styling definiert
+- [x] **TABLE-02**: Table Header Styling
+- [x] **TABLE-03**: Table Row States (Default, Hover, Selected)
+- [x] **TABLE-04**: Responsive Table Verhalten definiert
 
 ### UI-Komponenten - Feedback
 
@@ -188,18 +188,18 @@ Which phases cover which requirements. Updated during roadmap creation.
 | FORM-05 | Phase 3 | Complete |
 | FORM-06 | Phase 3 | Complete |
 | FORM-07 | Phase 3 | Complete |
-| NAV-01 | Phase 4 | Pending |
-| NAV-02 | Phase 4 | Pending |
-| NAV-03 | Phase 4 | Pending |
-| NAV-04 | Phase 4 | Pending |
-| NAV-05 | Phase 4 | Pending |
-| CARD-01 | Phase 4 | Pending |
-| CARD-02 | Phase 4 | Pending |
-| CARD-03 | Phase 4 | Pending |
-| TABLE-01 | Phase 4 | Pending |
-| TABLE-02 | Phase 4 | Pending |
-| TABLE-03 | Phase 4 | Pending |
-| TABLE-04 | Phase 4 | Pending |
+| NAV-01 | Phase 4 | Complete |
+| NAV-02 | Phase 4 | Complete |
+| NAV-03 | Phase 4 | Complete |
+| NAV-04 | Phase 4 | Complete |
+| NAV-05 | Phase 4 | Complete |
+| CARD-01 | Phase 4 | Complete |
+| CARD-02 | Phase 4 | Complete |
+| CARD-03 | Phase 4 | Complete |
+| TABLE-01 | Phase 4 | Complete |
+| TABLE-02 | Phase 4 | Complete |
+| TABLE-03 | Phase 4 | Complete |
+| TABLE-04 | Phase 4 | Complete |
 | FB-01 | Phase 5 | Pending |
 | FB-02 | Phase 5 | Pending |
 | FB-03 | Phase 5 | Pending |
