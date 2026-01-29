@@ -1,0 +1,582 @@
+/**
+ * Do not edit directly, this file was auto-generated.
+ */
+
+:root {
+  --color-success: #22c55e; /** Erfolg, positive Aktionen, Bestätigungen */
+  --color-warning: #f59e0b; /** Warnungen, Vorsicht, wichtige Hinweise */
+  --color-error: #ef4444; /** Fehler, Probleme, destruktive Aktionen */
+  --color-info: #3b82f6; /** Informationen, neutrale Hinweise */
+  --button-primary-border-default: rgba(0, 0, 0, 0); /** Primärer Button Rahmen - Standard (kein sichtbarer Rahmen) */
+  --button-secondary-background-default: rgba(0, 0, 0, 0); /** Sekundärer Button Hintergrund - Standard (transparent für Outline-Stil) */
+  --button-secondary-background-disabled: rgba(0, 0, 0, 0); /** Sekundärer Button Hintergrund - Deaktiviert */
+  --button-tertiary-background-default: rgba(0, 0, 0, 0); /** Tertiärer/Ghost Button Hintergrund - Standard (transparent) */
+  --button-tertiary-background-disabled: rgba(0, 0, 0, 0); /** Tertiärer/Ghost Button Hintergrund - Deaktiviert */
+  --button-tertiary-border-default: rgba(0, 0, 0, 0); /** Tertiärer/Ghost Button Rahmen - Standard (kein Rahmen) */
+  --button-size-small-padding-y: 6px; /** Small Button vertikales Padding - 6px (spacing.1.5) */
+  --button-size-small-font-size: 14px; /** Small Button Schriftgröße - entspricht typography.sm */
+  --button-size-small-min-height: 32px; /** Small Button Mindesthöhe - kompakte UIs */
+  --button-size-small-gap: 6px; /** Small Button Abstand zwischen Icon und Text - 6px (spacing.1.5) */
+  --button-size-medium-font-size: 16px; /** Medium Button Schriftgröße - entspricht typography.base */
+  --button-size-medium-min-height: 40px; /** Medium Button Mindesthöhe - Standard für Formulare */
+  --button-size-large-font-size: 18px; /** Large Button Schriftgröße - entspricht typography.lg */
+  --button-size-large-min-height: 48px; /** Large Button Mindesthöhe - CTAs und Hero-Sections */
+  --button-base-border-width: 2px; /** Button Rahmenbreite für Secondary/Outline-Buttons */
+  --button-base-font-weight: 500; /** Button Schriftgewicht - Medium für ausgewogene Lesbarkeit */
+  --button-base-transition: 150ms ease-in-out; /** Button Übergangsanimation für Hover/Active-Zustände */
+  --button-focus-outline-width: 2px; /** Focus Outline Breite - WCAG 2.2 konform */
+  --button-focus-outline-offset: 2px; /** Focus Outline Abstand - Sichtbare Trennung vom Button */
+  --button-icon-only-small-size: 32px; /** Icon-only Button (Small) - 32x32px, nur für Desktop mit ausreichend Abstand */
+  --button-icon-only-medium-size: 44px; /** Icon-only Button (Medium) - 44x44px, WCAG Touch-Target */
+  --button-icon-only-large-size: 48px; /** Icon-only Button (Large) - 48x48px für CTAs */
+  --card-min-width: 280px; /** Minimum card width for auto-fit grid */
+  --card-border-width: 1px; /** Card border width */
+  --card-transition-duration: 300ms; /** Card transition duration */
+  --card-transition-timing: ease; /** Card transition timing function */
+  --card-hover-transform: translateY(-4px); /** Card transform on hover (GPU-accelerated) */
+  --card-image-aspect-ratio: 1 / 1; /** Square aspect ratio for product images */
+  --card-image-object-fit: cover; /** Image object-fit behavior */
+  --card-specs-line-height: 1.5; /** Card specs line height for readability */
+  --hydrophon-blau-50: #e5f5fd; /** Hydrophon Blau - Hellste Nuance */
+  --hydrophon-blau-100: #b8e4f9; /** Hydrophon Blau - Sehr hell */
+  --hydrophon-blau-200: #8ad3f5; /** Hydrophon Blau - Hell */
+  --hydrophon-blau-300: #5cc2f1; /** Hydrophon Blau - Leicht */
+  --hydrophon-blau-400: #2eb1ed; /** Hydrophon Blau - Medium hell */
+  --hydrophon-blau-500: #008bd2; /** Hydrophon Blau - Primärfarbe (Brand CI) */
+  --hydrophon-blau-600: #007bb8; /** Hydrophon Blau - Medium dunkel */
+  --hydrophon-blau-700: #006a9e; /** Hydrophon Blau - Dunkel */
+  --hydrophon-blau-800: #005a84; /** Hydrophon Blau - Sehr dunkel */
+  --hydrophon-blau-900: #00496a; /** Hydrophon Blau - Dunkelste Nuance */
+  --hydrophon-grau-50: #f7f7f7; /** Hydrophon Grau - Hellste Nuance */
+  --hydrophon-grau-100: #e8e8e8; /** Hydrophon Grau - Sehr hell */
+  --hydrophon-grau-200: #d1d1d1; /** Hydrophon Grau - Hell */
+  --hydrophon-grau-300: #b0afaf; /** Hydrophon Grau - Leicht */
+  --hydrophon-grau-400: #939292; /** Hydrophon Grau - Medium hell */
+  --hydrophon-grau-500: #575656; /** Hydrophon Grau - Primärfarbe (Brand CI) */
+  --hydrophon-grau-600: #4d4c4c; /** Hydrophon Grau - Medium dunkel */
+  --hydrophon-grau-700: #434242; /** Hydrophon Grau - Dunkel */
+  --hydrophon-grau-800: #393838; /** Hydrophon Grau - Sehr dunkel */
+  --hydrophon-grau-900: #2f2e2e; /** Hydrophon Grau - Dunkelste Nuance */
+  --neutral-50: #fafafa; /** Neutralgrau - Hellste Nuance */
+  --neutral-100: #f5f5f5; /** Neutralgrau - Sehr hell */
+  --neutral-200: #e5e5e5; /** Neutralgrau - Hell */
+  --neutral-300: #d4d4d4; /** Neutralgrau - Leicht */
+  --neutral-400: #a3a3a3; /** Neutralgrau - Medium hell */
+  --neutral-500: #737373; /** Neutralgrau - Medium */
+  --neutral-600: #525252; /** Neutralgrau - Medium dunkel */
+  --neutral-700: #404040; /** Neutralgrau - Dunkel */
+  --neutral-800: #262626; /** Neutralgrau - Sehr dunkel */
+  --neutral-900: #171717; /** Neutralgrau - Dunkelste Nuance */
+  --neutral-white: #ffffff; /** Weiß */
+  --neutral-black: #000000; /** Schwarz */
+  --productline-hyhero-primary: #f49a36; /** hyHero Primärfarbe - Orange */
+  --productline-hyhero-secondary: #373643; /** hyHero Sekundärfarbe - Dunkelgrau */
+  --productline-hyindustry-primary: #0e2638; /** hyIndustry Primärfarbe - Dunkelblau */
+  --productline-gluy-primary: #ffeeb6; /** Gluy Primärfarbe - Gelb */
+  --productline-gluy-secondary: #88a9c3; /** Gluy Sekundärfarbe - Hellblau */
+  --productline-gluy-tertiary: #14202e; /** Gluy Tertiärfarbe - Dunkelblau */
+  --border-radius-none: 0px; /** No border radius - sharp corners */
+  --border-radius-sm: 2px; /** Subtle rounding for small elements */
+  --border-radius-base: 4px; /** Standard rounding for buttons and inputs */
+  --border-radius-md: 6px; /** Medium rounding for cards */
+  --border-radius-lg: 8px; /** Large rounding for larger cards and modals */
+  --border-radius-xl: 12px; /** Extra large rounding for pills and large elements */
+  --border-radius-2xl: 16px; /** 2XL rounding for feature cards */
+  --border-radius-3xl: 24px; /** 3XL rounding for large decorative elements */
+  --border-radius-full: 9999px; /** Fully rounded for circular or pill shapes */
+  --shadow-none: none; /** No shadow */
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05); /** Subtle shadow for minimal depth */
+  --shadow-base: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1); /** Base shadow for standard elevation */
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1); /** Medium shadow for elevated elements */
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1); /** Large shadow for floating elements */
+  --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); /** Extra large shadow for modals and dialogs */
+  --shadow-2xl: 0 25px 50px -12px rgb(0 0 0 / 0.25); /** 2XL shadow for dramatic elevation */
+  --shadow-inner: inset 0 2px 4px 0 rgb(0 0 0 / 0.05); /** Inner shadow for inset elements */
+  --modal-overlay-background: rgba(0, 0, 0, 0.5); /** Modal Overlay Hintergrund - halbtransparentes Schwarz */
+  --modal-overlay-blur: 4px; /** Modal Overlay Backdrop-Blur für modernen Effekt */
+  --modal-size-sm-width: 400px; /** Modal Small Breite - für Bestätigungsdialoge */
+  --modal-size-sm-max-height: 80vh; /** Modal Small maximale Höhe */
+  --modal-size-md-width: 600px; /** Modal Medium Breite - für Formulare */
+  --modal-size-md-max-height: 85vh; /** Modal Medium maximale Höhe */
+  --modal-size-lg-width: 900px; /** Modal Large Breite - für komplexe Inhalte */
+  --modal-size-lg-max-height: 90vh; /** Modal Large maximale Höhe */
+  --modal-close-button-size: 32px; /** Modal Close-Button Größe */
+  --modal-close-button-icon-size: 20px; /** Modal Close-Button Icon Größe */
+  --modal-animation-duration: 200ms; /** Modal Ein-/Ausblend-Animation Dauer */
+  --modal-animation-timing: ease-out; /** Modal Animation Easing-Funktion */
+  --modal-z-index: 1000; /** Modal z-Index - gleich wie Navigation Drawer für modalen Kontext */
+  --spinner-size-sm: 16px; /** Spinner Small - 16px (für kleine Buttons) */
+  --spinner-size-md: 24px; /** Spinner Medium - 24px (Standard) */
+  --spinner-size-lg: 32px; /** Spinner Large - 32px (Seitenladeindikator) */
+  --spinner-size-xl: 48px; /** Spinner Extra Large - 48px (Vollbildlader) */
+  --spinner-stroke-width: 2px; /** Spinner Strichstärke */
+  --spinner-animation-duration: 750ms; /** Spinner Rotationsdauer - 0.75s */
+  --spinner-animation-timing: linear; /** Spinner Animation - linear für gleichmäßige Rotation */
+  --spinner-delay: 200ms; /** Spinner Anzeigeverzögerung - verhindert Flash bei schnellen Operationen */
+  --progress-height: 8px; /** Progress Bar Standardhöhe */
+  --progress-height-sm: 4px; /** Progress Bar schmale Variante */
+  --progress-indeterminate-animation-duration: 1.5s; /** Indeterminate Progress Animation Dauer */
+  --skeleton-animation-duration: 1.5s; /** Skeleton Shimmer-Animation Dauer */
+  --skeleton-animation-timing: ease-in-out; /** Skeleton Animation Easing-Funktion */
+  --skeleton-line-height: 1.2; /** Skeleton Zeilenhöhe für Text-Platzhalter */
+  --tooltip-delay: 300ms; /** Verzoegerung vor dem Anzeigen (300ms Industry-Standard) */
+  --tooltip-max-width: 200px; /** Maximale Breite vor Umbruch */
+  --tooltip-arrow-size: 6px; /** Groesse des Pfeil-Indikators */
+  --tooltip-offset: 5px; /** Abstand zum Trigger-Element */
+  --tooltip-z-index: 1100; /** Positionierung ueber Modals (1000) */
+  --tooltip-animation-duration: 150ms; /** Ein-/Ausblend-Animation - schnell, nicht stoerend */
+  --toast-width: 360px; /** Standardbreite fuer Toasts */
+  --toast-max-width: calc(100vw - 32px); /** Responsive maximale Breite */
+  --toast-max-visible: 4; /** Maximale Anzahl gleichzeitig sichtbar */
+  --toast-z-index: 1200; /** Z-Index ueber Tooltips (1100) */
+  --toast-duration-success: 3000ms; /** Auto-Dismiss nach 3 Sekunden */
+  --toast-duration-info: 4000ms; /** Auto-Dismiss nach 4 Sekunden */
+  --toast-duration-warning: 5000ms; /** Auto-Dismiss nach 5 Sekunden */
+  --toast-duration-error: 0ms; /** Bleibt bis manuell geschlossen */
+  --toast-animation-enter-duration: 200ms; /** Einblend-Animation */
+  --toast-animation-exit-duration: 150ms; /** Ausblend-Animation */
+  --toast-variant-success-background: #f0fdf4; /** Hellgruener Hintergrund (green-50) */
+  --toast-variant-success-border: #bbf7d0; /** Gruener Rahmen (green-200) */
+  --toast-variant-success-icon-color: #16a34a; /** Gruenes Icon (green-600) */
+  --toast-variant-success-text-color: #166534; /** Dunkelgruener Text (green-800) */
+  --toast-variant-info-background: #eff6ff; /** Hellblauer Hintergrund (blue-50) */
+  --toast-variant-info-border: #bfdbfe; /** Blauer Rahmen (blue-200) */
+  --toast-variant-info-icon-color: #2563eb; /** Blaues Icon (blue-600) */
+  --toast-variant-info-text-color: #1e40af; /** Dunkelblauer Text (blue-800) */
+  --toast-variant-warning-background: #fffbeb; /** Hellgelber Hintergrund (amber-50) */
+  --toast-variant-warning-border: #fde68a; /** Gelber Rahmen (amber-200) */
+  --toast-variant-warning-icon-color: #d97706; /** Gelbes Icon (amber-600) */
+  --toast-variant-warning-text-color: #92400e; /** Dunkelgelber Text (amber-800) */
+  --toast-variant-error-background: #fef2f2; /** Hellroter Hintergrund (red-50) */
+  --toast-variant-error-border: #fecaca; /** Roter Rahmen (red-200) */
+  --toast-variant-error-icon-color: #dc2626; /** Rotes Icon (red-600) */
+  --toast-variant-error-text-color: #991b1b; /** Dunkelroter Text (red-800) */
+  --toast-close-button-size: 24px; /** Groesse des Schliessen-Buttons */
+  --toast-close-button-icon-size: 16px; /** Groesse des X-Icons */
+  --input-height-sm: 32px; /** Input-Höhe Small - Konsistent mit Button Small (nur Desktop) */
+  --input-height-md: 40px; /** Input-Höhe Medium - Standard für die meisten Formulare */
+  --input-height-lg: 48px; /** Input-Höhe Large - Mobile-optimiert, CTAs */
+  --input-field-border-width-default: 1px; /** Input Rahmenbreite - Standard-Zustand */
+  --input-field-border-width-focus: 2px; /** Input Rahmenbreite - Focus-Zustand (verstärkt) */
+  --input-focus-ring-width: 3px; /** Focus Ring Breite - WCAG 2.2 konform */
+  --input-focus-outline-width: 2px; /** Focus Outline Breite - Verstärkter Border bei Focus */
+  --input-focus-outline-offset: 0px; /** Focus Outline Offset - Direkt am Input-Rand */
+  --input-required-symbol: *; /** Required Indicator Symbol - Asterisk */
+  --input-textarea-min-height: 120px; /** Textarea Mindesthöhe - ca. 5 Zeilen */
+  --input-textarea-resize: vertical; /** Textarea Resize-Verhalten - Nur vertikal */
+  --input-base-transition: 150ms ease-in-out; /** Input Übergangsanimation für Zustandswechsel */
+  --checkbox-size-default: 20px; /** Checkbox Größe Standard - 20x20px für Desktop und Mobile */
+  --checkbox-size-large: 24px; /** Checkbox Größe Large - 24x24px für mobile-optimierte Interfaces */
+  --checkbox-border-radius: 4px; /** Checkbox Eckenradius - 4px für weiche Kanten */
+  --checkbox-border-width: 2px; /** Checkbox Rahmenbreite - 2px für klare Sichtbarkeit */
+  --checkbox-icon-size: 14px; /** Checkbox Icon Größe - 14px für Default-Checkbox (20px) */
+  --checkbox-focus-outline-width: 2px; /** Checkbox Focus Outline Breite - WCAG 2.2 konform */
+  --checkbox-focus-outline-offset: 2px; /** Checkbox Focus Outline Abstand - 2px für klare Trennung */
+  --radio-size-default: 20px; /** Radio Button Größe Standard - 20x20px Kreis */
+  --radio-size-large: 24px; /** Radio Button Größe Large - 24x24px für mobile Interfaces */
+  --radio-border-radius: 50%; /** Radio Button Eckenradius - 50% für perfekten Kreis */
+  --radio-border-width: 2px; /** Radio Button Rahmenbreite - 2px für klare Sichtbarkeit */
+  --radio-dot-size: 10px; /** Radio Button innerer Punkt Größe - 10px (50% der Standard-Größe) */
+  --radio-dot-size-large: 12px; /** Radio Button innerer Punkt Größe Large - 12px (50% der Large-Größe) */
+  --radio-focus-outline-width: 2px; /** Radio Button Focus Outline Breite - WCAG 2.2 konform */
+  --radio-focus-outline-offset: 2px; /** Radio Button Focus Outline Abstand - 2px für klare Trennung */
+  --radio-group-orientation: vertical; /** Radio Button Gruppen-Orientierung - Standard vertikal, horizontal möglich für max. 3-4 Optionen */
+  --icon-size-xs: 16px; /** Extra kleine Icon-Groesse - Minimum lesbar, kompakte UIs, inline mit kleinem Text */
+  --icon-size-sm: 20px; /** Kleine Icon-Groesse - Standard für Buttons mit Text, Formular-Elemente */
+  --icon-size-md: 24px; /** Mittlere Icon-Groesse - Standalone-Icons, Basis-Grid-Groesse, Icon-only Buttons */
+  --icon-size-lg: 32px; /** Grosse Icon-Groesse - Betonung, Hero-Sections, Feature-Highlights */
+  --icon-size-xl: 48px; /** Extra grosse Icon-Groesse - Dekorative Elemente, maximale praktische Groesse */
+  --icon-stroke-weight: 2px; /** Strichstaerke fuer alle Icons - ausgewogen und lesbar bei allen Groessen */
+  --icon-stroke-cap: round; /** Strichabschluss - abgerundet fuer moderne B2B-Aesthetik, konsistent mit Inter Font */
+  --icon-stroke-join: round; /** Strichverbindung - abgerundet fuer weiche, moderne Optik */
+  --icon-grid-size: 24px; /** Basis-Grid-Groesse fuer Icon-Design - Standard-Artboard */
+  --icon-grid-padding: 2px; /** Grid-Padding - 1px visueller Abstand auf jeder Seite, 20x20px sichere Zone */
+  --icon-touch-target-minimum: 44px; /** Minimale Touch-Target-Groesse - WCAG 2.1 AAA Empfehlung fuer mobile Interaktion */
+  --icon-touch-target-compact: 32px; /** Kompakte Touch-Target-Groesse - nur Desktop mit ausreichend Abstand zu anderen Elementen */
+  --navigation-header-height-desktop: 80px; /** Header-Höhe auf Desktop-Geräten */
+  --navigation-header-height-mobile: 64px; /** Header-Höhe auf mobilen Geräten */
+  --navigation-header-border-bottom-width: 1px; /** Header untere Rahmenlinie Breite */
+  --navigation-header-z-index: 100; /** Header z-Index für Sticky-Verhalten */
+  --navigation-link-transition: color 150ms ease-in-out; /** Navigation-Link Farbübergang für Hover-Effekte */
+  --navigation-active-indicator-height: 2px; /** Aktiver Link Unterstreichung Höhe */
+  --navigation-active-indicator-position: bottom; /** Aktiver Link Indikator Position - unten am Link */
+  --navigation-focus-outline-width: 2px; /** Navigation-Link Focus Outline Breite */
+  --navigation-focus-outline-offset: 2px; /** Navigation-Link Focus Outline Abstand */
+  --navigation-drawer-width: 280px; /** Mobile Drawer feste Breite */
+  --navigation-drawer-max-width: 80vw; /** Mobile Drawer maximale Breite (verhindert zu breiten Drawer auf kleinen Geräten) */
+  --navigation-drawer-backdrop-color: rgba(0, 0, 0, 0.5); /** Mobile Drawer Backdrop Overlay Farbe */
+  --navigation-drawer-z-index: 1000; /** Mobile Drawer z-Index (über allem außer Toasts/Alerts) */
+  --navigation-drawer-transition-duration: 300ms; /** Mobile Drawer Slide-In/Out Animation Dauer */
+  --navigation-drawer-transition-easing: ease-in-out; /** Mobile Drawer Animation Easing */
+  --navigation-drawer-link-min-height: 48px; /** Mobile Drawer Link minimale Höhe für Touch-Targets */
+  --navigation-toggle-size: 44px; /** Hamburger-Button Größe - WCAG AAA Touch-Target */
+  --navigation-toggle-icon-size: 24px; /** Hamburger-Icon Größe */
+  --navigation-toggle-background-default: rgba(0, 0, 0, 0); /** Hamburger-Button Standard-Hintergrund - transparent */
+  --breadcrumb-separator-content: ›; /** Chevron-Separator für moderne Richtungsanzeige */
+  --breadcrumb-link-text-decoration: none; /** Keine Unterstreichung im Standard-Zustand */
+  --breadcrumb-link-text-decoration-hover: underline; /** Unterstreichung bei Hover für deutliches Feedback */
+  --footer-border-top-width: 1px; /** Footer obere Rahmenstärke */
+  --footer-border-top-style: solid; /** Footer oberer Rahmenstil */
+  --footer-max-width: 1280px; /** Footer maximale Breite - konsistent mit Grid-System */
+  --footer-heading-text-transform: uppercase; /** Uppercase für Überschriften-Hierarchie */
+  --footer-heading-letter-spacing: 0.05em; /** Leicht erhöhter Buchstabenabstand für Uppercase-Lesbarkeit */
+  --footer-link-line-height: 2; /** Großzügige Zeilenhöhe für Touch-Targets - 28px bei 14px Schrift */
+  --footer-legal-border-top-width: 1px; /** Legal-Bereich obere Rahmenstärke */
+  --footer-legal-border-top-style: solid; /** Legal-Bereich oberer Rahmenstil */
+  --spacing-0: 0px; /** Zero spacing */
+  --spacing-1: 4px; /** Base unit - smallest meaningful spacing */
+  --spacing-2: 8px; /** Extra small spacing - 2x base unit */
+  --spacing-3: 12px; /** Small spacing - 3x base unit */
+  --spacing-4: 16px; /** Medium spacing - 4x base unit, common for padding */
+  --spacing-5: 20px; /** Medium-large spacing - 5x base unit */
+  --spacing-6: 24px; /** Large spacing - 6x base unit */
+  --spacing-7: 28px; /** Extra large spacing - 7x base unit */
+  --spacing-8: 32px; /** 2XL spacing - 8x base unit */
+  --spacing-9: 36px; /** 2.5XL spacing - 9x base unit */
+  --spacing-10: 40px; /** 3XL spacing - 10x base unit */
+  --spacing-11: 44px; /** 3.5XL spacing - 11x base unit */
+  --spacing-12: 48px; /** 4XL spacing - 12x base unit */
+  --spacing-14: 56px; /** 5XL spacing - 14x base unit */
+  --spacing-16: 64px; /** 6XL spacing - 16x base unit */
+  --spacing-20: 80px; /** 7XL spacing - 20x base unit */
+  --spacing-24: 96px; /** 8XL spacing - 24x base unit */
+  --spacing-28: 112px; /** 9XL spacing - 28x base unit */
+  --spacing-32: 128px; /** 10XL spacing - 32x base unit */
+  --spacing-0-5: 2px; /** Extra tiny spacing - 0.5x base unit */
+  --spacing-1-5: 6px; /** Tiny spacing - 1.5x base unit */
+  --spacing-2-5: 10px; /** Small-medium spacing - 2.5x base unit */
+  --grid-columns: 12; /** Standard 12-column grid system */
+  --grid-margins-mobile: 16px; /** Mobile page margins */
+  --grid-margins-tablet: 32px; /** Tablet page margins */
+  --grid-margins-desktop: 64px; /** Desktop page margins */
+  --grid-max-width: 1280px; /** Maximum content width */
+  --breakpoints-sm: 640px; /** Small devices breakpoint (landscape phones) */
+  --breakpoints-md: 768px; /** Medium devices breakpoint (tablets) */
+  --breakpoints-lg: 1024px; /** Large devices breakpoint (desktops) */
+  --breakpoints-xl: 1280px; /** Extra large devices breakpoint (large desktops) */
+  --breakpoints-2xl: 1536px; /** 2XL devices breakpoint (very large desktops) */
+  --container-sm: 640px; /** Small container max-width */
+  --container-md: 768px; /** Medium container max-width */
+  --container-lg: 1024px; /** Large container max-width */
+  --container-xl: 1280px; /** Extra large container max-width */
+  --table-header-border-bottom-width: 2px; /** Table header bottom border width */
+  --table-row-default: rgba(0, 0, 0, 0); /** Default row background (odd rows) */
+  --table-row-border-bottom-width: 1px; /** Row bottom border width */
+  --table-caption-text-align: left; /** Table caption text alignment */
+  --table-responsive-min-width: 600px; /** Minimum table width before horizontal scroll */
+  --table-responsive-overflow: auto; /** Table container overflow behavior */
+  --font-family-sans: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; /** Primary font family for all text. Inter provides modern, professional appearance suitable for B2B context. */
+  --font-family-mono: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace; /** Monospace font for code snippets and technical specifications. */
+  --font-size-xs: 12px; /** Extra small - Captions, legal text */
+  --font-size-sm: 14px; /** Small - Labels, form inputs, UI text */
+  --font-size-base: 16px; /** Base size - Body text, paragraphs */
+  --font-size-lg: 18px; /** Large - Emphasis body text, large paragraphs */
+  --font-size-xl: 20px; /** Extra large - Subheadings, H5 */
+  --font-size-2xl: 24px; /** 2X large - H4 headings */
+  --font-size-3xl: 30px; /** 3X large - H3 headings */
+  --font-size-4xl: 36px; /** 4X large - H2 headings */
+  --font-size-5xl: 48px; /** 5X large - H1 headings */
+  --font-size-6xl: 60px; /** 6X large - Hero headings, special titles */
+  --font-weight-regular: 400; /** Regular weight for body text */
+  --font-weight-medium: 500; /** Medium weight for emphasis and UI elements */
+  --font-weight-semibold: 600; /** Semibold weight for subheadings */
+  --font-weight-bold: 700; /** Bold weight for headings */
+  --line-height-tight: 1.25; /** Tight line height for large headings */
+  --line-height-snug: 1.375; /** Snug line height for subheadings */
+  --line-height-normal: 1.5; /** Normal line height for body text */
+  --line-height-relaxed: 1.625; /** Relaxed line height for comfortable reading */
+  --line-height-loose: 2; /** Loose line height for special layouts */
+  --letter-spacing-tighter: -0.05em; /** Tighter tracking for large display text */
+  --letter-spacing-tight: -0.025em; /** Tight tracking for headings */
+  --letter-spacing-normal: 0em; /** Normal tracking for body text */
+  --letter-spacing-wide: 0.025em; /** Wide tracking for UI elements */
+  --letter-spacing-wider: 0.05em; /** Wider tracking for labels and buttons */
+  --color-action-primary: var(--hydrophon-blau-500); /** Primäre Aktionsfarbe für wichtigste Buttons */
+  --color-action-primary-hover: var(--hydrophon-blau-600); /** Primäre Aktionsfarbe bei Hover-Zustand */
+  --color-action-primary-active: var(--hydrophon-blau-700); /** Primäre Aktionsfarbe bei Active-Zustand */
+  --color-action-disabled: var(--neutral-200); /** Hintergrundfarbe für deaktivierte Buttons */
+  --color-text-on-primary: var(--neutral-white); /** Textfarbe auf primären Aktionsfarben */
+  --color-text-disabled: var(--neutral-400); /** Textfarbe für deaktivierte Elemente */
+  --color-text-primary: var(--neutral-900); /** Primärer Text (hoher Kontrast) */
+  --color-text-secondary: var(--neutral-700); /** Sekundärer Text (mittlerer Kontrast) */
+  --color-text-muted: var(--neutral-500); /** Gedämpfter Text (niedriger Kontrast) */
+  --color-text-inverse: var(--neutral-white); /** Text auf dunklem Hintergrund */
+  --color-primary: var(--hydrophon-blau-500); /** Primärfarbe für Markenelemente */
+  --color-secondary: var(--hydrophon-grau-500); /** Sekundärfarbe für unterstützende Elemente */
+  --color-background-primary: var(--neutral-white); /** Primärer Hintergrund */
+  --color-background-secondary: var(--neutral-50); /** Sekundärer Hintergrund für Abgrenzungen */
+  --color-background-tertiary: var(--neutral-100); /** Tertiärer Hintergrund für zusätzliche Hierarchie */
+  --button-primary-border-focus: var(--hydrophon-blau-300); /** Primärer Button Rahmen - Focus-Zustand */
+  --button-secondary-background-hover: var(--hydrophon-blau-50); /** Sekundärer Button Hintergrund - Hover-Zustand */
+  --button-secondary-background-active: var(--hydrophon-blau-100); /** Sekundärer Button Hintergrund - Active-Zustand */
+  --button-secondary-foreground-default: var(--hydrophon-blau-500); /** Sekundärer Button Text - Standard-Zustand */
+  --button-secondary-foreground-hover: var(--hydrophon-blau-600); /** Sekundärer Button Text - Hover-Zustand */
+  --button-secondary-foreground-disabled: var(--neutral-400); /** Sekundärer Button Text - Deaktiviert */
+  --button-secondary-border-default: var(--hydrophon-blau-500); /** Sekundärer Button Rahmen - Standard-Zustand */
+  --button-secondary-border-hover: var(--hydrophon-blau-600); /** Sekundärer Button Rahmen - Hover-Zustand */
+  --button-secondary-border-disabled: var(--neutral-300); /** Sekundärer Button Rahmen - Deaktiviert */
+  --button-secondary-border-focus: var(--hydrophon-blau-300); /** Sekundärer Button Rahmen - Focus-Zustand */
+  --button-tertiary-background-hover: var(--neutral-100); /** Tertiärer/Ghost Button Hintergrund - Hover-Zustand */
+  --button-tertiary-background-active: var(--neutral-200); /** Tertiärer/Ghost Button Hintergrund - Active-Zustand */
+  --button-tertiary-foreground-default: var(--hydrophon-blau-500); /** Tertiärer/Ghost Button Text - Standard-Zustand */
+  --button-tertiary-foreground-hover: var(--hydrophon-blau-600); /** Tertiärer/Ghost Button Text - Hover-Zustand */
+  --button-tertiary-foreground-disabled: var(--neutral-400); /** Tertiärer/Ghost Button Text - Deaktiviert */
+  --button-tertiary-border-focus: var(--hydrophon-blau-300); /** Tertiärer/Ghost Button Rahmen - Focus-Zustand */
+  --button-size-small-padding-x: var(--spacing-3); /** Small Button horizontales Padding - 12px */
+  --button-size-small-icon-size: var(--icon-size-xs); /** Small Button Icon-Größe - 16px */
+  --button-size-medium-padding-x: var(--spacing-4); /** Medium Button horizontales Padding - 16px */
+  --button-size-medium-padding-y: var(--spacing-2); /** Medium Button vertikales Padding - 8px */
+  --button-size-medium-icon-size: var(--icon-size-sm); /** Medium Button Icon-Größe - 20px */
+  --button-size-medium-gap: var(--spacing-2); /** Medium Button Abstand zwischen Icon und Text - 8px */
+  --button-size-large-padding-x: var(--spacing-6); /** Large Button horizontales Padding - 24px */
+  --button-size-large-padding-y: var(--spacing-3); /** Large Button vertikales Padding - 12px */
+  --button-size-large-icon-size: var(--icon-size-sm); /** Large Button Icon-Größe - 20px */
+  --button-size-large-gap: var(--spacing-2); /** Large Button Abstand zwischen Icon und Text - 8px */
+  --button-base-border-radius: var(--border-radius-base); /** Button Eckenradius - 4px Standard */
+  --button-focus-outline-color: var(--hydrophon-blau-300); /** Focus Outline Farbe - 3:1 Kontrast zum Hintergrund */
+  --card-gap: var(--spacing-6); /** Gap between cards in grid layout (24px) */
+  --card-radius: var(--border-radius-lg); /** Card border radius (8px) */
+  --card-padding: var(--spacing-6); /** Card internal padding (24px) */
+  --card-border-color: var(--neutral-200); /** Card border color */
+  --card-shadow-default: var(--shadow-sm); /** Card shadow at rest state */
+  --card-shadow-hover: var(--shadow-md); /** Card shadow on hover state */
+  --card-shadow-active: var(--shadow-lg); /** Card shadow on active/pressed state */
+  --card-image-background: var(--neutral-100); /** Image placeholder background color */
+  --card-title-font-size: var(--font-size-lg); /** Card title font size (18px) */
+  --card-title-font-weight: var(--font-weight-semibold); /** Card title font weight (600) */
+  --card-specs-font-size: var(--font-size-sm); /** Card specs font size (14px) */
+  --card-specs-gap: var(--spacing-1); /** Gap between spec items (4px) */
+  --card-cta-color: var(--hydrophon-blau-600); /** Card CTA link color */
+  --card-cta-color-hover: var(--hydrophon-blau-700); /** Card CTA link color on hover */
+  --card-cta-font-weight: var(--font-weight-medium); /** Card CTA font weight (500) */
+  --elevation-card: var(--shadow-base); /** Standard card elevation at rest */
+  --elevation-card-hover: var(--shadow-md); /** Card elevation on hover state */
+  --elevation-dropdown: var(--shadow-lg); /** Dropdown menu elevation */
+  --elevation-modal: var(--shadow-xl); /** Modal dialog elevation */
+  --elevation-tooltip: var(--shadow-md); /** Tooltip elevation */
+  --modal-content-background: var(--neutral-white); /** Modal Content Hintergrundfarbe */
+  --modal-content-border-radius: var(--border-radius-lg); /** Modal Content Eckenradius - 8px */
+  --modal-content-shadow: var(--shadow-xl); /** Modal Content Schatten für Elevation */
+  --modal-content-padding-x: var(--spacing-6); /** Modal Content horizontales Padding - 24px */
+  --modal-content-padding-y: var(--spacing-5); /** Modal Content vertikales Padding - 20px */
+  --modal-header-padding-bottom: var(--spacing-4); /** Modal Header unteres Padding - 16px */
+  --modal-header-border-bottom: 1px solid var(--neutral-200); /** Modal Header untere Rahmenlinie zur Trennung */
+  --modal-title-font-size: var(--font-size-2xl); /** Modal Titel Schriftgröße - 24px (H4) */
+  --modal-title-font-weight: var(--font-weight-semibold); /** Modal Titel Schriftgewicht - semibold (600) */
+  --modal-title-color: var(--neutral-900); /** Modal Titel Farbe - dunkles Grau */
+  --modal-close-button-color: var(--neutral-500); /** Modal Close-Button Standard-Farbe */
+  --modal-close-button-color-hover: var(--neutral-700); /** Modal Close-Button Hover-Farbe */
+  --modal-close-button-background-hover: var(--neutral-100); /** Modal Close-Button Hover-Hintergrund */
+  --modal-close-button-border-radius: var(--border-radius-md); /** Modal Close-Button Eckenradius - 6px */
+  --modal-body-padding-y: var(--spacing-4); /** Modal Body vertikales Padding - 16px */
+  --modal-body-color: var(--neutral-700); /** Modal Body Textfarbe */
+  --modal-footer-padding-top: var(--spacing-4); /** Modal Footer oberes Padding - 16px */
+  --modal-footer-border-top: 1px solid var(--neutral-200); /** Modal Footer obere Rahmenlinie zur Trennung */
+  --modal-footer-gap: var(--spacing-3); /** Modal Footer Abstand zwischen Buttons - 12px */
+  --spinner-color-primary: var(--hydrophon-blau-500); /** Spinner Primärfarbe - Hydrophon Blau */
+  --spinner-color-light: var(--neutral-400); /** Spinner helle Variante */
+  --spinner-color-on-primary: var(--neutral-white); /** Spinner auf primärem Hintergrund - weiß */
+  --spinner-track-color: var(--neutral-200); /** Spinner Track-Farbe (Hintergrundkreis) */
+  --progress-border-radius: var(--border-radius-full); /** Progress Bar Eckenradius - vollständig abgerundet */
+  --progress-track-background: var(--neutral-200); /** Progress Track Hintergrundfarbe */
+  --progress-bar-background: var(--hydrophon-blau-500); /** Progress Bar Füllfarbe - Hydrophon Blau */
+  --progress-bar-success: var(--color-success); /** Progress Bar Erfolgsfarbe - grün bei Abschluss */
+  --progress-label-font-size: var(--font-size-sm); /** Progress Label Schriftgröße - 14px */
+  --progress-label-color: var(--neutral-600); /** Progress Label Textfarbe */
+  --progress-label-gap: var(--spacing-2); /** Progress Abstand zwischen Bar und Label - 8px */
+  --skeleton-base-color: var(--neutral-200); /** Skeleton Basisfarbe */
+  --skeleton-highlight-color: var(--neutral-100); /** Skeleton Highlight-Farbe für Shimmer-Effekt */
+  --skeleton-border-radius: var(--border-radius-md); /** Skeleton Eckenradius - 6px */
+  --skeleton-spacing: var(--spacing-2); /** Skeleton Abstand zwischen Zeilen - 8px */
+  --tooltip-background: var(--neutral-900); /** Dunkler Hintergrund fuer hohen Kontrast */
+  --tooltip-color: var(--neutral-white); /** Weisser Text auf dunklem Hintergrund */
+  --tooltip-font-size: var(--font-size-sm); /** Kleine Schriftgroesse - 14px */
+  --tooltip-padding-x: var(--spacing-2); /** Horizontaler Innenabstand - 8px */
+  --tooltip-padding-y: var(--spacing-1); /** Vertikaler Innenabstand - 4px */
+  --tooltip-border-radius: var(--border-radius-sm); /** Leichte Rundung - 2px */
+  --toast-position-top: var(--spacing-4); /** Abstand vom oberen Bildschirmrand - 16px */
+  --toast-position-right: var(--spacing-4); /** Abstand vom rechten Bildschirmrand - 16px */
+  --toast-padding-x: var(--spacing-4); /** Horizontaler Innenabstand - 16px */
+  --toast-padding-y: var(--spacing-3); /** Vertikaler Innenabstand - 12px */
+  --toast-border-radius: var(--border-radius-lg); /** Eckenradius - 8px */
+  --toast-shadow: var(--shadow-lg); /** Schatten fuer Elevation */
+  --toast-gap: var(--spacing-3); /** Abstand zwischen Icon und Text - 12px */
+  --toast-stack-gap: var(--spacing-2); /** Abstand zwischen gestapelten Toasts - 8px */
+  --toast-action-font-size: var(--font-size-sm); /** Schriftgroesse fuer Aktions-Buttons - 14px */
+  --toast-action-font-weight: var(--font-weight-medium); /** Schriftgewicht fuer Aktions-Buttons */
+  --input-padding-x-sm: var(--spacing-2); /** Input horizontales Padding Small - 8px */
+  --input-padding-x-md: var(--spacing-3); /** Input horizontales Padding Medium - 12px */
+  --input-padding-x-lg: var(--spacing-4); /** Input horizontales Padding Large - 16px */
+  --input-font-size-sm: var(--font-size-sm); /** Input Schriftgröße Small - 14px */
+  --input-font-size-md: var(--font-size-base); /** Input Schriftgröße Medium - 16px */
+  --input-font-size-lg: var(--font-size-lg); /** Input Schriftgröße Large - 18px */
+  --input-field-background-default: var(--neutral-white); /** Input Hintergrund - Standard-Zustand */
+  --input-field-background-hover: var(--neutral-white); /** Input Hintergrund - Hover-Zustand */
+  --input-field-background-focus: var(--neutral-white); /** Input Hintergrund - Focus-Zustand */
+  --input-field-background-error: var(--neutral-white); /** Input Hintergrund - Error-Zustand */
+  --input-field-background-success: var(--neutral-white); /** Input Hintergrund - Success-Zustand */
+  --input-field-background-disabled: var(--neutral-50); /** Input Hintergrund - Deaktiviert (subtil grau) */
+  --input-field-border-default: var(--neutral-300); /** Input Rahmen - Standard-Zustand */
+  --input-field-border-hover: var(--neutral-400); /** Input Rahmen - Hover-Zustand */
+  --input-field-border-focus: var(--hydrophon-blau-500); /** Input Rahmen - Focus-Zustand (Hydrophon Blau) */
+  --input-field-border-error: var(--color-error); /** Input Rahmen - Error-Zustand */
+  --input-field-border-success: var(--color-success); /** Input Rahmen - Success-Zustand (gültige Eingabe) */
+  --input-field-border-disabled: var(--neutral-200); /** Input Rahmen - Deaktiviert */
+  --input-field-text-default: var(--neutral-900); /** Input Text - Standard-Zustand */
+  --input-field-text-placeholder: var(--neutral-400); /** Input Placeholder Text - Gedämpft */
+  --input-field-text-disabled: var(--neutral-600); /** Input Text - Deaktiviert (lesbar, aber reduziert) */
+  --input-focus-ring-color: var(--hydrophon-blau-100); /** Focus Ring Farbe - Hellblau für WCAG 2.2 Kontrast */
+  --input-label-color-default: var(--neutral-700); /** Label Farbe - Standard-Zustand */
+  --input-label-color-error: var(--color-error); /** Label Farbe - Error-Zustand */
+  --input-label-font-size: var(--font-size-sm); /** Label Schriftgröße - 14px */
+  --input-label-font-weight: var(--font-weight-medium); /** Label Schriftgewicht - Medium (500) */
+  --input-label-margin-bottom: var(--spacing-2); /** Label Abstand nach unten zum Input - 8px */
+  --input-helper-color: var(--neutral-600); /** Helper Text Farbe - Neutralgrau */
+  --input-helper-font-size: var(--font-size-xs); /** Helper Text Schriftgröße - 12px */
+  --input-helper-margin-top: var(--spacing-1); /** Helper Text Abstand nach oben vom Input - 4px */
+  --input-error-color: var(--color-error); /** Error Text Farbe - Rot */
+  --input-error-font-size: var(--font-size-xs); /** Error Text Schriftgröße - 12px */
+  --input-error-margin-top: var(--spacing-1); /** Error Text Abstand nach oben vom Input - 4px */
+  --input-success-color: var(--color-success); /** Success Text Farbe - Grün */
+  --input-required-color: var(--color-error); /** Required Indicator Farbe - Rot */
+  --input-select-icon-size: var(--icon-size-sm); /** Select Dropdown Icon Größe - 20px */
+  --input-select-icon-color-default: var(--neutral-600); /** Select Icon Farbe - Standard-Zustand */
+  --input-select-icon-color-disabled: var(--neutral-400); /** Select Icon Farbe - Deaktiviert */
+  --input-base-border-radius: var(--border-radius-base); /** Input Eckenradius - 4px Standard */
+  --input-base-font-family: var(--font-family-sans); /** Input Schriftfamilie - Inter Sans */
+  --checkbox-background-default: var(--neutral-white); /** Checkbox Hintergrund - Standard-Zustand (nicht angekreuzt) */
+  --checkbox-background-hover: var(--neutral-white); /** Checkbox Hintergrund - Hover-Zustand (nicht angekreuzt) */
+  --checkbox-background-checked: var(--hydrophon-blau-500); /** Checkbox Hintergrund - Angekreuzt (Hydrophon Blau) */
+  --checkbox-background-checked-hover: var(--hydrophon-blau-600); /** Checkbox Hintergrund - Angekreuzt + Hover (dunkler) */
+  --checkbox-background-disabled: var(--neutral-50); /** Checkbox Hintergrund - Deaktiviert (nicht angekreuzt) */
+  --checkbox-background-checked-disabled: var(--neutral-300); /** Checkbox Hintergrund - Deaktiviert + Angekreuzt (gedämpftes Grau) */
+  --checkbox-border-default: var(--neutral-300); /** Checkbox Rahmen - Standard-Zustand */
+  --checkbox-border-hover: var(--neutral-400); /** Checkbox Rahmen - Hover-Zustand */
+  --checkbox-border-checked: var(--hydrophon-blau-500); /** Checkbox Rahmen - Angekreuzt (Hydrophon Blau) */
+  --checkbox-border-focus: var(--hydrophon-blau-500); /** Checkbox Rahmen - Focus-Zustand (Tastatur-Navigation) */
+  --checkbox-border-error: var(--color-error); /** Checkbox Rahmen - Error-Zustand (Validierungsfehler) */
+  --checkbox-border-disabled: var(--neutral-200); /** Checkbox Rahmen - Deaktiviert */
+  --checkbox-icon-color: var(--neutral-white); /** Checkbox Icon Farbe - Weißes Checkmark bei angekreuztem Zustand */
+  --checkbox-focus-outline-color: var(--hydrophon-blau-300); /** Checkbox Focus Outline Farbe - Hellblau für Sichtbarkeit */
+  --checkbox-label-gap: var(--spacing-2); /** Checkbox Label Abstand - 8px zwischen Checkbox und Label-Text */
+  --checkbox-label-color: var(--neutral-700); /** Checkbox Label Farbe - Standard-Zustand */
+  --checkbox-label-color-disabled: var(--neutral-400); /** Checkbox Label Farbe - Deaktiviert (gedämpft) */
+  --radio-background-default: var(--neutral-white); /** Radio Button Hintergrund - Standard-Zustand (nicht ausgewählt) */
+  --radio-background-hover: var(--neutral-white); /** Radio Button Hintergrund - Hover-Zustand (nicht ausgewählt) */
+  --radio-background-checked: var(--hydrophon-blau-500); /** Radio Button Hintergrund - Ausgewählt (Hydrophon Blau) */
+  --radio-background-checked-hover: var(--hydrophon-blau-600); /** Radio Button Hintergrund - Ausgewählt + Hover (dunkler) */
+  --radio-background-disabled: var(--neutral-50); /** Radio Button Hintergrund - Deaktiviert (nicht ausgewählt) */
+  --radio-background-checked-disabled: var(--neutral-300); /** Radio Button Hintergrund - Deaktiviert + Ausgewählt (gedämpftes Grau) */
+  --radio-border-default: var(--neutral-300); /** Radio Button Rahmen - Standard-Zustand */
+  --radio-border-hover: var(--neutral-400); /** Radio Button Rahmen - Hover-Zustand */
+  --radio-border-checked: var(--hydrophon-blau-500); /** Radio Button Rahmen - Ausgewählt (Hydrophon Blau) */
+  --radio-border-focus: var(--hydrophon-blau-500); /** Radio Button Rahmen - Focus-Zustand (Tastatur-Navigation) */
+  --radio-border-error: var(--color-error); /** Radio Button Rahmen - Error-Zustand (Validierungsfehler) */
+  --radio-border-disabled: var(--neutral-200); /** Radio Button Rahmen - Deaktiviert */
+  --radio-dot-color: var(--neutral-white); /** Radio Button innerer Punkt Farbe - Weiß bei ausgewähltem Zustand */
+  --radio-focus-outline-color: var(--hydrophon-blau-300); /** Radio Button Focus Outline Farbe - Hellblau für Sichtbarkeit */
+  --radio-label-gap: var(--spacing-2); /** Radio Button Label Abstand - 8px zwischen Radio und Label-Text */
+  --radio-label-color: var(--neutral-700); /** Radio Button Label Farbe - Standard-Zustand */
+  --radio-label-color-disabled: var(--neutral-400); /** Radio Button Label Farbe - Deaktiviert (gedämpft) */
+  --radio-group-gap: var(--spacing-3); /** Radio Button Gruppen-Abstand - 12px zwischen einzelnen Radio Buttons in einer Gruppe */
+  --form-spacing-label-to-input: var(--spacing-2); /** Abstand von Label zu Input - 8px */
+  --form-spacing-input-to-helper: var(--spacing-1); /** Abstand von Input zu Helper/Error Text - 4px */
+  --form-spacing-field-to-field: var(--spacing-4); /** Abstand zwischen einzelnen Formularfeldern - 16px */
+  --form-spacing-group-to-group: var(--spacing-6); /** Abstand zwischen Formulargruppen/Sektionen - 24px */
+  --icon-spacing-with-text: var(--spacing-2); /** Abstand zwischen Icon und Text - 8px fuer harmonische Kombination */
+  --icon-spacing-standalone: var(--spacing-1); /** Optischer Rand fuer standalone Icons - 4px fuer visuelle Ausrichtung */
+  --navigation-header-background: var(--neutral-white); /** Header Hintergrundfarbe - Weiß für klare Abgrenzung */
+  --navigation-header-border-bottom-color: var(--neutral-200); /** Header untere Rahmenlinie Farbe - subtile Trennung */
+  --navigation-header-shadow: var(--shadow-sm); /** Header Schatten beim Scrollen (Sticky-State) */
+  --navigation-header-padding-x-mobile: var(--spacing-4); /** Header horizontales Padding auf Mobile - 16px */
+  --navigation-header-padding-x-desktop: var(--spacing-6); /** Header horizontales Padding auf Desktop - 24px */
+  --navigation-header-padding-y: var(--spacing-0); /** Header vertikales Padding - 0 (Höhe durch height-Token definiert) */
+  --navigation-link-color-default: var(--neutral-700); /** Navigation-Link Standard-Textfarbe */
+  --navigation-link-color-hover: var(--neutral-900); /** Navigation-Link Hover-Textfarbe */
+  --navigation-link-color-active: var(--hydrophon-blau-600); /** Navigation-Link aktive Seite Textfarbe (aria-current) */
+  --navigation-link-font-size: var(--font-size-base); /** Navigation-Link Schriftgröße - 16px */
+  --navigation-link-font-weight-default: var(--font-weight-medium); /** Navigation-Link Standard-Schriftgewicht - 500 */
+  --navigation-link-font-weight-active: var(--font-weight-semibold); /** Navigation-Link aktive Seite Schriftgewicht - 600 */
+  --navigation-link-padding-x: var(--spacing-4); /** Navigation-Link horizontales Padding - 16px */
+  --navigation-link-padding-y: var(--spacing-3); /** Navigation-Link vertikales Padding - 12px */
+  --navigation-link-gap: var(--spacing-6); /** Abstand zwischen Navigation-Links - 24px */
+  --navigation-active-indicator-color: var(--hydrophon-blau-500); /** Aktiver Link Unterstreichung Farbe */
+  --navigation-focus-outline-color: var(--hydrophon-blau-300); /** Navigation-Link Focus Outline Farbe */
+  --navigation-drawer-background: var(--neutral-white); /** Mobile Drawer Hintergrundfarbe */
+  --navigation-drawer-shadow: var(--shadow-xl); /** Mobile Drawer Schatten für Elevation */
+  --navigation-drawer-padding: var(--spacing-6); /** Mobile Drawer inneres Padding - 24px */
+  --navigation-drawer-link-padding-x: var(--spacing-4); /** Mobile Drawer Link horizontales Padding - 16px */
+  --navigation-drawer-link-padding-y: var(--spacing-3); /** Mobile Drawer Link vertikales Padding - 12px */
+  --navigation-drawer-link-gap: var(--spacing-2); /** Vertikaler Abstand zwischen Links im Drawer - 8px */
+  --navigation-toggle-color-default: var(--neutral-700); /** Hamburger-Button Standard-Farbe */
+  --navigation-toggle-color-hover: var(--neutral-900); /** Hamburger-Button Hover-Farbe */
+  --navigation-toggle-background-hover: var(--neutral-100); /** Hamburger-Button Hover-Hintergrund - subtiler Grauton */
+  --navigation-toggle-border-radius: var(--border-radius-base); /** Hamburger-Button Eckenradius - 4px */
+  --breadcrumb-font-size: var(--font-size-sm); /** Breadcrumb Schriftgröße - 14px für kompakte Navigation */
+  --breadcrumb-gap: var(--spacing-2); /** Abstand zwischen Breadcrumb-Elementen - 8px */
+  --breadcrumb-margin-y: var(--spacing-4); /** Vertikaler Abstand der Breadcrumb-Navigation - 16px */
+  --breadcrumb-separator-color: var(--neutral-400); /** Dezente Separator-Farbe für visuelle Trennung ohne Dominanz */
+  --breadcrumb-separator-margin-x: var(--spacing-2); /** Horizontaler Abstand um Separator - 8px */
+  --breadcrumb-link-color: var(--hydrophon-blau-600); /** Breadcrumb Link-Farbe - etwas dunkler als primäre Aktionsfarbe */
+  --breadcrumb-link-color-hover: var(--hydrophon-blau-700); /** Breadcrumb Link-Farbe bei Hover */
+  --breadcrumb-current-color: var(--neutral-900); /** Aktuelle Seite in neutraler Farbe ohne Link-Interaktion */
+  --breadcrumb-current-font-weight: var(--font-weight-medium); /** Medium-Gewicht hebt aktuelle Seite hervor - 500 */
+  --footer-background: var(--neutral-100); /** Footer Hintergrundfarbe - dezent vom Hauptinhalt abgesetzt */
+  --footer-border-top-color: var(--neutral-200); /** Footer obere Rahmenfarbe */
+  --footer-padding-y: var(--spacing-12); /** Footer vertikales Padding - 48px für großzügigen Abstand */
+  --footer-padding-x: var(--spacing-6); /** Footer horizontales Padding - 24px */
+  --footer-gap: var(--spacing-8); /** Abstand zwischen Footer-Spalten - 32px */
+  --footer-heading-font-size: var(--font-size-sm); /** Footer Überschriften-Größe - 14px */
+  --footer-heading-font-weight: var(--font-weight-semibold); /** Footer Überschriften-Gewicht - 600 für Betonung */
+  --footer-heading-color: var(--neutral-900); /** Footer Überschriften-Farbe - dunkles Grau für Kontrast */
+  --footer-heading-margin-bottom: var(--spacing-4); /** Abstand unter Überschrift - 16px */
+  --footer-link-color: var(--neutral-600); /** Footer Link-Farbe - dezentes Grau */
+  --footer-link-color-hover: var(--neutral-900); /** Footer Link-Farbe bei Hover - dunkler für Kontrast */
+  --footer-link-font-size: var(--font-size-sm); /** Footer Link-Größe - 14px */
+  --footer-legal-font-size: var(--font-size-xs); /** Footer Legal-Text Größe - 12px für sekundäre Information */
+  --footer-legal-color: var(--neutral-500); /** Footer Legal-Text Farbe - dezentes Grau */
+  --footer-legal-margin-top: var(--spacing-8); /** Abstand über Legal-Bereich - 32px */
+  --footer-legal-border-top-color: var(--neutral-200); /** Legal-Bereich obere Rahmenfarbe */
+  --footer-legal-padding-top: var(--spacing-6); /** Legal-Bereich oberes Padding - 24px */
+  --grid-gutters-mobile: var(--spacing-4); /** Mobile gutter spacing (16px) */
+  --grid-gutters-tablet: var(--spacing-6); /** Tablet gutter spacing (24px) */
+  --grid-gutters-desktop: var(--spacing-8); /** Desktop gutter spacing (32px) */
+  --table-font-size: var(--font-size-sm); /** Table text font size (14px) */
+  --table-border-color: var(--neutral-200); /** Table border color */
+  --table-border-radius: var(--border-radius-md); /** Table container border radius (6px) */
+  --table-cell-padding-y: var(--spacing-3); /** Table cell vertical padding (12px) */
+  --table-cell-padding-x: var(--spacing-4); /** Table cell horizontal padding (16px) */
+  --table-header-background: var(--neutral-100); /** Table header background color */
+  --table-header-font-weight: var(--font-weight-semibold); /** Table header font weight (600) */
+  --table-header-border-bottom-color: var(--neutral-300); /** Table header bottom border color */
+  --table-row-stripe: var(--neutral-50); /** Striped row background (even rows) - subtle 1.5:1 contrast */
+  --table-row-hover: var(--hydrophon-blau-50); /** Row hover background color */
+  --table-row-border-bottom-color: var(--neutral-200); /** Row bottom border color */
+  --table-caption-font-size: var(--font-size-lg); /** Table caption font size (18px) */
+  --table-caption-font-weight: var(--font-weight-semibold); /** Table caption font weight (600) */
+  --table-caption-padding: var(--spacing-4); /** Table caption padding (16px) */
+  --typography-heading-h1: var(--font-weight-bold) var(--font-size-5xl)/var(--line-height-tight) var(--font-family-sans); /** Main page heading (48px, bold, tight) */
+  --typography-heading-h2: var(--font-weight-bold) var(--font-size-4xl)/var(--line-height-tight) var(--font-family-sans); /** Section heading (36px, bold, tight) */
+  --typography-heading-h3: var(--font-weight-semibold) var(--font-size-3xl)/var(--line-height-snug) var(--font-family-sans); /** Subsection heading (30px, semibold, snug) */
+  --typography-heading-h4: var(--font-weight-semibold) var(--font-size-2xl)/var(--line-height-snug) var(--font-family-sans); /** Card heading (24px, semibold, snug) */
+  --typography-heading-h5: var(--font-weight-medium) var(--font-size-xl)/var(--line-height-normal) var(--font-family-sans); /** Small heading (20px, medium, normal) */
+  --typography-heading-h6: var(--font-weight-medium) var(--font-size-lg)/var(--line-height-normal) var(--font-family-sans); /** Smallest heading (18px, medium, normal) */
+  --typography-body-large: var(--font-weight-regular) var(--font-size-lg)/var(--line-height-relaxed) var(--font-family-sans); /** Large body text for emphasis (18px) */
+  --typography-body-base: var(--font-weight-regular) var(--font-size-base)/var(--line-height-normal) var(--font-family-sans); /** Standard body text (16px) */
+  --typography-body-small: var(--font-weight-regular) var(--font-size-sm)/var(--line-height-normal) var(--font-family-sans); /** Small body text (14px) */
+  --typography-ui-button: var(--font-weight-medium) var(--font-size-sm)/var(--line-height-normal) var(--font-family-sans); /** Button text (14px, medium, wide tracking) */
+  --typography-ui-label: var(--font-weight-medium) var(--font-size-sm)/var(--line-height-normal) var(--font-family-sans); /** Form label text (14px, medium) */
+  --typography-ui-caption: var(--font-weight-regular) var(--font-size-xs)/var(--line-height-normal) var(--font-family-sans); /** Caption and helper text (12px) */
+  --button-primary-background-default: var(--color-action-primary); /** Primärer Button Hintergrund - Standard-Zustand */
+  --button-primary-background-hover: var(--color-action-primary-hover); /** Primärer Button Hintergrund - Hover-Zustand */
+  --button-primary-background-active: var(--color-action-primary-active); /** Primärer Button Hintergrund - Active-Zustand */
+  --button-primary-background-disabled: var(--color-action-disabled); /** Primärer Button Hintergrund - Deaktiviert */
+  --button-primary-foreground-default: var(--color-text-on-primary); /** Primärer Button Text - Standard-Zustand */
+  --button-primary-foreground-disabled: var(--color-text-disabled); /** Primärer Button Text - Deaktiviert */
+  --card-background: var(--color-background-primary); /** Card background color */
+  --card-title-color: var(--color-text-primary); /** Card title text color */
+  --card-specs-color: var(--color-text-secondary); /** Card specs text color */
+  --table-background: var(--color-background-primary); /** Table background color */
+  --table-header-color: var(--color-text-primary); /** Table header text color */
+  --table-caption-color: var(--color-text-primary); /** Table caption text color */
+}

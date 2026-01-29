@@ -1,0 +1,38 @@
+{
+  "name": "@hydrophon/design-tokens",
+  "version": "1.0.0",
+  "description": "Hydrophon Design System Tokens - Farben, Typografie, Spacing und Komponenten-Tokens",
+  "type": "module",
+  "main": "./index.cjs",
+  "module": "./index.js",
+  "exports": {
+    ".": {
+      "import": "./index.js",
+      "require": "./index.cjs"
+    },
+    "./css": "./css/variables.css",
+    "./scss": "./scss/variables.scss",
+    "./json": "./json/tokens.json"
+  },
+  "files": [
+    "css/",
+    "scss/",
+    "json/",
+    "index.js",
+    "index.cjs",
+    "README.md"
+  ],
+  "keywords": [
+    "design-tokens",
+    "design-system",
+    "hydrophon",
+    "css-variables",
+    "scss"
+  ],
+  "author": "Hydrophon Kunststoff GmbH",
+  "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hydrophon/design-system"
+  }
+}
