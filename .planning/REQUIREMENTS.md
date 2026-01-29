@@ -216,12 +216,12 @@ Which phases cover which requirements. Updated during roadmap creation.
 | DOC-11 | Phase 6 | Pending |
 | DOC-12 | Phase 6 | Pending |
 | DOC-13 | Phase 6 | Pending |
-| DEL-01 | Phase 7 | Pending |
-| DEL-02 | Phase 7 | Pending |
-| DEL-03 | Phase 7 | Pending |
-| DEL-04 | Phase 7 | Pending |
-| DEL-05 | Phase 7 | Pending |
-| DEL-06 | Phase 7 | Pending |
+| DEL-01 | Phase 7 | Complete |
+| DEL-02 | Phase 7 | Complete |
+| DEL-03 | Phase 7 | Complete |
+| DEL-04 | Phase 7 | Complete |
+| DEL-05 | Phase 7 | Complete |
+| DEL-06 | Phase 7 | Complete |
 
 **Coverage:**
 - v1 requirements: 64 total
