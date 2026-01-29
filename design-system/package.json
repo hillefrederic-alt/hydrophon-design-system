@@ -12,7 +12,9 @@
     "build:palettes": "node scripts/export-palettes.js",
     "build:assets": "node scripts/export-assets.js",
     "build:pdf": "node scripts/build-pdf.js",
-    "build:figma": "node scripts/export-figma-tokens.js"
+    "build:figma": "node scripts/export-figma-tokens.js",
+    "build:packages": "node scripts/package-release.js",
+    "release": "npm run build && npm run build:pdf && npm run build:assets && npm run build:palettes && npm run build:packages"
   },
   "keywords": [],
   "author": "",
