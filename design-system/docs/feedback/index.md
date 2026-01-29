@@ -43,7 +43,7 @@ Alle Feedback-Komponenten erfuellen **WCAG 2.1 AA**:
 
 **Zweck:** Fokussierte Interaktionen, die volle Aufmerksamkeit erfordern
 
-**Dokumentation:** *(Link wird in Plan 05-01 erstellt)*
+**Dokumentation:** [Modal-Dialoge](./modal.md)
 
 **Verwendung:**
 
@@ -72,7 +72,7 @@ Alle Feedback-Komponenten erfuellen **WCAG 2.1 AA**:
 
 **Zweck:** Kurze kontextuelle Labels fuer Icons und Buttons
 
-**Dokumentation:** *(Link wird in Plan 05-02 erstellt)*
+**Dokumentation:** [Tooltips](./tooltip.md)
 
 **Verwendung:**
 
@@ -100,7 +100,7 @@ Alle Feedback-Komponenten erfuellen **WCAG 2.1 AA**:
 
 **Zweck:** Nicht-blockierende Bestaetigung von Aktionen
 
-**Dokumentation:** *(Link wird in Plan 05-02 erstellt)*
+**Dokumentation:** [Toast-Benachrichtigungen](./toast.md)
 
 **Verwendung:**
 
