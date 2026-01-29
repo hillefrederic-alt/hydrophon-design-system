@@ -158,20 +158,20 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| FOUND-01 | Phase 1 | Pending |
-| FOUND-02 | Phase 1 | Pending |
-| FOUND-03 | Phase 1 | Pending |
-| FOUND-04 | Phase 1 | Pending |
-| FOUND-05 | Phase 1 | Pending |
-| FOUND-06 | Phase 1 | Pending |
-| FOUND-07 | Phase 1 | Pending |
-| FOUND-08 | Phase 1 | Pending |
-| FOUND-09 | Phase 1 | Pending |
-| LOGO-01 | Phase 1 | Pending |
-| LOGO-02 | Phase 1 | Pending |
-| LOGO-03 | Phase 1 | Pending |
-| LOGO-04 | Phase 1 | Pending |
-| LOGO-05 | Phase 1 | Pending |
+| FOUND-01 | Phase 1 | Complete |
+| FOUND-02 | Phase 1 | Complete |
+| FOUND-03 | Phase 1 | Complete |
+| FOUND-04 | Phase 1 | Complete |
+| FOUND-05 | Phase 1 | Complete |
+| FOUND-06 | Phase 1 | Complete |
+| FOUND-07 | Phase 1 | Complete |
+| FOUND-08 | Phase 1 | Complete |
+| FOUND-09 | Phase 1 | Complete |
+| LOGO-01 | Phase 1 | Complete |
+| LOGO-02 | Phase 1 | Complete |
+| LOGO-03 | Phase 1 | Complete |
+| LOGO-04 | Phase 1 | Complete |
+| LOGO-05 | Phase 1 | Complete |
 | ICON-01 | Phase 2 | Complete |
 | ICON-02 | Phase 2 | Complete |
 | ICON-03 | Phase 2 | Complete |
@@ -181,13 +181,13 @@ Which phases cover which requirements. Updated during roadmap creation.
 | BTN-03 | Phase 2 | Complete |
 | BTN-04 | Phase 2 | Complete |
 | BTN-05 | Phase 2 | Complete |
-| FORM-01 | Phase 3 | Pending |
-| FORM-02 | Phase 3 | Pending |
-| FORM-03 | Phase 3 | Pending |
-| FORM-04 | Phase 3 | Pending |
-| FORM-05 | Phase 3 | Pending |
-| FORM-06 | Phase 3 | Pending |
-| FORM-07 | Phase 3 | Pending |
+| FORM-01 | Phase 3 | Complete |
+| FORM-02 | Phase 3 | Complete |
+| FORM-03 | Phase 3 | Complete |
+| FORM-04 | Phase 3 | Complete |
+| FORM-05 | Phase 3 | Complete |
+| FORM-06 | Phase 3 | Complete |
+| FORM-07 | Phase 3 | Complete |
 | NAV-01 | Phase 4 | Pending |
 | NAV-02 | Phase 4 | Pending |
 | NAV-03 | Phase 4 | Pending |
