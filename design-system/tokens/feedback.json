@@ -354,5 +354,73 @@
       "$type": "dimension",
       "$description": "Skeleton Abstand zwischen Zeilen - 8px"
     }
+  },
+  "tooltip": {
+    "delay": {
+      "$value": "300ms",
+      "$type": "duration",
+      "$description": "Verzoegerung vor dem Anzeigen (300ms Industry-Standard)"
+    },
+    "background": {
+      "$value": "{neutral.900}",
+      "$type": "color",
+      "$description": "Dunkler Hintergrund fuer hohen Kontrast"
+    },
+    "color": {
+      "$value": "{neutral.white}",
+      "$type": "color",
+      "$description": "Weisser Text auf dunklem Hintergrund"
+    },
+    "font-size": {
+      "$value": "{fontSize.sm}",
+      "$type": "dimension",
+      "$description": "Kleine Schriftgroesse - 14px"
+    },
+    "padding": {
+      "x": {
+        "$value": "{spacing.2}",
+        "$type": "dimension",
+        "$description": "Horizontaler Innenabstand - 8px"
+      },
+      "y": {
+        "$value": "{spacing.1}",
+        "$type": "dimension",
+        "$description": "Vertikaler Innenabstand - 4px"
+      }
+    },
+    "border-radius": {
+      "$value": "{borderRadius.sm}",
+      "$type": "dimension",
+      "$description": "Leichte Rundung - 2px"
+    },
+    "max-width": {
+      "$value": "200px",
+      "$type": "dimension",
+      "$description": "Maximale Breite vor Umbruch"
+    },
+    "arrow": {
+      "size": {
+        "$value": "6px",
+        "$type": "dimension",
+        "$description": "Groesse des Pfeil-Indikators"
+      }
+    },
+    "offset": {
+      "$value": "5px",
+      "$type": "dimension",
+      "$description": "Abstand zum Trigger-Element"
+    },
+    "z-index": {
+      "$value": "1100",
+      "$type": "number",
+      "$description": "Positionierung ueber Modals (1000)"
+    },
+    "animation": {
+      "duration": {
+        "$value": "150ms",
+        "$type": "duration",
+        "$description": "Ein-/Ausblend-Animation - schnell, nicht stoerend"
+      }
+    }
   }
 }
