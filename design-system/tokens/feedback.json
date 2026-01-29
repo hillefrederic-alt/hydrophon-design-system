@@ -187,5 +187,172 @@
       "$type": "number",
       "$description": "Modal z-Index - gleich wie Navigation Drawer für modalen Kontext"
     }
+  },
+  "spinner": {
+    "size": {
+      "sm": {
+        "$value": "16px",
+        "$type": "dimension",
+        "$description": "Spinner Small - 16px (für kleine Buttons)"
+      },
+      "md": {
+        "$value": "24px",
+        "$type": "dimension",
+        "$description": "Spinner Medium - 24px (Standard)"
+      },
+      "lg": {
+        "$value": "32px",
+        "$type": "dimension",
+        "$description": "Spinner Large - 32px (Seitenladeindikator)"
+      },
+      "xl": {
+        "$value": "48px",
+        "$type": "dimension",
+        "$description": "Spinner Extra Large - 48px (Vollbildlader)"
+      }
+    },
+    "stroke-width": {
+      "$value": "2px",
+      "$type": "dimension",
+      "$description": "Spinner Strichstärke"
+    },
+    "color": {
+      "primary": {
+        "$value": "{hydrophon.blau.500}",
+        "$type": "color",
+        "$description": "Spinner Primärfarbe - Hydrophon Blau"
+      },
+      "light": {
+        "$value": "{neutral.400}",
+        "$type": "color",
+        "$description": "Spinner helle Variante"
+      },
+      "on-primary": {
+        "$value": "{neutral.white}",
+        "$type": "color",
+        "$description": "Spinner auf primärem Hintergrund - weiß"
+      }
+    },
+    "track-color": {
+      "$value": "{neutral.200}",
+      "$type": "color",
+      "$description": "Spinner Track-Farbe (Hintergrundkreis)"
+    },
+    "animation": {
+      "duration": {
+        "$value": "750ms",
+        "$type": "duration",
+        "$description": "Spinner Rotationsdauer - 0.75s"
+      },
+      "timing": {
+        "$value": "linear",
+        "$type": "cubicBezier",
+        "$description": "Spinner Animation - linear für gleichmäßige Rotation"
+      }
+    },
+    "delay": {
+      "$value": "200ms",
+      "$type": "duration",
+      "$description": "Spinner Anzeigeverzögerung - verhindert Flash bei schnellen Operationen"
+    }
+  },
+  "progress": {
+    "height": {
+      "$value": "8px",
+      "$type": "dimension",
+      "$description": "Progress Bar Standardhöhe"
+    },
+    "height-sm": {
+      "$value": "4px",
+      "$type": "dimension",
+      "$description": "Progress Bar schmale Variante"
+    },
+    "border-radius": {
+      "$value": "{borderRadius.full}",
+      "$type": "dimension",
+      "$description": "Progress Bar Eckenradius - vollständig abgerundet"
+    },
+    "track": {
+      "background": {
+        "$value": "{neutral.200}",
+        "$type": "color",
+        "$description": "Progress Track Hintergrundfarbe"
+      }
+    },
+    "bar": {
+      "background": {
+        "$value": "{hydrophon.blau.500}",
+        "$type": "color",
+        "$description": "Progress Bar Füllfarbe - Hydrophon Blau"
+      },
+      "success": {
+        "$value": "{color.success}",
+        "$type": "color",
+        "$description": "Progress Bar Erfolgsfarbe - grün bei Abschluss"
+      }
+    },
+    "indeterminate": {
+      "animation-duration": {
+        "$value": "1.5s",
+        "$type": "duration",
+        "$description": "Indeterminate Progress Animation Dauer"
+      }
+    },
+    "label": {
+      "font-size": {
+        "$value": "{fontSize.sm}",
+        "$type": "dimension",
+        "$description": "Progress Label Schriftgröße - 14px"
+      },
+      "color": {
+        "$value": "{neutral.600}",
+        "$type": "color",
+        "$description": "Progress Label Textfarbe"
+      },
+      "gap": {
+        "$value": "{spacing.2}",
+        "$type": "dimension",
+        "$description": "Progress Abstand zwischen Bar und Label - 8px"
+      }
+    }
+  },
+  "skeleton": {
+    "base-color": {
+      "$value": "{neutral.200}",
+      "$type": "color",
+      "$description": "Skeleton Basisfarbe"
+    },
+    "highlight-color": {
+      "$value": "{neutral.100}",
+      "$type": "color",
+      "$description": "Skeleton Highlight-Farbe für Shimmer-Effekt"
+    },
+    "border-radius": {
+      "$value": "{borderRadius.md}",
+      "$type": "dimension",
+      "$description": "Skeleton Eckenradius - 6px"
+    },
+    "animation": {
+      "duration": {
+        "$value": "1.5s",
+        "$type": "duration",
+        "$description": "Skeleton Shimmer-Animation Dauer"
+      },
+      "timing": {
+        "$value": "ease-in-out",
+        "$type": "cubicBezier",
+        "$description": "Skeleton Animation Easing-Funktion"
+      }
+    },
+    "line-height": {
+      "$value": "1.2",
+      "$type": "number",
+      "$description": "Skeleton Zeilenhöhe für Text-Platzhalter"
+    },
+    "spacing": {
+      "$value": "{spacing.2}",
+      "$type": "dimension",
+      "$description": "Skeleton Abstand zwischen Zeilen - 8px"
+    }
   }
 }
