@@ -16,7 +16,7 @@
   "license": "ISC",
   "type": "module",
   "devDependencies": {
-    "adobe-swatch-exchange": "^0.0.0",
+    "ase-utils": "^0.1.1",
     "lucide-static": "^0.563.0",
     "style-dictionary": "^4.4.0",
     "svgo": "^4.0.0"

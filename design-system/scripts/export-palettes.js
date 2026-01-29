@@ -4,7 +4,7 @@
  * Export color palettes from design tokens to Adobe ASE and GIMP GPL formats
  */
 
-import ase from 'adobe-swatch-exchange';
+import { encode } from 'ase-utils';
 import { readFile, writeFile, mkdir } from 'fs/promises';
 import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';
@@ -200,11 +200,13 @@ async function generateASE(colors, outputPath) {
     type: 'global'
   }));
 
-  const buffer = ase.encode({
+  const aseData = {
     version: '1.0',
     groups: [],
     colors: aseColors
-  });
+  };
+
+  const buffer = encode(aseData);
 
   await writeFile(outputPath, buffer);
   console.log(`✓ ASE file generated: ${outputPath}`);
