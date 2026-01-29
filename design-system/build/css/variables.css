@@ -119,6 +119,40 @@
   --skeleton-animation-duration: 1.5s; /** Skeleton Shimmer-Animation Dauer */
   --skeleton-animation-timing: ease-in-out; /** Skeleton Animation Easing-Funktion */
   --skeleton-line-height: 1.2; /** Skeleton Zeilenhöhe für Text-Platzhalter */
+  --tooltip-delay: 300ms; /** Verzoegerung vor dem Anzeigen (300ms Industry-Standard) */
+  --tooltip-max-width: 200px; /** Maximale Breite vor Umbruch */
+  --tooltip-arrow-size: 6px; /** Groesse des Pfeil-Indikators */
+  --tooltip-offset: 5px; /** Abstand zum Trigger-Element */
+  --tooltip-z-index: 1100; /** Positionierung ueber Modals (1000) */
+  --tooltip-animation-duration: 150ms; /** Ein-/Ausblend-Animation - schnell, nicht stoerend */
+  --toast-width: 360px; /** Standardbreite fuer Toasts */
+  --toast-max-width: calc(100vw - 32px); /** Responsive maximale Breite */
+  --toast-max-visible: 4; /** Maximale Anzahl gleichzeitig sichtbar */
+  --toast-z-index: 1200; /** Z-Index ueber Tooltips (1100) */
+  --toast-duration-success: 3000ms; /** Auto-Dismiss nach 3 Sekunden */
+  --toast-duration-info: 4000ms; /** Auto-Dismiss nach 4 Sekunden */
+  --toast-duration-warning: 5000ms; /** Auto-Dismiss nach 5 Sekunden */
+  --toast-duration-error: 0ms; /** Bleibt bis manuell geschlossen */
+  --toast-animation-enter-duration: 200ms; /** Einblend-Animation */
+  --toast-animation-exit-duration: 150ms; /** Ausblend-Animation */
+  --toast-variant-success-background: #f0fdf4; /** Hellgruener Hintergrund (green-50) */
+  --toast-variant-success-border: #bbf7d0; /** Gruener Rahmen (green-200) */
+  --toast-variant-success-icon-color: #16a34a; /** Gruenes Icon (green-600) */
+  --toast-variant-success-text-color: #166534; /** Dunkelgruener Text (green-800) */
+  --toast-variant-info-background: #eff6ff; /** Hellblauer Hintergrund (blue-50) */
+  --toast-variant-info-border: #bfdbfe; /** Blauer Rahmen (blue-200) */
+  --toast-variant-info-icon-color: #2563eb; /** Blaues Icon (blue-600) */
+  --toast-variant-info-text-color: #1e40af; /** Dunkelblauer Text (blue-800) */
+  --toast-variant-warning-background: #fffbeb; /** Hellgelber Hintergrund (amber-50) */
+  --toast-variant-warning-border: #fde68a; /** Gelber Rahmen (amber-200) */
+  --toast-variant-warning-icon-color: #d97706; /** Gelbes Icon (amber-600) */
+  --toast-variant-warning-text-color: #92400e; /** Dunkelgelber Text (amber-800) */
+  --toast-variant-error-background: #fef2f2; /** Hellroter Hintergrund (red-50) */
+  --toast-variant-error-border: #fecaca; /** Roter Rahmen (red-200) */
+  --toast-variant-error-icon-color: #dc2626; /** Rotes Icon (red-600) */
+  --toast-variant-error-text-color: #991b1b; /** Dunkelroter Text (red-800) */
+  --toast-close-button-size: 24px; /** Groesse des Schliessen-Buttons */
+  --toast-close-button-icon-size: 16px; /** Groesse des X-Icons */
   --input-height-sm: 32px; /** Input-Höhe Small - Konsistent mit Button Small (nur Desktop) */
   --input-height-md: 40px; /** Input-Höhe Medium - Standard für die meisten Formulare */
   --input-height-lg: 48px; /** Input-Höhe Large - Mobile-optimiert, CTAs */
@@ -354,6 +388,22 @@
   --skeleton-highlight-color: var(--neutral-100); /** Skeleton Highlight-Farbe für Shimmer-Effekt */
   --skeleton-border-radius: var(--border-radius-md); /** Skeleton Eckenradius - 6px */
   --skeleton-spacing: var(--spacing-2); /** Skeleton Abstand zwischen Zeilen - 8px */
+  --tooltip-background: var(--neutral-900); /** Dunkler Hintergrund fuer hohen Kontrast */
+  --tooltip-color: var(--neutral-white); /** Weisser Text auf dunklem Hintergrund */
+  --tooltip-font-size: var(--font-size-sm); /** Kleine Schriftgroesse - 14px */
+  --tooltip-padding-x: var(--spacing-2); /** Horizontaler Innenabstand - 8px */
+  --tooltip-padding-y: var(--spacing-1); /** Vertikaler Innenabstand - 4px */
+  --tooltip-border-radius: var(--border-radius-sm); /** Leichte Rundung - 2px */
+  --toast-position-top: var(--spacing-4); /** Abstand vom oberen Bildschirmrand - 16px */
+  --toast-position-right: var(--spacing-4); /** Abstand vom rechten Bildschirmrand - 16px */
+  --toast-padding-x: var(--spacing-4); /** Horizontaler Innenabstand - 16px */
+  --toast-padding-y: var(--spacing-3); /** Vertikaler Innenabstand - 12px */
+  --toast-border-radius: var(--border-radius-lg); /** Eckenradius - 8px */
+  --toast-shadow: var(--shadow-lg); /** Schatten fuer Elevation */
+  --toast-gap: var(--spacing-3); /** Abstand zwischen Icon und Text - 12px */
+  --toast-stack-gap: var(--spacing-2); /** Abstand zwischen gestapelten Toasts - 8px */
+  --toast-action-font-size: var(--font-size-sm); /** Schriftgroesse fuer Aktions-Buttons - 14px */
+  --toast-action-font-weight: var(--font-weight-medium); /** Schriftgewicht fuer Aktions-Buttons */
   --input-padding-x-sm: var(--spacing-2); /** Input horizontales Padding Small - 8px */
   --input-padding-x-md: var(--spacing-3); /** Input horizontales Padding Medium - 12px */
   --input-padding-x-lg: var(--spacing-4); /** Input horizontales Padding Large - 16px */
