@@ -1,0 +1,191 @@
+{
+  "$schema": "https://design-tokens.org/schema.json",
+  "modal": {
+    "overlay": {
+      "background": {
+        "$value": "rgba(0, 0, 0, 0.5)",
+        "$type": "color",
+        "$description": "Modal Overlay Hintergrund - halbtransparentes Schwarz"
+      },
+      "blur": {
+        "$value": "4px",
+        "$type": "dimension",
+        "$description": "Modal Overlay Backdrop-Blur für modernen Effekt"
+      }
+    },
+    "content": {
+      "background": {
+        "$value": "{neutral.white}",
+        "$type": "color",
+        "$description": "Modal Content Hintergrundfarbe"
+      },
+      "borderRadius": {
+        "$value": "{borderRadius.lg}",
+        "$type": "dimension",
+        "$description": "Modal Content Eckenradius - 8px"
+      },
+      "shadow": {
+        "$value": "{shadow.xl}",
+        "$type": "shadow",
+        "$description": "Modal Content Schatten für Elevation"
+      },
+      "padding": {
+        "x": {
+          "$value": "{spacing.6}",
+          "$type": "dimension",
+          "$description": "Modal Content horizontales Padding - 24px"
+        },
+        "y": {
+          "$value": "{spacing.5}",
+          "$type": "dimension",
+          "$description": "Modal Content vertikales Padding - 20px"
+        }
+      }
+    },
+    "size": {
+      "sm": {
+        "width": {
+          "$value": "400px",
+          "$type": "dimension",
+          "$description": "Modal Small Breite - für Bestätigungsdialoge"
+        },
+        "maxHeight": {
+          "$value": "80vh",
+          "$type": "dimension",
+          "$description": "Modal Small maximale Höhe"
+        }
+      },
+      "md": {
+        "width": {
+          "$value": "600px",
+          "$type": "dimension",
+          "$description": "Modal Medium Breite - für Formulare"
+        },
+        "maxHeight": {
+          "$value": "85vh",
+          "$type": "dimension",
+          "$description": "Modal Medium maximale Höhe"
+        }
+      },
+      "lg": {
+        "width": {
+          "$value": "900px",
+          "$type": "dimension",
+          "$description": "Modal Large Breite - für komplexe Inhalte"
+        },
+        "maxHeight": {
+          "$value": "90vh",
+          "$type": "dimension",
+          "$description": "Modal Large maximale Höhe"
+        }
+      }
+    },
+    "header": {
+      "paddingBottom": {
+        "$value": "{spacing.4}",
+        "$type": "dimension",
+        "$description": "Modal Header unteres Padding - 16px"
+      },
+      "borderBottom": {
+        "$value": "1px solid {neutral.200}",
+        "$type": "border",
+        "$description": "Modal Header untere Rahmenlinie zur Trennung"
+      }
+    },
+    "title": {
+      "fontSize": {
+        "$value": "{fontSize.2xl}",
+        "$type": "dimension",
+        "$description": "Modal Titel Schriftgröße - 24px (H4)"
+      },
+      "fontWeight": {
+        "$value": "{fontWeight.semibold}",
+        "$type": "fontWeight",
+        "$description": "Modal Titel Schriftgewicht - semibold (600)"
+      },
+      "color": {
+        "$value": "{neutral.900}",
+        "$type": "color",
+        "$description": "Modal Titel Farbe - dunkles Grau"
+      }
+    },
+    "closeButton": {
+      "size": {
+        "$value": "32px",
+        "$type": "dimension",
+        "$description": "Modal Close-Button Größe"
+      },
+      "iconSize": {
+        "$value": "20px",
+        "$type": "dimension",
+        "$description": "Modal Close-Button Icon Größe"
+      },
+      "color": {
+        "$value": "{neutral.500}",
+        "$type": "color",
+        "$description": "Modal Close-Button Standard-Farbe"
+      },
+      "colorHover": {
+        "$value": "{neutral.700}",
+        "$type": "color",
+        "$description": "Modal Close-Button Hover-Farbe"
+      },
+      "backgroundHover": {
+        "$value": "{neutral.100}",
+        "$type": "color",
+        "$description": "Modal Close-Button Hover-Hintergrund"
+      },
+      "borderRadius": {
+        "$value": "{borderRadius.md}",
+        "$type": "dimension",
+        "$description": "Modal Close-Button Eckenradius - 6px"
+      }
+    },
+    "body": {
+      "paddingY": {
+        "$value": "{spacing.4}",
+        "$type": "dimension",
+        "$description": "Modal Body vertikales Padding - 16px"
+      },
+      "color": {
+        "$value": "{neutral.700}",
+        "$type": "color",
+        "$description": "Modal Body Textfarbe"
+      }
+    },
+    "footer": {
+      "paddingTop": {
+        "$value": "{spacing.4}",
+        "$type": "dimension",
+        "$description": "Modal Footer oberes Padding - 16px"
+      },
+      "borderTop": {
+        "$value": "1px solid {neutral.200}",
+        "$type": "border",
+        "$description": "Modal Footer obere Rahmenlinie zur Trennung"
+      },
+      "gap": {
+        "$value": "{spacing.3}",
+        "$type": "dimension",
+        "$description": "Modal Footer Abstand zwischen Buttons - 12px"
+      }
+    },
+    "animation": {
+      "duration": {
+        "$value": "200ms",
+        "$type": "duration",
+        "$description": "Modal Ein-/Ausblend-Animation Dauer"
+      },
+      "timing": {
+        "$value": "ease-out",
+        "$type": "cubicBezier",
+        "$description": "Modal Animation Easing-Funktion"
+      }
+    },
+    "zIndex": {
+      "$value": "1000",
+      "$type": "number",
+      "$description": "Modal z-Index - gleich wie Navigation Drawer für modalen Kontext"
+    }
+  }
+}

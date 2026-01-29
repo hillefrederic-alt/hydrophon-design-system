@@ -92,6 +92,19 @@
   --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); /** Extra large shadow for modals and dialogs */
   --shadow-2xl: 0 25px 50px -12px rgb(0 0 0 / 0.25); /** 2XL shadow for dramatic elevation */
   --shadow-inner: inset 0 2px 4px 0 rgb(0 0 0 / 0.05); /** Inner shadow for inset elements */
+  --modal-overlay-background: rgba(0, 0, 0, 0.5); /** Modal Overlay Hintergrund - halbtransparentes Schwarz */
+  --modal-overlay-blur: 4px; /** Modal Overlay Backdrop-Blur für modernen Effekt */
+  --modal-size-sm-width: 400px; /** Modal Small Breite - für Bestätigungsdialoge */
+  --modal-size-sm-max-height: 80vh; /** Modal Small maximale Höhe */
+  --modal-size-md-width: 600px; /** Modal Medium Breite - für Formulare */
+  --modal-size-md-max-height: 85vh; /** Modal Medium maximale Höhe */
+  --modal-size-lg-width: 900px; /** Modal Large Breite - für komplexe Inhalte */
+  --modal-size-lg-max-height: 90vh; /** Modal Large maximale Höhe */
+  --modal-close-button-size: 32px; /** Modal Close-Button Größe */
+  --modal-close-button-icon-size: 20px; /** Modal Close-Button Icon Größe */
+  --modal-animation-duration: 200ms; /** Modal Ein-/Ausblend-Animation Dauer */
+  --modal-animation-timing: ease-out; /** Modal Animation Easing-Funktion */
+  --modal-z-index: 1000; /** Modal z-Index - gleich wie Navigation Drawer für modalen Kontext */
   --input-height-sm: 32px; /** Input-Höhe Small - Konsistent mit Button Small (nur Desktop) */
   --input-height-md: 40px; /** Input-Höhe Medium - Standard für die meisten Formulare */
   --input-height-lg: 48px; /** Input-Höhe Large - Mobile-optimiert, CTAs */
@@ -293,6 +306,25 @@
   --elevation-dropdown: var(--shadow-lg); /** Dropdown menu elevation */
   --elevation-modal: var(--shadow-xl); /** Modal dialog elevation */
   --elevation-tooltip: var(--shadow-md); /** Tooltip elevation */
+  --modal-content-background: var(--neutral-white); /** Modal Content Hintergrundfarbe */
+  --modal-content-border-radius: var(--border-radius-lg); /** Modal Content Eckenradius - 8px */
+  --modal-content-shadow: var(--shadow-xl); /** Modal Content Schatten für Elevation */
+  --modal-content-padding-x: var(--spacing-6); /** Modal Content horizontales Padding - 24px */
+  --modal-content-padding-y: var(--spacing-5); /** Modal Content vertikales Padding - 20px */
+  --modal-header-padding-bottom: var(--spacing-4); /** Modal Header unteres Padding - 16px */
+  --modal-header-border-bottom: 1px solid var(--neutral-200); /** Modal Header untere Rahmenlinie zur Trennung */
+  --modal-title-font-size: var(--font-size-2xl); /** Modal Titel Schriftgröße - 24px (H4) */
+  --modal-title-font-weight: var(--font-weight-semibold); /** Modal Titel Schriftgewicht - semibold (600) */
+  --modal-title-color: var(--neutral-900); /** Modal Titel Farbe - dunkles Grau */
+  --modal-close-button-color: var(--neutral-500); /** Modal Close-Button Standard-Farbe */
+  --modal-close-button-color-hover: var(--neutral-700); /** Modal Close-Button Hover-Farbe */
+  --modal-close-button-background-hover: var(--neutral-100); /** Modal Close-Button Hover-Hintergrund */
+  --modal-close-button-border-radius: var(--border-radius-md); /** Modal Close-Button Eckenradius - 6px */
+  --modal-body-padding-y: var(--spacing-4); /** Modal Body vertikales Padding - 16px */
+  --modal-body-color: var(--neutral-700); /** Modal Body Textfarbe */
+  --modal-footer-padding-top: var(--spacing-4); /** Modal Footer oberes Padding - 16px */
+  --modal-footer-border-top: 1px solid var(--neutral-200); /** Modal Footer obere Rahmenlinie zur Trennung */
+  --modal-footer-gap: var(--spacing-3); /** Modal Footer Abstand zwischen Buttons - 12px */
   --input-padding-x-sm: var(--spacing-2); /** Input horizontales Padding Small - 8px */
   --input-padding-x-md: var(--spacing-3); /** Input horizontales Padding Medium - 12px */
   --input-padding-x-lg: var(--spacing-4); /** Input horizontales Padding Large - 16px */
