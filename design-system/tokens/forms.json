@@ -1,0 +1,335 @@
+{
+  "$schema": "https://design-tokens.org/schema.json",
+  "input": {
+    "height": {
+      "sm": {
+        "$value": "32px",
+        "$type": "dimension",
+        "$description": "Input-Höhe Small - Konsistent mit Button Small (nur Desktop)"
+      },
+      "md": {
+        "$value": "40px",
+        "$type": "dimension",
+        "$description": "Input-Höhe Medium - Standard für die meisten Formulare"
+      },
+      "lg": {
+        "$value": "48px",
+        "$type": "dimension",
+        "$description": "Input-Höhe Large - Mobile-optimiert, CTAs"
+      }
+    },
+    "padding": {
+      "x": {
+        "sm": {
+          "$value": "{spacing.2}",
+          "$type": "dimension",
+          "$description": "Input horizontales Padding Small - 8px"
+        },
+        "md": {
+          "$value": "{spacing.3}",
+          "$type": "dimension",
+          "$description": "Input horizontales Padding Medium - 12px"
+        },
+        "lg": {
+          "$value": "{spacing.4}",
+          "$type": "dimension",
+          "$description": "Input horizontales Padding Large - 16px"
+        }
+      }
+    },
+    "font": {
+      "size": {
+        "sm": {
+          "$value": "{fontSize.sm}",
+          "$type": "dimension",
+          "$description": "Input Schriftgröße Small - 14px"
+        },
+        "md": {
+          "$value": "{fontSize.base}",
+          "$type": "dimension",
+          "$description": "Input Schriftgröße Medium - 16px"
+        },
+        "lg": {
+          "$value": "{fontSize.lg}",
+          "$type": "dimension",
+          "$description": "Input Schriftgröße Large - 18px"
+        }
+      }
+    },
+    "field": {
+      "background": {
+        "default": {
+          "$value": "{neutral.white}",
+          "$type": "color",
+          "$description": "Input Hintergrund - Standard-Zustand"
+        },
+        "hover": {
+          "$value": "{neutral.white}",
+          "$type": "color",
+          "$description": "Input Hintergrund - Hover-Zustand"
+        },
+        "focus": {
+          "$value": "{neutral.white}",
+          "$type": "color",
+          "$description": "Input Hintergrund - Focus-Zustand"
+        },
+        "error": {
+          "$value": "{neutral.white}",
+          "$type": "color",
+          "$description": "Input Hintergrund - Error-Zustand"
+        },
+        "success": {
+          "$value": "{neutral.white}",
+          "$type": "color",
+          "$description": "Input Hintergrund - Success-Zustand"
+        },
+        "disabled": {
+          "$value": "{neutral.50}",
+          "$type": "color",
+          "$description": "Input Hintergrund - Deaktiviert (subtil grau)"
+        }
+      },
+      "border": {
+        "default": {
+          "$value": "{neutral.300}",
+          "$type": "color",
+          "$description": "Input Rahmen - Standard-Zustand"
+        },
+        "hover": {
+          "$value": "{neutral.400}",
+          "$type": "color",
+          "$description": "Input Rahmen - Hover-Zustand"
+        },
+        "focus": {
+          "$value": "{hydrophon.blau.500}",
+          "$type": "color",
+          "$description": "Input Rahmen - Focus-Zustand (Hydrophon Blau)"
+        },
+        "error": {
+          "$value": "{color.error}",
+          "$type": "color",
+          "$description": "Input Rahmen - Error-Zustand"
+        },
+        "success": {
+          "$value": "{color.success}",
+          "$type": "color",
+          "$description": "Input Rahmen - Success-Zustand (gültige Eingabe)"
+        },
+        "disabled": {
+          "$value": "{neutral.200}",
+          "$type": "color",
+          "$description": "Input Rahmen - Deaktiviert"
+        }
+      },
+      "borderWidth": {
+        "default": {
+          "$value": "1px",
+          "$type": "dimension",
+          "$description": "Input Rahmenbreite - Standard-Zustand"
+        },
+        "focus": {
+          "$value": "2px",
+          "$type": "dimension",
+          "$description": "Input Rahmenbreite - Focus-Zustand (verstärkt)"
+        }
+      },
+      "text": {
+        "default": {
+          "$value": "{neutral.900}",
+          "$type": "color",
+          "$description": "Input Text - Standard-Zustand"
+        },
+        "placeholder": {
+          "$value": "{neutral.400}",
+          "$type": "color",
+          "$description": "Input Placeholder Text - Gedämpft"
+        },
+        "disabled": {
+          "$value": "{neutral.600}",
+          "$type": "color",
+          "$description": "Input Text - Deaktiviert (lesbar, aber reduziert)"
+        }
+      }
+    },
+    "focus": {
+      "ring": {
+        "color": {
+          "$value": "{hydrophon.blau.100}",
+          "$type": "color",
+          "$description": "Focus Ring Farbe - Hellblau für WCAG 2.2 Kontrast"
+        },
+        "width": {
+          "$value": "3px",
+          "$type": "dimension",
+          "$description": "Focus Ring Breite - WCAG 2.2 konform"
+        }
+      },
+      "outline": {
+        "width": {
+          "$value": "2px",
+          "$type": "dimension",
+          "$description": "Focus Outline Breite - Verstärkter Border bei Focus"
+        },
+        "offset": {
+          "$value": "0px",
+          "$type": "dimension",
+          "$description": "Focus Outline Offset - Direkt am Input-Rand"
+        }
+      }
+    },
+    "label": {
+      "color": {
+        "default": {
+          "$value": "{neutral.700}",
+          "$type": "color",
+          "$description": "Label Farbe - Standard-Zustand"
+        },
+        "error": {
+          "$value": "{color.error}",
+          "$type": "color",
+          "$description": "Label Farbe - Error-Zustand"
+        }
+      },
+      "fontSize": {
+        "$value": "{fontSize.sm}",
+        "$type": "dimension",
+        "$description": "Label Schriftgröße - 14px"
+      },
+      "fontWeight": {
+        "$value": "{fontWeight.medium}",
+        "$type": "fontWeight",
+        "$description": "Label Schriftgewicht - Medium (500)"
+      },
+      "marginBottom": {
+        "$value": "{spacing.2}",
+        "$type": "dimension",
+        "$description": "Label Abstand nach unten zum Input - 8px"
+      }
+    },
+    "helper": {
+      "color": {
+        "$value": "{neutral.600}",
+        "$type": "color",
+        "$description": "Helper Text Farbe - Neutralgrau"
+      },
+      "fontSize": {
+        "$value": "{fontSize.xs}",
+        "$type": "dimension",
+        "$description": "Helper Text Schriftgröße - 12px"
+      },
+      "marginTop": {
+        "$value": "{spacing.1}",
+        "$type": "dimension",
+        "$description": "Helper Text Abstand nach oben vom Input - 4px"
+      }
+    },
+    "error": {
+      "color": {
+        "$value": "{color.error}",
+        "$type": "color",
+        "$description": "Error Text Farbe - Rot"
+      },
+      "fontSize": {
+        "$value": "{fontSize.xs}",
+        "$type": "dimension",
+        "$description": "Error Text Schriftgröße - 12px"
+      },
+      "marginTop": {
+        "$value": "{spacing.1}",
+        "$type": "dimension",
+        "$description": "Error Text Abstand nach oben vom Input - 4px"
+      }
+    },
+    "success": {
+      "color": {
+        "$value": "{color.success}",
+        "$type": "color",
+        "$description": "Success Text Farbe - Grün"
+      }
+    },
+    "required": {
+      "color": {
+        "$value": "{color.error}",
+        "$type": "color",
+        "$description": "Required Indicator Farbe - Rot"
+      },
+      "symbol": {
+        "$value": "*",
+        "$type": "string",
+        "$description": "Required Indicator Symbol - Asterisk"
+      }
+    },
+    "select": {
+      "iconSize": {
+        "$value": "{icon.size.sm}",
+        "$type": "dimension",
+        "$description": "Select Dropdown Icon Größe - 20px"
+      },
+      "iconColor": {
+        "default": {
+          "$value": "{neutral.600}",
+          "$type": "color",
+          "$description": "Select Icon Farbe - Standard-Zustand"
+        },
+        "disabled": {
+          "$value": "{neutral.400}",
+          "$type": "color",
+          "$description": "Select Icon Farbe - Deaktiviert"
+        }
+      }
+    },
+    "textarea": {
+      "minHeight": {
+        "$value": "120px",
+        "$type": "dimension",
+        "$description": "Textarea Mindesthöhe - ca. 5 Zeilen"
+      },
+      "resize": {
+        "$value": "vertical",
+        "$type": "string",
+        "$description": "Textarea Resize-Verhalten - Nur vertikal"
+      }
+    },
+    "base": {
+      "borderRadius": {
+        "$value": "{borderRadius.base}",
+        "$type": "dimension",
+        "$description": "Input Eckenradius - 4px Standard"
+      },
+      "transition": {
+        "$value": "150ms ease-in-out",
+        "$type": "string",
+        "$description": "Input Übergangsanimation für Zustandswechsel"
+      },
+      "fontFamily": {
+        "$value": "{fontFamily.sans}",
+        "$type": "fontFamily",
+        "$description": "Input Schriftfamilie - Inter Sans"
+      }
+    }
+  },
+  "form": {
+    "spacing": {
+      "labelToInput": {
+        "$value": "{spacing.2}",
+        "$type": "dimension",
+        "$description": "Abstand von Label zu Input - 8px"
+      },
+      "inputToHelper": {
+        "$value": "{spacing.1}",
+        "$type": "dimension",
+        "$description": "Abstand von Input zu Helper/Error Text - 4px"
+      },
+      "fieldToField": {
+        "$value": "{spacing.4}",
+        "$type": "dimension",
+        "$description": "Abstand zwischen einzelnen Formularfeldern - 16px"
+      },
+      "groupToGroup": {
+        "$value": "{spacing.6}",
+        "$type": "dimension",
+        "$description": "Abstand zwischen Formulargruppen/Sektionen - 24px"
+      }
+    }
+  }
+}
