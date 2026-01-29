@@ -105,7 +105,11 @@
 
 ## Barrierefreiheit
 
-> **Hinweis:** Detaillierte Accessibility-Dokumentation wird in einer zukünftigen Phase erstellt.
+**Umfassende Accessibility-Dokumentation:**
+
+- [Accessibility-Übersicht](../03-accessibility/overview.md) - Prinzipien, WCAG-Grundlagen, Design-Checkliste
+- [WCAG-Compliance](../03-accessibility/wcag-compliance.md) - Komponenten-spezifische Compliance-Details
+- [Testing-Guide](../03-accessibility/testing-guide.md) - axe DevTools, manuelles Testing, Screen Reader
 
 ### Wichtige Prinzipien
 
