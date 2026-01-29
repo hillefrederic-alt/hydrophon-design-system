@@ -1,0 +1,208 @@
+{
+  "$schema": "https://design-tokens.org/schema.json",
+  "breadcrumb": {
+    "fontSize": {
+      "$value": "{fontSize.sm}",
+      "$type": "dimension",
+      "$description": "Breadcrumb Schriftgröße - 14px für kompakte Navigation"
+    },
+    "gap": {
+      "$value": "{spacing.2}",
+      "$type": "dimension",
+      "$description": "Abstand zwischen Breadcrumb-Elementen - 8px"
+    },
+    "marginY": {
+      "$value": "{spacing.4}",
+      "$type": "dimension",
+      "$description": "Vertikaler Abstand der Breadcrumb-Navigation - 16px"
+    },
+    "separator": {
+      "content": {
+        "$value": "›",
+        "$type": "string",
+        "$description": "Chevron-Separator für moderne Richtungsanzeige"
+      },
+      "color": {
+        "$value": "{neutral.400}",
+        "$type": "color",
+        "$description": "Dezente Separator-Farbe für visuelle Trennung ohne Dominanz"
+      },
+      "marginX": {
+        "$value": "{spacing.2}",
+        "$type": "dimension",
+        "$description": "Horizontaler Abstand um Separator - 8px"
+      }
+    },
+    "link": {
+      "color": {
+        "$value": "{hydrophon.blau.600}",
+        "$type": "color",
+        "$description": "Breadcrumb Link-Farbe - etwas dunkler als primäre Aktionsfarbe"
+      },
+      "colorHover": {
+        "$value": "{hydrophon.blau.700}",
+        "$type": "color",
+        "$description": "Breadcrumb Link-Farbe bei Hover"
+      },
+      "textDecoration": {
+        "$value": "none",
+        "$type": "string",
+        "$description": "Keine Unterstreichung im Standard-Zustand"
+      },
+      "textDecorationHover": {
+        "$value": "underline",
+        "$type": "string",
+        "$description": "Unterstreichung bei Hover für deutliches Feedback"
+      }
+    },
+    "current": {
+      "color": {
+        "$value": "{neutral.900}",
+        "$type": "color",
+        "$description": "Aktuelle Seite in neutraler Farbe ohne Link-Interaktion"
+      },
+      "fontWeight": {
+        "$value": "{fontWeight.medium}",
+        "$type": "fontWeight",
+        "$description": "Medium-Gewicht hebt aktuelle Seite hervor - 500"
+      }
+    }
+  },
+  "footer": {
+    "background": {
+      "$value": "{neutral.100}",
+      "$type": "color",
+      "$description": "Footer Hintergrundfarbe - dezent vom Hauptinhalt abgesetzt"
+    },
+    "borderTop": {
+      "width": {
+        "$value": "1px",
+        "$type": "dimension",
+        "$description": "Footer obere Rahmenstärke"
+      },
+      "color": {
+        "$value": "{neutral.200}",
+        "$type": "color",
+        "$description": "Footer obere Rahmenfarbe"
+      },
+      "style": {
+        "$value": "solid",
+        "$type": "string",
+        "$description": "Footer oberer Rahmenstil"
+      }
+    },
+    "paddingY": {
+      "$value": "{spacing.12}",
+      "$type": "dimension",
+      "$description": "Footer vertikales Padding - 48px für großzügigen Abstand"
+    },
+    "paddingX": {
+      "$value": "{spacing.6}",
+      "$type": "dimension",
+      "$description": "Footer horizontales Padding - 24px"
+    },
+    "maxWidth": {
+      "$value": "1280px",
+      "$type": "dimension",
+      "$description": "Footer maximale Breite - konsistent mit Grid-System"
+    },
+    "gap": {
+      "$value": "{spacing.8}",
+      "$type": "dimension",
+      "$description": "Abstand zwischen Footer-Spalten - 32px"
+    },
+    "heading": {
+      "fontSize": {
+        "$value": "{fontSize.sm}",
+        "$type": "dimension",
+        "$description": "Footer Überschriften-Größe - 14px"
+      },
+      "fontWeight": {
+        "$value": "{fontWeight.semibold}",
+        "$type": "fontWeight",
+        "$description": "Footer Überschriften-Gewicht - 600 für Betonung"
+      },
+      "color": {
+        "$value": "{neutral.900}",
+        "$type": "color",
+        "$description": "Footer Überschriften-Farbe - dunkles Grau für Kontrast"
+      },
+      "textTransform": {
+        "$value": "uppercase",
+        "$type": "string",
+        "$description": "Uppercase für Überschriften-Hierarchie"
+      },
+      "letterSpacing": {
+        "$value": "0.05em",
+        "$type": "dimension",
+        "$description": "Leicht erhöhter Buchstabenabstand für Uppercase-Lesbarkeit"
+      },
+      "marginBottom": {
+        "$value": "{spacing.4}",
+        "$type": "dimension",
+        "$description": "Abstand unter Überschrift - 16px"
+      }
+    },
+    "link": {
+      "color": {
+        "$value": "{neutral.600}",
+        "$type": "color",
+        "$description": "Footer Link-Farbe - dezentes Grau"
+      },
+      "colorHover": {
+        "$value": "{neutral.900}",
+        "$type": "color",
+        "$description": "Footer Link-Farbe bei Hover - dunkler für Kontrast"
+      },
+      "fontSize": {
+        "$value": "{fontSize.sm}",
+        "$type": "dimension",
+        "$description": "Footer Link-Größe - 14px"
+      },
+      "lineHeight": {
+        "$value": "2",
+        "$type": "number",
+        "$description": "Großzügige Zeilenhöhe für Touch-Targets - 28px bei 14px Schrift"
+      }
+    },
+    "legal": {
+      "fontSize": {
+        "$value": "{fontSize.xs}",
+        "$type": "dimension",
+        "$description": "Footer Legal-Text Größe - 12px für sekundäre Information"
+      },
+      "color": {
+        "$value": "{neutral.500}",
+        "$type": "color",
+        "$description": "Footer Legal-Text Farbe - dezentes Grau"
+      },
+      "marginTop": {
+        "$value": "{spacing.8}",
+        "$type": "dimension",
+        "$description": "Abstand über Legal-Bereich - 32px"
+      },
+      "borderTop": {
+        "width": {
+          "$value": "1px",
+          "$type": "dimension",
+          "$description": "Legal-Bereich obere Rahmenstärke"
+        },
+        "color": {
+          "$value": "{neutral.200}",
+          "$type": "color",
+          "$description": "Legal-Bereich obere Rahmenfarbe"
+        },
+        "style": {
+          "$value": "solid",
+          "$type": "string",
+          "$description": "Legal-Bereich oberer Rahmenstil"
+        }
+      },
+      "paddingTop": {
+        "$value": "{spacing.6}",
+        "$type": "dimension",
+        "$description": "Legal-Bereich oberes Padding - 24px"
+      }
+    }
+  }
+}
