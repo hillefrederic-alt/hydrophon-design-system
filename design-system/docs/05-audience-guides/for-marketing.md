@@ -6,8 +6,8 @@ Schneller Zugang zu allem, was Sie für Ihre tägliche Arbeit brauchen.
 
 ### Wenn Sie neu sind
 
-> **Hinweis:** Der umfassende Marketing Onboarding Guide wird in einer zukünftigen Phase erstellt.
-> Beginnen Sie mit den Schnellzugriff-Links unten für sofortigen Zugang zu den wichtigsten Ressourcen.
+> **Empfohlen:** Starten Sie mit dem [Marketing Onboarding Guide](../00-quick-start/marketing-onboarding.md) -
+> Ein umfassender Leitfaden mit Logo-Verwendung, Farbsystem, Typografie und Do's and Don'ts.
 
 ### Schnellzugriff
 
