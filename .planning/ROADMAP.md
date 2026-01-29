@@ -135,10 +135,15 @@ Plans:
   3. Marketing can reference brand guidelines from PDF document
   4. Designer can clone Figma library and start designing
   5. All assets are versioned and organized with clear naming
-**Plans**: TBD
+**Plans**: 6 plans
 
 Plans:
-- [ ] TBD during plan-phase
+- [ ] 07-01-PLAN.md — PDF documentation generation (md-to-pdf, Hydrophon styling, German Unicode)
+- [ ] 07-02-PLAN.md — Asset export and optimization (SVGO, sharp, SVG/PNG for all brands)
+- [ ] 07-03-PLAN.md — Color palette export (ASE for Adobe, GPL for GIMP)
+- [ ] 07-04-PLAN.md — NPM package setup (dual ESM/CJS, CSS/SCSS/JSON tokens)
+- [ ] 07-05-PLAN.md — Distribution packaging (stakeholder-specific ZIP bundles, RELEASE.md)
+- [ ] 07-06-PLAN.md — Figma library documentation (setup guide, token export, checklist)
 
 ## Progress
 
@@ -153,7 +158,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6 → 7
 | 4. Navigation & Content Structure | 3/3 | Complete | 2026-01-29 |
 | 5. Feedback & System Responses | 5/5 | Complete | 2026-01-29 |
 | 6. Comprehensive Documentation | 6/6 | Complete | 2026-01-29 |
-| 7. Final Packaging & Delivery | 0/TBD | Not started | - |
+| 7. Final Packaging & Delivery | 0/6 | Not started | - |
 
 ---
 *Roadmap created: 2026-01-28*
