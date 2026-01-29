@@ -80,10 +80,12 @@ Plans:
   2. User can identify current location in site hierarchy
   3. Developer can display product information in cards and comparison tables
   4. Content displays responsively across all breakpoints
-**Plans**: TBD
+**Plans**: 3 plans
 
 Plans:
-- [ ] TBD during plan-phase
+- [ ] 04-01-PLAN.md — Navigation system (Header tokens, desktop navigation, mobile drawer with focus management)
+- [ ] 04-02-PLAN.md — Location indicators & footer (Breadcrumb with aria-current, footer layout and legal)
+- [ ] 04-03-PLAN.md — Content components (Product cards, content cards, data tables with accessibility)
 
 ### Phase 5: Feedback & System Responses
 **Goal**: Users receive appropriate feedback for system actions and states
@@ -139,7 +141,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6 → 7
 | 1. Foundation & Brand Identity | 5/5 | Complete | 2026-01-28 |
 | 2. Icons & Basic Interactions | 2/2 | Complete | 2026-01-29 |
 | 3. Forms & Data Input | 3/3 | Complete | 2026-01-29 |
-| 4. Navigation & Content Structure | 0/TBD | Not started | - |
+| 4. Navigation & Content Structure | 0/3 | Not started | - |
 | 5. Feedback & System Responses | 0/TBD | Not started | - |
 | 6. Comprehensive Documentation | 0/TBD | Not started | - |
 | 7. Final Packaging & Delivery | 0/TBD | Not started | - |
