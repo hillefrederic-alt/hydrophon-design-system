@@ -14,6 +14,8 @@
     "build:pdf": "node scripts/build-pdf.js",
     "build:figma": "node scripts/export-figma-tokens.js",
     "build:packages": "node scripts/package-release.js",
+    "build:ts": "tsc",
+    "gemini:example": "tsx src/gemini/example.ts",
     "release": "npm run build && npm run build:pdf && npm run build:assets && npm run build:palettes && npm run build:packages"
   },
   "keywords": [],
@@ -21,12 +23,18 @@
   "license": "ISC",
   "type": "module",
   "devDependencies": {
+    "@types/node": "^25.1.0",
     "archiver": "^7.0.1",
     "ase-utils": "^0.1.1",
     "lucide-static": "^0.563.0",
     "md-to-pdf": "^5.2.5",
     "sharp": "^0.34.5",
     "style-dictionary": "^4.4.0",
-    "svgo": "^4.0.0"
+    "svgo": "^4.0.0",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1"
   }
 }
