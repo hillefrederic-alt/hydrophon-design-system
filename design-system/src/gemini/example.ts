@@ -61,6 +61,28 @@ async function main() {
   const tokenCount = await client.countTokens(text);
   console.log(`Text: "${text}"`);
   console.log(`Token count: ${tokenCount}`);
+  console.log();
+
+  // Example 6: UX Design Prompt Generation
+  console.log('--- UX Design Prompt ---');
+  const uxPrompt = await client.generateUXPrompt(
+    'Eine moderne Login-Seite für eine Musik-Streaming-App',
+    {
+      style: 'Minimalistisch, dunkel',
+      brand: 'Hydrophon',
+      targetAudience: 'Junge Erwachsene 18-35'
+    }
+  );
+  console.log(uxPrompt);
+  console.log();
+
+  // Example 7: Image Generation Prompt
+  console.log('--- Image Generation Prompt ---');
+  const imagePrompt = await client.generateImagePrompt(
+    'Hero-Bild für eine Musik-App Landing Page',
+    'Futuristisch, neon, abstrakte Soundwellen'
+  );
+  console.log(imagePrompt);
 }
 
 main().catch(console.error);
